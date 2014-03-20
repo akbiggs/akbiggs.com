@@ -1,0 +1,50 @@
+.name {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links {
+    text-align: center;
+}
+
+.about {
+    width: 620px;
+    margin: 0 auto;
+}
+
+.about p {
+    text-align: center;
+}
+
+.games h3 {
+    text-align: center;
+}
+
+.games_container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.game {
+    position: relative;
+    width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+}
+
+.game .title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.game p {
+    text-align: center;
+}
+
+.game img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+    height: 175px;
+}
