@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
 .name {
     text-align: center;
     margin-top: 10px;
