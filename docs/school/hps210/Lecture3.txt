@@ -1,0 +1,269 @@
+Midterm Tips
+==============
+
+If you find common themes or topics between the book and the class slides,
+there's a very good chance that it will be on the midterm. The main thing you
+should know from the book are the themes that are discussed on each topic.
+
+Part 1 of the Assignment
+=========================
+
+Worth a very small percentage of the assignment mark(10%).
+He seems to be emphasizing sites that have few citations, even if they have some
+content populated already.
+Email to hps210h1@utoronto.ca with topic Assignment 1.
+
+You're not doing a rewrite of the page, you are adding 500-1000 words.
+Probably easier to pick a person, place or thing because it's easy to search
+for.
+
+Include the url for the copy-pasted content.
+
+Sources for Research:
+    -- Google Scholar (scholar.google.com)
+        Typically search for stuff that's more recent, it'll usually be more
+        interesting. However, it will only give likely sources, not access to
+        them. So you find something that you want to source, then copy it into
+        the U of T library search engine.
+    -- University of Toronto Libraries site (supplement with Google Scholar)
+        If something shows up in the search engine, it's considered a scholarly
+        source and is fair game for the assignment.
+
+Don't handcode references to resources, simply copy the Cite from Google
+Scholar.
+
+Go to Robarts for historical context, Gerrstein is great for research with some
+historical context.
+
+Teacher recommends just clicking around on Wikipedia until you find one that's
+interesting and that has room for expansion.
+
+Lecture 3
+Classical Greek Science
+============
+
+Typically understood to be the starting point of science.
+Starts around 600 BCE, 500 BCE with the rise of the Archaemenid Empire. When
+they started trying to take things over, Greece began thinking of itself as a
+unity as opposed to a bunch of separate entities.
+
+They're pretty rich at this point and they are very much based on the water.
+They draw in ideas from all around them. People would travel around the
+Mediterranean and would bring back cultures into Greece.
+
+Classical Greece (500 BCE - 300 BCE)
+================
+================
+
+Parmenides (born 515 BCE?): "There is no such thing as nothing, or non-existence
+can't exist". This means that nothing changes, and there is no difference
+between anything and anything else, since it would mean that something would
+have properties that do not exist elsewhere. Also he figured out somehow that
+the universe is a sphere.
+
+One contrast between Greece and China's way of thinkings is that paradoxes were
+highly important in Chinese thinking and were considered a limitation of
+language, whereas Greece attempted to solve all of the existing paradoxes.
+
+Zeno's Paradoxes
+==================
+
+First paradox is: Since you cover half the distance progressively between
+yourself and another object when running, you will never reach the other object
+(half keeps getting smaller but never reaches zero).
+
+Plato (428 - 348 BCE)
+=====================
+
+Deeply influenced by Parmenides in way of thinking.  Came up with the fable of
+the cave: four men are shackled to a wall, and only see shadows, so shadows
+become their world (illusion, false beliefs). Then one man is unshackled, and
+reaches the outside world (representing pure rationality).
+
+This represents Plato's world view -- we need to break through the shadows of
+disillusion and come to the light of the truth.
+Teacher believes this mindset did a huge disservice to science, lasting as a
+worldview for 1500 years. Advocates that we won't gain much from messing around
+with material stuff, since it's all an illusion. Aristotle saved us from this.
+
+Plato believed that we were all the organs of this giant living thing that was
+the universe.
+
+Democritus (460 - 370 BCE)
+==================
+
+Student of Leucippus (5th century BCE).
+Had a more sensible approach to Parmenidis: he believed that maybe there was a
+smallest base unit (the atom) that definitely existed and that they bounced off
+of each other and interacted. Democritus believed that nothing existed, but that
+nothing could not be created, it simply gets displaced.
+
+Empedocles (490 - 430 BCE)
+=========================
+
+Believed that people are reincarnated. His main contribution was to produce a
+picture of the world through the four elements (fire, air, earth, water), which
+share four properties (fire and air are hot, fire and earth are dry, earth and
+water are cold, air and water are wet). THIS IS IMPORTANT, REPRODUCE DIAMOND
+DIAGRAM! This would have been consulted by doctors to figure out how to treat
+patients.
+
+He believes that the universe is in-between two states: one of perfect form
+(everything is spherical) and one of strife (everything is separated apart,
+non-spherical states).
+
+Applied all over the place: medicine, cosmology, metallurgy, ...
+
+Aristotle (384 - 322 BCE)
+=====================
+
+Contributed three main ideas that are crucial to the narrative of this class:
+    
+    Logic: Syllogism. Creates a fairly nuanced logical system for proving things
+    that exist. His arguments are kind-based, in that he associates each object
+    or idea mentioned in an argument with a kind (a variable: X, Y, ...). His
+    arguments are based on the characteristics that make up an object at the
+    base level.
+
+    Four Causes: For Aristotle, understanding the world involves invoking four
+    explanations to explain every interaction between objects.
+        
+        Efficient: physical pushes and pulling. Believed to not be sufficient,
+        adding in three more causes.
+
+        Material: "statue is bronze". The material that constructs an object.
+
+        Formal: The form of an idea brought into reality. E.g. a painter
+        envisions Aristotle and brings that form into reality. Or when someone
+        is born, something is maintaining the form of the living things, since
+        if you cut off both hands off a woman and she gives birth, the child
+        still has hands.
+
+        Final: The purpose of an object, why it needs to exist. The purpose of a
+        human being is to be a rational animal, and that is what drives us
+        forward. The purpose of the Earth is to go down, explaining why we are
+        pulled down when we jump.
+
+    This is a radically different picture from our modern world. Aristotle wants
+    to know why forces exist, why they are there, whereas in modern times we
+    don't really care about the purpose of forces, we just know that they exist
+    and have theories to explain them.
+
+    Physics: His picture of how the universe is shaped was spherical. The Earth
+    is located at the center, surrounded by layers of water, air, and fire,
+    considered the sublunarary realm. Everything below the moon was the world of
+    the four elements. He establishes a fifth element called quitessence (or
+    ether), which was a material for everything located past the moon. All the
+    materials want to go down, but stop when they are located over their
+    corresponding material.
+
+    He believes there are two types of motion in the world: natural motion and
+    violent motion. Violent motion stems from interacting with things in an
+    "unnatural" way, by shoving or pulling on it. If you want to understand the
+    way something works, you have to let it work naturally, in its own
+    environment. He also believes that there is a prime mover, an active
+    intellect that started the interactions going and created the world but now
+    spends all of its time rationalizing.
+
+    The fifth element has a different natural motion: circular. The planets from
+    the moon beyond and the sun all like to move in circles. As a result math
+    would only apply beyond the moon, and everything below the moon was a mess
+    that could only be figured out through observance of the different kinds and
+    their interaction. 
+
+Hippocrates (460 - 370 BCE)
+=====================
+
+Probably a real person, but we can't distinguish his work from those around him
+(fake Hippocrates). He was considered the legendary founder of Western medicine.
+
+His main contribution was to figure out that disease and medicine was natural as
+opposed to an omen from the gods, by way of observing the geometry of the places
+of sick people.
+
+Four Humours Theory: Compose the body. Each is made from an element. Too much of
+one element unbalances you and you become sick.
+  - Yellow bile (fire) = Choleric (angry)
+  - Black bile (earth) = Melancholic (sad, irritable)
+  - Phlegm (water) = sanguine (pleasure-seeking, sociable)
+  - Blood (air) = phlegmatic (calm, unemotional)
+MEMORIZE THIS FOR THE TEST
+
+Hippocrates' main medical intervention was diet. Diet included exercise, food
+that you eat, other regular stuff, but it also included the city that you live
+in, the environment.
+
+There are two classes of doctors in society: the rich doctors and the non-rich
+doctors (women, people of different wealth). Rich doctors are very philosophical
+and focus on research whereas non-rich doctors are doing...something else that
+we don't know much about because there's no writing.
+
+Also (maybe) created the Hippocratic Oath: a document that new doctors need to
+swear to.
+
+Alexandrian Science
+===============
+
+Philip and Alexander of Macedon
+----------------------
+
+Alexander (356 - 323 BCE) and his father conquered a lot of land and are
+responsible for the spread of Hellenistic culture.
+
+When he found the Library of Ashurbanipal, he wanted a similar library that
+brings together the learning and culture of his society into one place(multiple
+places, but in particular the Library of Alexandria).
+
+The Library of Alexandria
+---------------------
+
+Founded by the Ptolemaic dynasty (people who run the Egyptian part of the
+empire). Part of the larger Museum of Alexandria, dedicated to the Muses. If
+anyone brought a book into Alexandria, a copy had to be made for the collection
+of the library. This allowed Alexandria to accumulate a vast amount of
+knowledge.
+
+Part of the motivation behind setting up this library was to establish Alexander
+as the rightful ruler of all the land through his cultural relevancy.
+ 
+Euclid
+---------
+
+Employed at the library of Alexandria. He systemized Geometry through axioms
+that established the laws of how geometry should function, although he didn't
+bring many new geometrical features.
+
+Eratosthenes (276 - 194 BCE)
+-------------
+
+A polymath who was also employed at the library. Estimated the size of the Earth
+through the use of measuring the angle and distance of parallel rays of sunlight
+and basic application of Geometry. Note that this only works if people believe
+the Earth is round, not flat, so clearly we knew this for a long time.
+
+Ptolemy (90 - 168 CE)
+--------------
+
+Easily the most famous astronomer in antiquity. His innovation was to take the
+Aristotle view of the world and apply numbers to explaining the positions of the
+stars and the planets in the sky. He was the author of the Almagest, a
+collection of calculation tables for astronomy.
+
+In order to make his calculations work, he had to make a few adjustments to the
+model of the solar system. He had to add epicycles to the rotation of planets
+that would explain why sometimes the stars and planets would appear to go
+backwards. He also had to add an equant to the calculations, which was an offset
+of the Earth from the center of the rotation.
+
+One of the main things that motivated Copernicus to rework all of this is that
+the equant doesn't make any sense physically with what Aristotle said. This
+theory remains culturally relevant for a very long time and motivates a lot of
+discussion and development.
+
+Antikythera Mechanism (100 BCE)
+-------------
+
+A mechanism discovered recently that allowed people to determine when a lunar
+eclipse would happen. This shows that the Babylonian techniques were transformed
+into concrete methods of determing planetary positions through instruments used
+by the Greeks.

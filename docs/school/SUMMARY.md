@@ -1,0 +1,24 @@
+# Summary
+
+This is the summary of my AWESOME book.
+
+* [CSC443](csc443/README.md)
+    * [Lecture 1](csc443/Lecture1.md)
+    * [Lecture 2](csc443/Lecture2.md)
+    * [Reading 1](csc443/Reading1.md)
+    * [Tutorial 1](csc443/Tutorial1.md)
+* [CSC469](csc469/README.md)
+    * [Lecture 1](csc469/Lecture1.md)
+    * [Reading 1](csc469/Reading1.md)
+* [CSC372](csc372/README.md)
+    * [Lecture 1](csc372/Lecture1.md)
+    * [Lecture 2](csc372/Lecture2.md)
+    * [Lecture 3](csc372/Lecture3.md)
+* [CSC454](csc469/README.md)
+    * [Lecture 1](csc454/Lecture1.md)
+* [CSC411](csc411/README.md)
+    * [Lecture 1](csc411/Lecture1.md)
+    * [Lecture 2](csc411/Lecture2.md)
+    * [Lecture 3](csc411/Lecture3.md)
+    * [Reading 1](csc411/Reading1.md)
+    * [Tutorial 1](csc411/Tutorial1.md)

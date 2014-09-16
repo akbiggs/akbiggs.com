@@ -1,0 +1,166 @@
+\section{Lecture 9 - 12/06/14}
+\subsection{Newton}
+
+Just prior to Newton a lot of people were trying to do something new, but they
+were all doing it in different ways and it was kind of a mess. When Newton
+publishes his laws he, at least appears to, unify all of it and sorts the mess
+out.
+ 
+\subsubsection{Galileo}
+
+But talking about that mess Galileo wrote: "A motion is said to be uniformly
+acelerated when starting from rest, it acquires, during equal time-intervals,
+equal increments of speed" The math for idea of uniform acceleration started
+becoming a thing although they didn't have a proper mathematical basis for it.
+This was contrary to aristotle who thought that heavier things fall faster.
+Galileo proved it wrong without even experiement.
+ 
+Suppose you have 2 balls, 1 heavier than the other. So according to aristotle
+the heaver one should fall faster. So now add a very tiny thread to attach the 2
+balls. Then the new system should fall at the combined weight of the 2 balls.
+Which well lol.
+ 
+Galileo is amusingly an old school copernicus guy. He's all about perfect
+circles, epicycles, silly shit.
+ 
+\subsubsection{Kepler}
+
+Heliocentricism was pretty standard and accepted at this point. Kepler didn't
+understand why ellipses. One of his attempted suggestions is a sweeping force
+from the sun. He had a pseduo-gravity explanation, but it wasn't all that
+accurate.
+ 
+\subsubsection{Descartes}
+
+His most worthwhile contribution is the concept that rest is not more
+fundamental than motion. Which is to say that both rest and motion are natural.
+So I guess that's helpful. He dosen't believe in empty space. Well that's less
+helpful.
+ 
+\subsubsection{Life of Newton}
+
+He was born December 25th. When he was 19 he made a list of all his sins from
+his past life. He was seen a sober and silent boy, he would build mechanisms
+that were powered by a mouse running on a treadmill. Being pratical and learn'd
+was realitvly new at the time. He was pretty bad at running the estate. In 1661
+he went to Cambridge University, they still taught the works of Aristotle but
+had started to move onto Descartes etc. Newton once said something along the
+lines of "Plato is my friend, Aristotle is my friend but truth is a even greater
+friend".
+ 
+He started playing with optics. It was mostly about finding the relationship
+between mind and body. He would close one eye and stare at the sun for as long
+as he could. Apparently it hurt. He was weird even by the standard of the day.
+He did some other optics experiments with prisms. He famously showed that white
+light is made up of all the colours. He made a refelcting telescope. Which is a
+base design that is the basis for basically all telescopes even today.
+ 
+If you looked at his library, 27\% of it was Theological and 10\% was Alchemy
+where as only 7\% and 3\% are for Math and Physics respectivly.
+ 
+\subsubsection{The Royal Society}
+
+He definately got into conflict with other people. One of the jobs of the royal
+society was to confirm other experiements. They couldn't replicate Newtons prism
+experiment. He had spent so much time with his theories that it had just become
+obvious to him so he quickly lost patience with people who didn't understand it.
+He felt very uneasy about the Royal Society. Newton is seen as one of the
+biggest challenges to the Royal Society. He is often seen as the first true
+scientist although it would also be fair to see him as "the last magician" as a
+BBC documentary put it.
+ 
+ 
+\subsection{The Royal Society}
+
+A lot of new methodology and attitudes are being produced. This is a really good
+time for science and it's heating up in a really big way. These scientific
+societies start showing up. The basic structure was that you'd bring ideas to
+the society, you'd all review it, once everyone had accepted it they'd publish
+it in some sort of journal. Which is a very modern thing. It's a consensus
+amungst scientist instead of wealthy elites. It also tries to get rid of biases.
+It's worth noting that this is royal. It's chartered by the king and it's still
+a product of its time. It's made up of people that aren't of the lowest class.
+They published some stuff... you know like a table of all the times at which
+there was high tide at london bridge.
+ 
+Once a week, they'd all gather, have dinner and watch the latest experiment
+happen in front of them. When something new would happen they could, collect
+results, check those results and distribute them quickly and easily.
+ 
+\subsubsection{Nullius in Verba}
+
+Means take no ones word for it or take nothing in speach. It's not just about
+not trusting random people, it's about not trusting even there peers. Socially
+prior, to question people could be seen as an insult to their honor. So this was
+a drastically different way of looking at things. Nullius in Verba is also a way
+to deal with some of the philosophical stuff. They only really looked at things
+that were observable so you couldn't really get into philosophical debate about
+it\footnote{or you could but they didn't}.
+ 
+\subsubsection{Robert Boyle}
+
+He was around 1627-1691. He is most famous for Boyles Law, that relates
+pressure. He would evacuate as much of the air from a container as he could.
+Then he would put other stuff in there, like a mercury barometer. He also put
+candles in it, and they would go out. He proved that it was absolutely
+essential. He also noticed that butterflys couldn't fly without air. Mice,
+somewhat amusingly, died. Better yet: magnets still worked!
+ 
+\subsubsection{Christiaan Huygens}
+
+He was around 1629-1695. Anyone who does science these days know you do a ton of
+statistics. Huygens was one of the first people to start developing a
+statistical system. He also invented a pendulum and a spring drive clock.
+ 
+\subsubsection{Robert Hooke}
+
+He was around 1635-1703. Apparently there is no known pictures of him. He is
+like the arch nemesis of Newton. He is best known for his microscopic work. He
+publishes a book called Micrographia (1665) that discuss microscopic stuff. It
+has a ton of illustrations of things seen through a microscope. These
+illustations are far too detailed for what he actually saw. These were
+reconstructions of what he thought they were. This stuff was very disturbing at
+the time, as it made small things complex. People believed in spontaneous life
+appearing. When these small animals became complex it became hard to justify
+that.
+ 
+\subsubsection{Anton Leeuenhoek}
+
+Random extra person. He was just some dude who sold cloth. He noticed that some
+of the glass beads he used in clothing would magnify things. He made a one lens
+microscope. He was getting 250x magnification from it. He does eventually get
+recognized in the royal society.
+ 
+\subsubsection{The Fateful Dinner}
+
+In 1685 some royal society members were having a dinner. They were discussing
+keplers elipses. There were many circles that looked like eclipses but they
+didn't know why. Hooke claimed to know it but didn't tell them. Most evidence
+suggests he didn't. Haley became really interested in this question and he talks
+to newton about it. The idea that gravity follows an inverse square law has been
+floating around. Newton said he had calculated it, he couldn't find his papers,
+procedes to go reformulate it and then 2 years later produces, well a better
+answer than anyone could of hoped for.
+ 
+\subsubsection{Newton and the Mechnical Philosophy}
+
+This seemed really bad for the whole Mechanical philosophy. It says there is a
+force everywhere in the universe that attract all matter to other matter. The
+idea of it acting at a distance very strange.
+ 
+\subsubsection{Liebniz}
+
+Liebniz invented calculus around the same time so there was a priorty dispute
+about it. The royal society decied to figure it out. However this initive was
+let by Newton so yea Liebniz got ignored.
+ 
+\subsubsection{Two Views of Human Happiness}
+
+Scientific societies saw it as their duty to make us better and happier. They
+saw happiness as having more stuff. The idea that consumers like to consume
+things and we need more things to consume. Before that happiness was about not
+having that much, not knowing that much and being fine. The idea that people are
+happy when things are stable. That isn't that crazy of an idea when you think of
+it. The fact that new things happen all the time was not always true. Bacon
+brought forward the idea that we should constantly try to improve everything.
+This is a profoundly new way of approaching human happiness.

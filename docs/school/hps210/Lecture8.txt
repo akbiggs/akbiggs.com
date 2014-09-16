@@ -1,0 +1,214 @@
+Lecture 8
+===============
+
+Descartes and Bacon
+-------------------
+
+Convinced that science hasn't been going in the right track, too focused on
+philosophy and that the game needs to be stepped up.
+
+Descartes emphasizes clear reasoning, Bacon emphasizes data and knowledge. Both
+overlap but have different focuses on things.
+
+Attempt to find a new scientific method.
+
+A Question of Method
+--------------------
+
+The scientific method is not something that's ever finished, it's always being
+adapted based on the state of the field.
+
+Francis Bacon (1561 - 1626)
+---------------------
+
+His name is often associated with the scientific method itself (especially in
+England). Became the patron saint of English society.
+
+The way you can tell good methods from bad is good methods produce results that
+increase the amount of knowledge we have. This is cutting away the divide
+between the theoretical and practical study of science. We need to get more
+practical with our investigations.
+
+He's the right kind of guy for this, because he's rich and has a lot of
+political influence. Has a lot more influence than someone at the bottom of
+society. He's a religious guy who formulates his acts in terms of his Christian
+Duty to relieve the suffering of humankind.
+
+Novum Organum (1620)
+-------------------
+
+Written by Francis Bacon. Puts in place a new system for performing science and
+doing logic and argumentation. Shows a ship of knowledge leaving the confines of
+the Mediterranean towards the great unknown Atlantic.
+
+Points out how unhelpful Syllogistic Logic is. Wants to produce new ways of
+thinking. In Syllogistic Logic you would take a natural law and use it to infer
+how particular objects should behave; Bacon believes this is backwards, we
+should go from the way objects behave to maybe establishing a natural law once
+we have enough evidence.
+
+His main tool for doing this is Induction, where you build up a case bit by bit
+by establishing middle axioms (restricted axioms with as little theory as
+possible), use that to create new questions, and then continue making new
+observations and new middle axioms until you can establish higher axioms, and
+eventually arrive at the truth.
+
+The main way for determining observations is through instruments, not the naked
+hand or pure reasoning.
+
+Idols of the Tribe
+------------------
+
+There are several biases built into human nature, e.g. cognitive biases, like
+confirmation bias or self-serving bias. All of us fall victim to this. Bacon
+doesn't have the big picture that we have today, but he knows that we have these
+biases and calls them idols of the tribe.
+
+Idols of the Cave
+------------------
+
+Biases peculiar to an individual due to education or temperment, see evidence of
+it everywhere. 
+
+Idols of the Marketplace
+----------------------
+
+Biases due to the medium of communication. Translation issues, failure to
+express, certain kinds of expressions that trap you into a certain way of
+thinking e.g. four elements being used to express everything.
+
+Idols of the Theatre
+-------------------
+
+Biases due to being locked into a systematic belief that everyone else has, e.g.
+the view of the solar system. Hard to break out after a certain point.
+
+Rene Descartes (1596 - 1650 CE)
+------------------------------
+
+Also wants to wipe the slate clean and start fresh. Most of his physics are
+underwhelming but his math is great.
+
+The Mechanical Philosophy
+-------------------------
+
+Descartes believes that everything should be explained in terms of mechanical
+action, no forms or active principles. There is just matter and human souls. He
+separates the human souls from matter and treats it differently, but says
+everything else is strictly mechanical.
+
+He also believes that people are made entirely of mechanisms (nerves) that are
+triggered by animal spirits (also matter) and cause the body to move around.
+
+NOTE: Read Schaven (??) note from the portal, will influence the exam. He says
+that clocks appeal to early European philosopher because it acts as a good
+metaphor for how people and things should behave.
+
+The Clock Metaphor
+-------------------
+
+Descartes also believes that we should think like a clock, in the sense that we
+should reduce involved propositions step by step (tick tock) until we build up
+to absolute knowledge.
+
+Scientist as Sage
+------------------
+
+Descartes says we need to start off with the smallest bit of knowledge and build
+up until you have absolute.
+
+Bacon vs. Descartes
+-------------------
+
+Bacon is empiracist, Descartes is a rationalist. Bacon says we need to do
+experiments, Descartes says we can use our reasoning. Both still manage to
+liberate us from the idea that we have to come up with world-spanning theories,
+we can instead just build up bit by bit.
+
+8.2 Natural History
+(and some other stuff)
+===================
+
+The Voyages of Discovery (1497)
+------------------------
+
+Africa is a place where people don't like you around this time. Vasco Da Gama
+found a way to navigate around it. This is the advent of colonialism. Indian
+ocean is a lively trading place for many different cultures at this point.
+
+Natural History Museums
+----------------------
+
+With natural trade, people began to take natural things and display them in
+museums, in displays to show off how learned and cultured they were.
+
+These displays were intended much more for entertainment than education. So
+things from other cultures are being brought into Europe, bringing a huge amount
+of natural knowledge into Europe.
+
+Relocating Modern Science (1725)
+-------------------------
+
+Chapter 1 of this tells the story of another book, The Jardin de Lorixa by
+Nicolas L'Empereur, A guy from Europe settled down in India and collected and
+correlated all the herbal knowledge around in this book. This is really useful
+for keeping sailors alive, until at least as late as the 18th century. Tons of
+people dying on sea voyages, need remedies.
+
+Also aims to get rid of lies being perpetuated by the Dutch about remedies to
+protect trade secrets.
+
+Huge amounts of natural knowledge are pouring into Europe from different parts
+of the world.
+
+Yuktibhasa (1550)
+------------------
+
+By Jyesthadeva. Another piece of knowledge brought into Europe around the age of
+colonialism as a product of discussion. A textbook summary of the results of the
+Kerala school of mathematics. Includes results important to Calculus (finding
+the slope of a tangent to a curve), as well as iterative techniques to
+numerically solve non-linear equations.
+
+Also shows something that is conceptually very similar to Tycho Brahe's
+astronomical system.
+
+An epic work that summarizes the best of the work of the Karala school. Notably
+written in the local language as opposed to Sanskrit, and includes proofs and
+explanations and arguments, not something previously included in texts by this
+school. Peculiar, but possibly explained by the fact that the Portugese made
+contact in India 50 years earlier.
+
+The Society of Jesus (Jesuits) est. 1540
+---------------------------------------
+
+Maybe the Yuktibhasa was written for this society, which made contact with the
+School of Karala. Setting up a system for education, their job is to remain
+super-educated, so they set up schools to educate the young and priests. Doing
+the heavy lifting of getting people up to speed and raising the modern level of
+education while raising the level of communication inside of Europe.
+
+Matteo Ricci (1552 - 1610)
+-------------------------
+
+Arrives in China in the 1580s looking to spread the good word, bringing along a
+head full of math and astronomy that makes him feel welcome. Very fortunate,
+because he arrives in China at the right time when their calendar is beginning
+to slip by about ten days. Standards are rising while instruments have gone
+away. They need to make sure that the skies are behaving regularly, but if the
+calendar is slipping off then the predictions are going to be crazy.
+
+Around 600 CE< the astro-Calendric bureau employed Indian astronomers. Around
+1250, created a special department for Muslim astronomers.
+
+Very selective about the things they want to learn. Super interested in Math and
+Astronomy but not really Theology.
+
+Government called for a reform of the calendar, dropping the Jesuits into
+things. Translating a lot of texts into Chinese.
+
+More Jesuits start appearing in the 1600s, some people begin to oppose their
+presence. Some Chinese scholars claim that the new learning being introduced
+from Europe is just old Chinese knowledge being refound and repurposed.
+Interesting parallels with European culture later on claiming that other
+cultures' developments were just European knowledge being reclaimed.

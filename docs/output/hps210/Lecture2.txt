@@ -1,0 +1,296 @@
+Lecture 2
+Pre-History to Babylonian Astrology
+=================
+
+Ishango Bone (10000 BCE)
+--------------
+Although there's no good starting point, we'll choose to begin with the Ishango
+Bone, which is a stone with two sides with 60 engravings on both of them. This
+seems to correlate to modern-day calendars, since each moon cycle lasts 29/30
+days.
+
+This stands as evidence that people are beginning to predict or notice and
+create data about the things going on around them (observation). As mentioned
+last time, this is by far not the first such evidence, but it's one good piece.
+
+Polynesian Navigation
+---------------------
+Practically, the reason people would want to track the cycles of the sun is for
+navigation purposes. The sun does a daily arc that gets higher and higher as
+summer gets closer. As long as you know where the sun is and where some
+constellations are, you can find your way and figure out what direction you're
+going in.
+
+However, some cultures went far beyond this, seemingly impractically.
+Specifically Mesopotamia, which will be the focus for the remainder of this.
+
+The Fertile Crescent
+-----------------------
+
+A crescent in geography that had Egypt, Mesopotamia, Babylonia and other cities.
+Development driven by lots of rivers in the area, causing agriculture to
+flourish.
+
+The Gobekli Tepe
+-------------------
+
+An incredible, intricately carved monument with animals on it that shows
+evidence of large social organization, division of labor and agriculture. We can
+tell that agriculture was around because when agriculture flourishes, people
+tend to settle down and create cities/defenses, leading to division of labor.
+
+Counting Tokens
+--------------------
+
+Dated to around 8000BCE. Rocks with markings on them indicating a numerical
+system that allowed people to count. Used for thousands of years. Could have
+been used to count agricultural stuff, like how many oats have been planted.
+
+Thousands of years later, evolved into a system where counting tokens inside an
+envelope were indicated using impressions on clay. Then thousands of years after
+that evolved to just impressions without the counting tokens.
+
+This leads to writing in 3200 BCE.
+
+Mesopotamian Writing
+---------------------
+
+3200 BCE. Important for showing us the evolution of counting into impressions
+used to indicate some form of communication.
+
+Babylonian Counting System
+--------------------------
+
+2000 BCE. Shows a form of concisely writing large quantities quickly using
+patterns of markings. Base 60.
+
+Trivia: this is why clocks count 60 seconds in a minute and 60 minutes in an
+hour, we're still using the Babylonian Counting System.
+
+Neo-Assyrian Empire
+-----------------------
+
+Resembles the Fertile Crescent, which makes sense because ancient cultures would
+always develop around rivers where it was easier for agriculture to thrive.
+
+Expanded heavily from 824 BC to 671 BC as the society believed that they were
+the universal culture and decided to conquer other cultures as much as possible.
+
+Ashurbanipal (668 - 627 BCE) and his Wise Men
+--------------
+
+A king. Built a library where he tried to accumulate all the culture from all the
+societies that had been conquered. We also find evidence of correspondence
+between his men and him, giving us a view into the state.
+
+From one of these correspondences we find that they were able to predict lunar
+eclipses by around 700 BCE.
+
+From another correspondence, we find that they were observing the movement of
+the planets, and observing that planets appear together in the sky.
+They don't really have a model of figuring out the underlying mechanics of
+what's going on, but they still are able to predict through tables and
+calculations.
+
+Why would Ashurbanipal care about any of this?
+Not because they're just watching natural events, but because they are watching
+for omens. Unusual events that they didn't predict are considered acts from the
+gods, showing that things are going wrong. This drove a large amount of the
+actions of the king.
+
+Types of Men:
+  - scribe-diviner: primitive mathematician, predicted the activity of the stars
+  - celestial diviner: interprets the star movements when they vary from
+    predictions
+  - magician exorcist: casts spells to exorcise omens
+  - dream interpreter: has elaborate methods of taking parts out of the king's
+    dream and interpreting what they mean.
+  - haruspex: Examines the livers of sheep and gazelles to interpret the will of
+    the gods.
+
+There's a strange relation between observation and theory here.
+We have the Venus Tablet from 1500 BCE, tablet 63 of Enuma Anu Enlil, which
+shows the dates of the first and last visibility of Venus over 21 years.
+
+However, are they just observations? Actually, things might be backwwards.
+
+For example, examining the calendar, the ideal 360 days a year and 30 days a
+month would be completely inaccurate, to the point that nobody could have
+believed it to be accurate. The scribes would have to stick an extra month into
+the year to make things work. The more likely interpretation is that they
+believed that this was an ideal model of the world and that any deviation was
+signs from the god.
+
+So people were driven to make actual observations, but they would always be
+driven by theoretical ideals of how the world should function (theory driving
+observation, not observation driving theory).
+
+However, eventually someone worked it out and created an astrological chart that
+correlated the positions of the planets to the way people would behave based on
+their birthdate. This shows us that they figured out how to predict where the
+planets would be years in advance, bringing doubt to the idea that the positions
+of the planets were a sign from the gods.
+
+A major job of the court mathematician was to divine the astrological sign of a
+person. This shows that this lasted for 2300 years, beginning around 500 BCE.
+
+The Archaemenid Empire (550 BCE)
+----------------------
+
+Considered the bad guys of the Persian empires, although much better than the
+Assyrians. Didn't make particular advancements to science, but they had an idea
+of how things should be ruled that drove a lot of advancement: instead of
+killing or assimilating the people they conquered, they would allow them to keep
+their culture and their language while simply paying taxes. They could even keep
+the same people in charge if they agreed with being conquered. This allowed
+people to travel safely, allowing scholars to transfer knowledge from one
+culture to another. Conversation between people with different values drives
+productive, objective discussion that advances the state of science.
+
+This let them conquer a lot of land over 400 years because it was a more
+friendly empire.
+
+Surprisingly, this doesn't mean that science is driven by peace -- actually,
+some of the most scientific periods were driven by turmoil, leading to people
+from different cultures interacting.
+
+Early Chinese Astrology and Alchemy
+===================================
+
+Has a surprising amount of similarities with Greece advancements.
+Dynasties range from 20000 BCE - 1911 CE.
+In particular, the Spring and Autumn and the Warring Dynasties period lead a
+great deal of advancement.
+
+Early Chinese Writing
+---------------------
+
+Symbols found on oracle bones from 6600 - 6200 BCE give evidence of
+protowriting, showing notes of things such as birds, eyes, lines.
+
+We see more formal forms of writing with the Shang Dynasty Oracle Bone (1600 -
+1050 BCE), where people would write symbols onto a piece of bone and the cracks
+would lead predictions about the future. The bone gives dates for what day would
+be good for things such as childbirth, and also gives predictions about the
+results/outcome of the subject.
+
+Bamboo Books
+------------------
+
+Innovation from around the Warring Dynasty period, around 300 BCE. Each stick of
+bamboo carries a long string of characters, leading to an efficient and
+effective use of space.
+
+People and Dates
+------------------
+
+The 100 Schools: 475 BCE - 220 BCE
+
+Kongzi: 551 - 479 BCE 
+Concerned with politics and the way that people should behave themselves. His
+philosophy was about obtaining social harmony.
+
+Laozi: 500 BCE ???
+The founder of Daoism (going with the flow).
+
+Mozi: 470 - 391 BCE
+One of the first groups of real Chinese scientists. Concerned with subjects
+such as optics and how shadows will fall.
+
+Zou Yan: 305 BCE - 240 BCE
+Credited with synthesizing the Yin-Yang theory along with the Wu Xing theory of
+five elements or processes of transform (Water, Wood, Fire, Metal, Earth). Not
+strictly states of being, but instead phases of transformation as time passes.
+
+Huge amounts of what's known in Chinese science is based entirely around this
+interaction chart.
+
+Metal => Water => Wood => Fire => Earth => ...
+Metal -> Wood -> Earth -> Water -> Fire -> ...
+
+This is applied towards classifying everything. Each planet has an element. Each
+emotion has an element. Each organ has an element. Each stage of life has an
+element. Everything has an element.
+
+We can also see them develop anathestics and weed. yes, marijuana.
+
+The Unification of China
+-----------------------
+
+For most of its history, China was not one unified nation. In 221 BCE, Qin
+defeated the rest of the states, establishing complete control over China for
+the first time. This was not a good time for scholars. Qin is an ambiguous
+figure -- on one hand, he's the first person who could be considered an emperor
+of China, and did set up the conditions that allowed China to be overthrown and
+unified. On the other, he was also a jerk who killed everyone who disagreed
+with him, particularly Confuscious scholar. The period after him was quite a
+good period for scholars.
+
+Han Astrology/Astronomy
+------------------------
+
+During the Han Dynasty (206 BCE - 220 AD), we find instruments for making
+astronomical observations using markings and pins. Their calendar system
+involved adding seven months every 19 years, and nailed the time within a few
+hours. This would be adopted into European culture later on.
+
+Zhou Bi Suan Jing
+--------------------
+
+Geometry is established and applied towards measuring the distance between the
+sun and the earth and correlating the shadows that would be cast. Unfortunately,
+the model that was created only worked if the Earth was flat, which it is not.
+
+One common argument leveraged against China for why modern science was not
+developed there was that they were too focused on the practical and not on the
+theoretical, however, we can see through developments like this that that was
+not necessarily the case.
+
+The Mandate of Heaven
+---------------------
+
+The emperor was considered the son of heaven, a special sort of human who
+mediates between the earth and the cosmos.
+
+Like in Mesopotamia, omens were thought to be updates on how the Emperor was
+doing at his job. They had similar elaborate forms of divination.
+
+Han Cosmological Theories
+---------------------
+
+There's a division in Chinese thinking in the era between the picture of the
+cosmos through theories and the practical calculation tables. There are three
+theories we focus on:
+
+    Gai tian: The heaven and earth are two plates running around eachother.
+
+    Hun tian: The earth lies alone in the center, like the yolk of the hen's
+    egg (the heavens being the egg)
+
+    Xuan ye: Earth and the other heavenly bodies float in infinite empty space.
+    The author of the book thinks this is interesting because it resembles what
+    we think today, where the Earth is a body floating in a lot of empty space
+    being moved around by invisible forces. It's a very naturalistic view where
+    qi is being used universally to represent any kind of force and energy
+    without focusing on dividing into different types of qi.
+
+Chinese Alchemy
+--------------
+
+In Han Dynasty, the compass was invented through the form of metal being melted.
+In the Song Dynasty, gunpowder is created, advanced through an important
+material of which there were great quantities in the Chinese mines. Gunpowder is
+composed of sulfer, charcoal and saltpeter, and saltpeter was readily available.
+
+Chinese Mechanics
+------------------
+
+Han Dynasty: Earthquake detector. Earthquakes were seen as a very dire omen that
+the Emperor would have to respond to immediately.
+
+Spring and Autumn Period: Repeating Crossbow, allowing people to fire off
+multiple bolts rapidly. Traditional views of science see the world in terms of
+mechanisms composed of many small working parts, and the standard narrative
+argues that this is a Western way of thinking, an analytical approach. This
+fails to explain the history of how things actually went down, since China was
+better at creating practical tools and weapons.

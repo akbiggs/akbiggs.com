@@ -1,0 +1,185 @@
+Lecture 10
+10.1: Lavoisier
+==================
+
+At this point Newton has destroyed the idea that the sublunary realm behaves
+differently from the moon and beyond. We have a unified model of how
+motion/physics works.
+
+However, we still have a classical model of how matter works -- four elements
+compose everything. Similar to the physics models, we have a lot of different
+conflicting views of what composes everything in the world. Some people maintain
+that everything is made of sulfur and mercury, others say salt, etc.
+Lavoisier puts an end to this. He makes a table of 33 elements, but he treats
+them differently than other people have been. They're defined pragmatically as
+anything that doesn't have an experiment to be broken into multiple parts. Note
+the emphasis on experimentation as the basis.
+
+Antoine was born in 1733. He's part of the middle-class, so not a peasant but
+not a nobleman either. Privleges are restricted for him: can't carry a sword,
+can't take on some jobs. With enough money, you can bridge this gap by buying a
+title, which he eventually does. Ended up getting him killed in the French
+Revolution.
+
+Married to Marie-Anne Lavoisier, formerly the poet Marie-Anne Balzac. They were
+a team in the laboratory, with her taking care of the practical experiments. So
+when you hear of Lavoisier's accomplishments, think of the family.
+
+The Problem With Phlogiston
+--------------------------
+
+Phlogiston theory for how burning works: when you burn stuff, fire is stuff
+coming off of the material. Phlogiston is a material that comes out of things
+when they burn, causing combustion. Explains some things such as objects getting
+lighter in color and since air apparently absorbs phlogiston it explains why a
+candle goes out in a sealed vessel.
+
+However, runs into some problems, notably with burning metals. The results from
+burning phosphorous weigh more than the original, which shouldn't happen if
+something is coming off. The response was to suggest that phlogiston has
+negative weight in some situations, buoying the weight of the object.
+
+Lavoisier finds this ridiculous, especially because it runs contrary to...
+
+The French Style of Chemistry
+-------------------------
+
+Everything must be done and reasoned using empirical observations. Symbolized by
+the French making the best balances seen yet, with very precise measurements.
+
+The English are being very private at the moment, which France tries to upset by
+working very much in teams out of national interest. They need to progress to
+put France ahead of other countries and cultures. This is particularly important
+with things such as gunpowder, where France is severely lagging behind.
+
+The Metric System (1795)
+------------------------
+
+At this point, we have 5 units: meter, are, stere, litre, gramme. There is no
+relationship between these units, they just represent many different things.
+France attempts to fix this and make this make more sense, again out of national
+interest.
+
+So Lavoisier is irritated at the idea of Phlogiston since it goes against the
+metric system.
+
+Joseph Priestly
+---------------
+
+Has dinner with Lavoisier one night in 1774, told Lavoisier about an experiment where a
+candle supported combustion better than regular air. This is a big deal, because
+it shines doubt on the idea that air is one of the four elements. It starts to
+become clear that air is a compound. 1775 the revolution occurs, and France and
+America begin fighting, which means that Lavoisier and Priestly are unable to
+collaborate.
+
+Unfortunately Priestly lets his information slip.
+
+Joseph Priestly Background (1733 - 1804)
+---------------------------------
+
+Made his living as a minister but he's actually a dissenter. Wrote a lot of
+political and theological books with deeply heretical views, didn't make him
+popular.
+
+Got interested in the chemistry of gases. It was understood that the
+fermentation of anything produced gas, which bothered Priestly, his wife and
+kids. This inspired him to do experiments, such as setting fire to wood chips
+and putting them in beer to discover that it did not allow for combustion. His
+experiments were cut short eventually, but not before he made some advances in
+pneumatic chemistry.
+
+Felt bad about sacrificing mice, so he developed an experiment for testing the
+"goodness" of air. Followed Boyle's experiments for creating nitric acid, and
+leads him to try and find situations that can cause mice to survive in a jar
+with a candle. Found that if you stick a plant into the jar, it can refresh the
+air in the jar, and that a candle can sustain in a jar with a plant, and so can
+a mice. Leads to realization that plants emit what we breathe in.
+
+This isn't quite his crucial combination, although it's quite good.
+He takes calx of mercury, putting it into a container, connected to a pneumatic
+trough with metallic mercury (to avoid absorbing some of the gases). Uses a
+burning lens to burn the calx of mercury, and a gas is created, and the gas is
+pure oxygen. Gives a decomposition of oxide, and a reduction with charcoal.
+
+He was worried that since oxygen seems better than natural air, and better than
+we deserve from nature, and that it might cause us to die more quickly. 
+
+10.2: Chemistry
+
+Helmont's Willow Tree
+--------------------
+
+You take a tree, dump it in a kiln and weigh it, bury it in dirt for five years,
+take care of it, weigh it again afterwards and you'll notice that the tree has
+lost. Seems to imply that the tree is gaining weight from the water. Helmont did
+this. Weight doesn't come from the soil, deeply convincing argument that water
+is fundamental and earth is composite.
+
+Lavoisier gives us a clearer picture of what's going on here. He's pushing for a
+full-scale revolution of the way that science works, the Scientific Revolution.
+
+Wrestling with the fact that some materials gain weight when you burn them.
+Thesis he's working on is that metals gain weight because they take air into
+themselves, gain weight by taking air in. Starts by replicating Priestly's
+experiments and taking them a step further.
+
+The 12 Day Experiment 
+----------------------
+
+Lit a flame under a pot filled with mercury, left it running for 12 continuous
+days. After the first day nothing exciting happened, but after the second day
+small red flecks begin to appear. After 12 days, as many red flecks as could
+form are formed and the heat is shut off. The mercury calks that were formed
+were collected and subjected to further experimentation, trying to reverse the
+process and finding that it produces the exact amount of air as was consumed
+initially.
+
+He used this to conclude that the air of the atmosphere is not a simple
+substance/element, but instead a composition of respirable air and noxious gas.
+He gave this substance the name OXYGEN.
+
+oxy: meaning acid
+gen: meaning maker
+
+He belives that oxygen is the root of all acids, and that all salts are a
+combination of oxygen and some base. This is not true, it's the hydrogen that
+determines the acid.
+
+Caloric Theory
+-------------
+
+Lavoisier's theory for how flame works. Believes that there's an equivalent
+anti-substance to fire called Caloric that explains a few interactions. Entirely
+wrong, but looks similar to the modern kinetic theory of heat which allows
+people to make advances anyways.
+
+Stop seeing the world in terms of elements. Divided into four categories: gases,
+metal, non-metals, and one other.
+
+Three Steps To Chemical Revolution
+----------------------------------
+
+1. Priestly produces pure oxygen, calls it dephlogisticated air
+2. Lavoisier identifies this substance as oxygen
+3. Lavoisier and friends build new chemical nomenclature around oxygen theory of
+combustion
+
+Reform of Chemical Nomenclature
+------------------------------
+
+Giving things new names doesn't make a huge difference, except when you consider
+the social dimension of what's going on. Using the oxygen theory and new
+results, by pushing for this new nomenclature, it gets everybody on the same
+page for how to name things. Able to do this using the prestige of the French
+scientific society. This gets everybody talking the same language, something
+that is very new. This causes knowledge to spread faster.
+
+The Prediction of Silicon
+-------------------------
+
+People begin to experiment with making theories and trying experiments to
+confirm them. Starts off the way to think.
+
+They didn't just make names, they engaged in a social campaign to convince
+people that this was a scientific revolution to get them on the same page.

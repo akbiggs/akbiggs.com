@@ -1,0 +1,187 @@
+HPS211 Lecture 1
+=================
+
+Syllabus
+=================
+Instructor: Greg Lusk (greg.lusk@toronto.ca)
+TA: Alison Berzins (alison.berzins@mail.utoronto.ca)
+
+Overview: overview of history of science from (roughly) 1800 to (roughly) the
+present.
+NEED TO USE U OF T EMAIL OR MESSAGES WILL BE IGNORED ;_;
+
+Lecture
+Introduction
+=================
+
+What is History?
+-------------------
+
+What do historians do? What is the point of this course?
+Is history just a synthesis of various viewpoints and various stories that are
+passed down over time, or is it something more? Is history a matter of
+perspective or is it more objective?
+
+The fact that history is so controlled by historians means that history is
+controlled very strongly by different perspectives. There is still objectivity
+to history, but we need to be careful and look out for biases that determine the
+history we receive(eurocentrism, for example).
+
+We also need to realize that there are some things that affect how objective
+history can be. For example, if you're trying to determine the day a war
+started, do you say it happened the day bombs were dropped or do you say it
+happened the day the bombed country declared war?
+
+So history is a series of facts that are built up and delivered through
+interpretation.
+
+What is Philosophy?
+--------------------
+
+Discussion ensues about what philosophy is. The main reason we should know this
+is because up until the point that the class covers, there was no real
+distinction between science and philosphy. In this class, we begin to establish
+the difference.
+
+Why history and philosophy of science?
+-------------------------------------
+
+Seriously, why are they stuck together in the same subject?  Because biases.
+Because individual recounts of history. Because of subjectivity.
+
+This subject merges them together and tries to dissuade people studying it of
+their biases.
+
+Longitude
+==============
+
+You can determine your latitude fairly easily if you're stranded on a desert
+island using the sun's height. But how do you figure out your longitude? If you
+have a watch set to your old timezone, you can test with it to figure out your
+longitude range via timezone.
+
+HMS Association
+-------------------
+
+The lieutenant who tracked the longitude on the HMS Association in October 1707
+was hung immediately for saying that they were closer to land than the captain
+thought they were. The HMS Association ran smack into land the next morning,
+along with four other ships.
+
+Navigating The Globe
+--------------------
+
+Back in the 1700s, navigation was very difficult. North and south (latitude was
+easy) by measuring the angle from the sun, e.g. using Champlain's Astrolabe)
+
+People knew time was related to longitude, they could use heavenly observations
+to determine the time, and time was approximately equal to distance due to
+timezones.
+
+But longitude was difficult to calculate at sea. Telescopes were too large to be
+accurate and powerful, boats moved making it difficult to observe, and time
+keepers were even more inaccurate at sea (lubricates and metals act differently
+in different temperatures, pendulums move differently when shaken)
+
+Dead Reckoning
+----------------
+
+Primitive way of determining location. One way of examining longitude was
+determinining latitude and sailing until hitting a longitude. But for seafarers
+this was problematic, since it drastically prolonged the journey (increases
+chance of scurvey, pirates, mutiny).
+
+So instead the Dead Reckoning was used to figure out how much speed the boat was
+travelling at. Drop rope in water with hourglass, see how much rope is being
+extended. But since wind, current, and cumulative small errors cause large
+errors when taken in sum, was not very effective.
+
+Longitude Prize
+----------------------
+
+Established in 1714 through an act of British Parliament.
+Big chunks of money given to individuals who could determine longitude within a
+certain amount of accuracy. Just obscene amounts, 2.45 million pounds (today)
+given to individual who could determine longitude within 30 nautical miles (56
+km).
+
+Previous Suggestions
+----------------------
+
+Celatone (Galileo)
+  -- use satellites of Jupiter as time keeping device
+  -- can't see them during the day, hard to measure on a moving ship
+  -- method gained acceptance on land circa 1650
+  -- it's a mask that someone on the ship can wear while laying down and keeping
+  steady, has a telescope in one eye and a focusing point in the other.
+
+Powder of Sympathy (1687, Sir Kenelm Digby)
+Cut up a bunch of dogs, keep them alive, use powder which apparently only acts
+at a distance and is not painless. The dog, when you heal it, feels pain, and
+screams/barks at exactly 12 o'clock. You know the time now. Problem solved.
+
+Magnetic Variation Method (potential blog post?)
+Magnetic north and true north are different. If you calculate the difference
+between them, you can use this to get your longitude. Varies too much to
+work well.
+
+Cannon Signals (1714ish)
+You use cannons to signal from London at times, and use a relay of ships to
+communicate times. But you need a bunch of sailors, and a bunch of ships just
+sitting around for months on end.
+
+Two Main Competitors
+---------------------
+
+The Lunar Distance Method
+  Calculate distance from the moon and other stars to figure out relative
+  position.
+
+Clocks (John Harrison)
+Made clocks somehow. Only clock maker in Paris before he was 20 years old. Made
+a clock in a tower out of wood. Cheap, easier to work with but mainly it was not
+susceptible to heat like other clocks at the time were. Solved the problems with
+earlier lubricants and metals used for pendulums and other time-keeping devices.
+
+Met up with Graham from the Royal Society, convinced him that he knew what he
+was doing via plans and discussion, and got funding. Made his first clock four
+years later.
+
+Took his clock to Portugal to show that it could work for measuring longitude,
+had less than eight minutes of inaccuracy. Got more funding, and came back with
+a second prototype. Had much more brass, still some wood on the inside. 
+
+Octant/Sextant
+--------------------
+
+Invented simulataneously by John Hadley and Thomas Godfrey. Ready long before
+John Harrison's clocks.
+
+Main important thing was in had mirrors. Could keep two objects in the sight at
+once, and their distances relative to each other remained stable even if a ship
+was moving. No need to look at the horizon to set the device and look at the sky
+to set it again, so less room for error. Mark in the mirrors allowed you to see
+one point and keep it about level.
+
+What Happened?
+------------------
+
+Prize was never awarded by the longitude board. Increasingly strict rules were
+put in place by acts of Parliament to make the prize more difficult to obtain.
+Harrison hacked on his H3 prototype, took him 19 years of very hard work. Took
+his assistant Jeffreys with him travelling, and they made a prototype that fit
+in the hand and was much less expensive. Harrison had to appeal to the King, and
+then Parliament, to receive the money from the prize.
+
+The Lunar Distance Method dominated through 1800. This was because it was
+cheaper.
+
+Why tell this story?
+-----------------------
+
+Sets the stage for what life is like at this point. Can't tell where we are on
+the globe when sailing across the ocean.
+
+People are moving around the world. Colonialism is dominating.
+
+And because history is repeating with the Longitude Prize 2014.

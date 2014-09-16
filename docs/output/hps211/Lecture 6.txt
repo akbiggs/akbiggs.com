@@ -1,0 +1,173 @@
+Lecture 5
+Relativity
+============
+
+The Scientific Context
+--------------------------
+
+Before the theory of relativity, in the 19th century, people have
+an idea of how the universe works through Newton's model of how
+things move within it.
+
+The structure of Space
+------------------------
+
+Space is a set with some structure. You take everything and you
+organize it. If you want to use math to describe physical space,
+have to ask two questions: what kind of set, and what kind of structure?
+
+The everyday view is Newtonian Absolute Space. It makes sense to speak
+of exactly where something is in space. Lengths and distances are objective,
+and physical objects have one single and definite size.
+
+Newtonian Absolute Time says all clocks everywhere tick together. Doesn't
+matter where you put them. You can ask questions like "what time is it
+on the other side of the universe"
+
+A frame of reference is a state of rest or motion from which observations
+can be made. In absolute space, we have a special frame of reference, called a
+privleged frame: that of absolute space itself. There is something that just
+isn't moving, it's the center.
+
+Refresher on the Nature of Light
+---------------------------------
+
+The debate over the nature of light went on for centuries. People know what
+light does, bounces around and what-not, but people don't know what it is. Is
+it a particle or a wave?
+
+By the late 19th century, wave won out, based on experiments of the wavelength
+of light. But a wave in what? A sound wave travels through air, but what does
+the light wave travel through?
+
+The Luminiferous Aether: answer to that question. An imponderable fluid that
+pervades all of space. Needs to be to allow light to travel everywhere. This
+means that light should travel at different speeds depending on your movement through the ether.
+
+Problems With Aether Theory
+------------------------------
+
+Very difficult to detect experimentally. Had theoretical difficulties too: had
+extremely strange properties based on the behavior of light, had to be both
+denser than metal but lighter than air.
+
+These problems led scientists other than Einstein to come up with equations
+for how things work. But they thought these problems had solutions.
+
+Special Relativity
+--------------------
+
+Introduced in his paper On The Electrodynamics of Moving Bodies.
+His motivations were not experimental difficulties in the aether.
+The Michaelson-Morrey experiments attempt to figure out how the Earth
+moves through the aether, but aren't successful.
+
+He wasn't motivated by other, relativity-like theories put forth by
+other scientists.
+
+He was motivated by the idea that the laws of nature shouldn't depend
+on whether you're moving or not. All reference frames should have the
+same laws.
+
+This was not the case in electrodynamics, which frustrated Einstein.
+
+Two Principles
+----------------
+
+Principle of relativity: if you're standing still or moving at a constant
+speed, the laws of electricity and magnetism are valid.
+
+Constancy of Speed Of Light: speed of light is the same in all reference frames. This is weird, because if you're moving around and light is reflecting off of you, it feels like your speed should change things.
+
+Consequences
+---------------
+
+Einstein solved problems and derived same equations as other scientists, but interpretation was much different. He says that there is no privleged frame
+of reference, so no absolute space, so no aether.
+
+Both distances and lengths of time are different in different reference
+frames.
+
+Nothing can ever go faster than the speed of light, in any reference frame.
+Lengths and times change more and more as you approach the speed of light.
+
+This means that a ruler which is moving with respect to your frame of
+reference will appear shorter than the same ruler if it is not moving with
+respect to your frame of reference.
+
+A clock which is moving ticks slower than a clock which is not moving (w.r.t
+your frame of reference)
+
+So it's nonsense to speak about *the* length and *the* time, only lengths and
+times.
+
+Atomic clocks in airplanes tick more slowly than clocks on the ground. Fast particles seem to live longer than they should. Signals from GPS satellites need to be corrected because they are moving very quickly.
+
+General Relativity
+--------------------
+
+What's special about special relativity?
+Only works in non-accelerating reference frames. Doesn't tell us anything
+about gravity, and we like gravity, so we want to know things about it.
+
+Thought experiment: in a box with no windows, no sight. You jump, and you
+feel like you're falling down. You could be on Earth, and gravity pulled you,
+or you could be accelerating, and the thing pulls you down.
+No experiment exists to figure out what box you're in.
+
+This means that the force of gravity is indistinguishable from the effect
+of acceleration, and that effectively they are *equivalent*.
+
+General relativity combines special relativeity with the law of gravitation,
+eliminating assymetry.
+
+A General Relativistic Universe
+---------------------------------
+
+This allows us to talk about the structure and shape of time and space
+themselves. Enables modern cosmology with big bangs and black holes. And
+we can make sense of the idea that time has a beginning.
+
+Reception and Acceptance
+--------------------------
+
+GR was not accepted immediately.
+
+When GR was published in 1915, it was barely even noticed outside of Germany,
+due to the war. The British didn't understand Einstein's mathematics, and used a differnet scientific approach.
+
+Many were still comfortable with aether theory in 1915. Thought the problems
+could be solved, didn't see a need for this German theory for things that don't
+seem to be problems.
+
+Sir Arthur Eddington
+------------------------
+
+"only" person in the English-speaking world who understood GR. Wanted to prove
+it for Anglo-Germaic relations after the war and for his own reputation.
+
+Prediction and Experiment
+--------------------------
+
+Einstein's theory predicts light from stars is bent by sun. Newton also
+predicts this, but only half as much.
+
+How do you measure this? The sun is extremely bright, so you can't see
+the stars. Need to observe them when they appear close to the sun in the sky.
+
+Take a photograph of the sky where you know the sun will be when it's dark.
+Then take a photograph when an eclipse happens, and compare the stars.
+
+In 1919 Eddington led an expedition to Principe, to photograph an eclipse.
+Eddington and public media portray this as definitively establishing that
+Einstein is correct. Modern re-examination shows that he may have been over-
+enthusiastic. Experiment was very difficult to perform, which many possible
+sources of errors: temperature, cloud cover, foliage, etc.
+
+So huge margins of error. Did not have enough stars to calibrate properly,
+exposures were bad. Some results from Sobral actually support Newton's theory.
+
+Eddington discarded conflicting results from Sobral experiment, and went with
+Principe results. At the time he made a judgement call, but he could have
+justifiably come to the opposite conclusion. Science is not always clear-cut.
+

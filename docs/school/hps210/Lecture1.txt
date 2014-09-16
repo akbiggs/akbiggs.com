@@ -1,0 +1,206 @@
+HPS210 Lecture 1 
+=================
+
+Info Stuff
+-----------------
+Instructor: Cory Lewis
+Email: hps210h1@utoronto.ca
+Syllabus: http://bit.ly/1olWCNw
+Book: The Dialogue of Civilizations In The Birth of Modern Science
+      				by Arun Bala
+
+Tests will be multiple choice. Apparently entirely multiple choice?
+
+For the assignment:
+    1. Focus on choosing an article on a subject with lots of references to
+    consult. Do preliminary research to figure out that you have stuff available
+    to consult.
+    2. Cite pretty much every sentence, or almost every sentence. Go beyond
+    what's available in public available resources and dive into the library.
+    Sources are what he's looking for here.
+    3. Concise, informative, and interesting. Stay away from too much jargon,
+    and make sure that it is clear and readable.
+    4. Use one of the citation systems (APA, MLA, ...) but it doesn't have to be
+    a particular one.
+
+Lecture
+================
+
+Course Overview
+---------------
+This course covers the history of science from the very beginning
+to the 1800s.
+
+This course used to teach that scientific advancement followed a
+quadratic curve, where the majority of scientific advancement occurred
+during modern science (when science was primarily Eurocentric). This was
+the story as the teacher was originally taught it, and is one that is repeated
+due to historians shying away from telling large grand narratives that would
+emphasize the contributions of Europe towards modern science. Instead, they
+focus on telling microhistories, which don't help to build a big
+picture of what happened.
+
+The focus of the lectures will be preparing you to read the course textbook,
+which is designed as a counterargument to the Eurocentric telling of scientific
+history.
+
+These notes will be based off of what the teacher expresses. Since the teacher
+is expressing his own viewpoint, do not take it entirely for granted. Question
+and verify things that you read here.
+
+The History Of Science (in reverse)
+-----------------------------------
+
+1800 CE
+----------
+
+The big deal was Volta dveloping the electric pile, a stack of copper and nickel
+separated by copper, the world's first battery. Controlled electricity shaped
+everything that happened afterwards.
+
+At the same time, chemistry was made quantative rather than qualitative by
+Lavoisier, making chemistry into a science where careful measurements were taken
+and laws were formed, such as the Law of Conservation. Chemistry also gained
+standardized units of measurement. These contributions earned Antoine Lavoisier
+the title of The Father of Modern Chemistry. 
+
+Alchemy was the popular older form of chemistry, and a very private form of
+science where secrets would be passed between members of a family. This held
+back science, as often conclusions would be subjective and unverified.
+
+1697 CE
+-----------
+
+Isaac Newton is more well known for his contributions to physics, but was also
+an alchemist. He was an important member of the Royal Society, a gathering of
+scientists who would exchange information. This shift in mentality towards
+science helped to get the ball rolling on scientific advancement, leading up to
+the Scientific Revolution.
+
+1632 CE
+-----------
+
+The Medici Family were a family who donated large amounts of money towards the
+advancement of arts and science. In particular, they donated money to Galileo,
+who started as a university professor and found his way into the prince's court.
+Here, he was regarded as a philosophical rockstar, entertaining families like
+the Medicis with his science. He invented the telescope, which enabled observing
+stars, and led him to discover that things were resolving around Jupiter,
+eventually leading to the discovery that the Earth revolves around the Sun(by
+way of disproving that the Earth was not the only source of rotation in the
+solar system).
+
+1618 CE
+------------
+
+Johannes Kepler rose to fame by way of being clever from a nobody to an
+imperial mathematician. His big innovation was discovering that things don't go
+in perfect cycles around the Earth, but instead resolve in ellipses.
+
+1543 CE
+------------
+
+Copernicus is the centerpoint of a lot of discussions about scientific
+revolutions. He didn't want to be the cause of revolution but in order to make
+his math work, he needed to make the Sun the center of the solar system. He
+started focusing math on analyzing the solar system, whereas previously math had
+not been used to analyze in such a large scale.
+
+The author of the class book spends a lot of time discussing the developments of
+all the math that Copernicus relied on in his calculations.
+
+1224 CE / 970 CE
+-----------
+
+The European university system was largely inspired by the university system of
+the Islamic world, inspired by one important scientist(?) who was largely
+influenced by their advancements. This can be seen in the universities that were
+developed around 1224 CE(Europe) and 970 CE(Islam).
+
+However, when Europe got access to the research developed in the Islamic world
+during the Christian crusades, they would repaint the story to make it seem like
+ancient Greece was the source when they were actually building off of the
+Islamic world, since Islam was the political rival of Europe.
+
+965 - 1040 CE
+---------------
+
+Alhazen realized how vision works. Prior to his research, the world was
+convinced that beams of stuff were shot out of the eye and whatever it hit was
+visible. He applied geometry to vision and realized that things were backwards,
+and that light was reflected into the eye to make it visible.
+
+722 - 804 CE
+---------------
+
+The polymath Geber invented crystalization, a method of separating and purifying
+materials. He was also a big advocate of the experimental method, which
+emphasized constantly experimenting and verifying before saying anything about
+how science works. This has earned him the title of The Father of Modern
+Chemistry (800 years earlier and distinctly non-European).
+
+400 - 1190 CE
+-----------------
+
+Significant developments in math take place at Nalanda University in India (trig, numeric
+system, decimal, zero as a number).
+
+1700s CE
+------------------
+
+Jump ahead a while and we have something really cool -- Jantar Mantar, a giant
+collection of astronomical tools that were created by people with large amounts
+of money.
+
+200 BCE - 1300 CE
+-------------------
+
+China makes technological advancements steadily and constantly over the course
+of a millenium, leading to results that were imported into Europe around the
+1500s and in some sense kicked off the Scientific Revolutions.
+
+China is often excluded unnecessarily from this story because their advancements
+were mostly technological. They invented a primitive form of the printing press
+and some tools for studying chemistry.
+
+1600 BCE and 600 BCE
+----------------
+
+Going even further back, we find the Ancient Chinese Oracle Bone, with writing
+on it. This course emphasizes that writing didn't just come from Mesoamerica and
+Mesopetemia, it was developing all around the world from different cultures. In
+600 BCE there is Mayan script
+
+600 - 300 BCE
+-----------------
+
+Classical Greece. The main argument of this class is that we shouldn't focus on
+this as the big place where all scientific advancements took place.
+
+In 330 BC, we have Aristotle, who dramatically is portrayed as the "enemy" who
+Copernicus defeated. In 400 BCE we have Democritus, a philospher who emphasized
+atomism (the idea that everything is comprised of a smallest unit called the
+atom). For this reason he is sometimes referred to as The Father of Modern
+Chemistry (yes, again). The course will argue again that we shouldn't focus on
+his contributions because there were interesting advancements going on elsewhere
+while he was arguing this.
+
+1500 BCE (?)
+------------------
+
+The Venus Tablet is an early record (but not the earliest by far) of
+astronomical activity that we have discovered.
+
+3000 BCE
+-----------------
+Highly simplified rocks with engravings on them that are evidence of scientific
+activity and observation.
+
+20000 BCE
+----------------
+We have an even older artifact with mathematical engravings on them.
+The emphasis of all of this is that there's no clear beginning point. we can
+keep going back and finding traces of something, and every culture has evidence
+of astronomy.
+
+Basically there's no good starting point, either in time or in location.

@@ -1,0 +1,304 @@
+Lecture 5
+=============
+
+The first review of the Origin of Species by Darwin said that
+the work would be very controversial among theologians. He's not
+dismissing the importance of the text, and believes that it deserves
+attention.
+
+It says that the work is going to be important everywhere: the Divinity Hall,
+the College, the Lecture Room, and the Museum. It could also be saying that
+the Origin of Species will have a lasting effect. It's a strong review for Darwin's
+Origin of Species that also questions its impact.
+
+Reception of Origin
+------------------
+
+Further solidified Darwin's reputation. Spread very quickly because it was popular.
+Darwin had a friend, Thomas Henry Huxley, considered Darwin's Bull Dog for how he would
+be sent after people who questioned it. Darwin publically stayed out of debates, leaving
+Huxley to do it.
+
+There's a famous debate between Huxley and the clergyman Wilberforce. At a meeting, paper was
+being presented, and these two start yelling at eachother. Had nothing to do with the paper.
+Lots of insults thrown at each other.
+
+Catholics reluctantly begin to accept evolution.
+
+Scientific Responses
+---------------------
+
+Fossil Record: Where were the varieties that Darwin claimed existed? Darwin believed the fossil
+record is incomplete, maybe the fossils people are looking for no longer exist.
+
+Fleming Jenkin objection: asks to imagine a fit trait coming up, say being tall. What happens if
+that person mates with someone who's shorter? Presumably average height. Traits blend together as they
+evolve and large variations are cancelled out, leaving unfit species. Mendel's work hasn't become popular
+yet, so people don't really know about genetics or how it works.
+
+One of the objections was answered very quickly. A fossil was found, the archeopetrix, that was somewhat
+between bird and dinosaur. So here's the variety Darwin was looking for.
+
+Haeckel View
+Recapitulation Theory / Law of Parallelism
+------------------------------------------
+
+Embryonic production that can be observed mimicks the evolutionary history of the species.
+We see a change from Fish to to Chicken to Pig to Human in terms of embryos, where
+we go from a simple worm-like embryo to a more complex embryo that eventually
+has the most complexity with the human embryo. Huxley believes in this, and says
+it mimicks the natural history of the world.
+
+Eclipse of Darwin
+----------------------
+
+Darwin's theory of natural selection falls out of favor, and is largely
+discredited by the 1880s. Wallace is one of the remaining defenders,
+
+A mechanism was discovered that could be married to Darwin's view, called
+modern synthesis (memorize), that is more of what we think of Darwin's view
+today.
+
+Three Views on Darwin
+------------------------
+
+We've skipped over a lot in this story. Darwin publishes another book that
+is not well-received at all. A lot leads up to Darwin's Origin that accumulates
+and builds up leading to the work.
+
+There are three ways historians might look at Darwin in retrospect.
+
+Paradigmatic Scientist: Led to his theory by slow accumulation of evidence.
+
+Anti-Christian: Had ulterior motives for developing his theory. 
+
+Naturalism Capitalism: Darwin's view comes during the heyday of victorian capitalism.
+He's a consequence of his time.
+
+No really clear right or wrong answer.
+
+Germ Theory and Disease
+=========================
+
+Infectious Disease in the 19th Century
+---------------------------------------
+
+Huge social problem. One of the dominant factors in child mortality and stopped life
+from lasting nearly as long as it does today.
+
+Particularly contagious diseases were terrible. Pneumonia, Turboculosis, Infectious
+Diarrhea were killer. Today contagious diseases are barely on the radar, and they are
+much more significant diseases.
+
+There were few effective treatments, and no concensus over the mechanism. People were
+unconvinced that medicine was the answer. Small pox from cows was the main thing being
+studied, some vaccines were developed for cow pox that were also used for healing the disease
+in people, but this was unlikely to be accessible to the general public.
+
+Contagionism vs Miasma
+------------------------
+
+Two theories for how diseases work:
+   Contagionism: Doseases spread when an "infectious principle" is passed between people.
+   Empirical evidence was shakey in many cases.
+
+   Miasma theory: Much older. Epidemics are caused by noxious air that is present in
+   certain places or produced by rotting organic matter. Malaria = bad air. Used to
+   explain certain diseases better than contagionism could.
+
+It seems to be clear that contagionism won, but why would miasma theory be accepted?
+Diseases such as cholera that are usually spread by people drinking infected water as
+opposed to getting in contact with other, or diseases like malaria that spread via mosquito
+bites didn't seem like they were passed by other people.
+
+Science and Medicine
+--------------------
+
+Science and medicine are thought of as intimately connected today, but back then the
+connection was more shakey. There's an idea that surgeons chop people up and couldn't
+help to save people, medicines are still shakey.
+
+Separate professions until the late 19th century. Changes in anatomy and classification
+of disease did not often change medical practice.
+
+Academic vs apprenticeship model: there's still a very strong divide between the
+theoretical and practical sides of science. There's a traditional physician/surgeon/apothecary
+division. There's no collaboration.
+
+There's a loss of confidence in traditional medical theories. Theory of four humours
+is now in crisis, undermined by discovery of blood circulation. This is the basis behind
+bloodletting: bleed people out to relieve them of excess humours. People are still bloodletting,
+however, even though it doesn't make theoretical sense anymore.
+
+So it seems like medicine is in a state of crisis right now, but there's no new theory that
+has risen up yet to replace the outdated theories, so things are stagnant.
+
+The Microscope
+-----------------
+
+Definitely not invented in the 19th century. Comes from the 17th century, with Robert Hooke.
+
+However, didn't influence medicine quite yet because the microscopes weren't powerful enough
+to perceive germs and bacteria clearly. By the end of the 18th century, historians were
+frustrated with the microscope, thought it was a toy for showing things at museums.
+
+Joseph Jackson Lister (1786 - 1869)
+-------------------------
+
+Father of surgeon Joseph Lister.
+
+Natural historian and optics expert who perfected the double lens design for the microscope,
+minimizing distortion due to refraction. Costs go down significantly, advancing microbiology
+significantly by making it available to much more people.
+
+Louis Pasteur (1822 - 1895)
+------------------------------
+
+Not trained as a physician, was a chemist working on crystollogy who became interested
+in the symmetry of molecules and how the symmetry of molecules in organic matter differed
+from that of molecules in inorganic matter.
+
+Fermentation was something where people didn't understand the mechanisms behind it.
+Pasteur researched the problems confusing people about it. He became convinced that
+yeast was an organic sort of thing that was necessary for fermentation to happen,
+and that there were bacteria and other things getting mixed in that were screwing up the
+process.
+
+Spontaneous Generation
+-------------------------
+
+After several years of study, became involved in this highly controversial debate.
+Spontaneous generation says that organic matter can be generated from inorganic matter.
+
+Pasteur was convinced about biogenesis, the idea that living organisms can only come
+from other living organisms. Applied this to putrefacation and disease, saying that diseases
+come from other living things.
+
+Debates with naturalist Felix Pouchet began in 1858. Pasteur belived Pouchet's experiments
+showed contamination from dust, not spontaneous generation.
+
+Philosophical/religious aspects of the controversy:
+  --biogenesis makes microscopic realm the same thing as larger animals, everything's designed
+  by God.
+
+Germ Theory Wins Out
+-----------------------
+
+Pasteur comes up with swan-necked flask experiment where the sample would stay fine
+in the flask, but if you broke the neck off then the sample would quickly become contaminated.
+
+Quickly applied. In 1864, Pasteur and collaborators devised pasteurization of wine.
+
+In 1868, Pasteur was elected to French Academy of Sciences and suffered a stroke which prevented
+him from carrying out experiments himself, due to losing the ability to control his left arm.
+His practical experiments had to be done in collaboration with assistants.
+
+Joseph Lister (1827 - 1912)
+---------------
+
+Physician who popularized antiseptic technique in surgery.
+Convinced of germ theory by Pasteur's work. Believed wound infections
+could be prevented by applying an agent that killed "septic organisms".
+
+Division of wounds into three types: incisions, contusions or lacerations, and abscesses.
+The doctor's role in each group is to prevent the occurrence of decomposition. Not
+creating incisions yet, just trying to let the body naturally repair itself without getting
+infected.
+
+No need yet to know what types of microorganisms are around, just trying to kill all of them
+at any cost. Using antiseptics that can cause burn wounds.
+
+Pasteur and Vaccines
+----------------------
+
+Performed "attentuation" experiments with chicken cholera in 1879 to produce vaccine. Trying
+to prevent chickens from getting killed.
+
+Turned attention to anthrax and cholera, due to their high agricultural and medical importance.
+Cholera was just terrifying, caused many terrible epidemics. Anthrax killed sheep and cows,
+which could destroy farms.
+
+Attenuated; weakened, alive bacteria and virus.
+Killed: the bacteria is dead, no longer able to spread.
+
+1881 trial of anthrax vaccine in 50 sheep was large public success.
+
+Debate about whether or not Pasteur used an attenuated or a killed vaccine. Believe he used
+a killed vaccine these days by examining his notebooks, but didn't want to admit that due
+to publically debating that attenuated vaccines were better.
+
+Pasteur had a public rivalry with Robert Koch, a German physician who identified the bacterium
+that caused anthrax in 1876.
+
+Robert Koch (1843 - 1910)
+----------------------------
+
+Very good at scientific networking and technical tinkering.
+Had a national rivalry with Pasteur.
+
+Took photographs of anthrax bacilli in 1876. Dark rods and chains that were laying dormant in pastures.
+The photograph microscope was extremely influential, since a bad photograph was much better than
+a misleading or inaccurate drawing. Gave an objectivity to observations of molecules.
+
+Realized that you could see bacteria better under different stains besides waters. Used dyes that were very
+bright and stable, and stained things at different strengths, allowing you to distinguish different
+types of cells and bacteria.
+
+Koch's Postulates (don't have to memorize)
+---------------------
+
+1. Microbe must be present in all cases of disease and absent in healthy individuals
+2. Microbe must be grown in lab in pure culture after being isolated from diseased organism
+3. When introduced into healthy organism's body, microbe should cause disease
+4. When isolated again from newly diseased organism, microbe should be found to be identical
+in form to the originals.
+
+By the early 1890s, however, Koch himself is noting that there are many anomalies that don't
+agree with these rules. Viruses particularly don't behave, since they aren't perceivable yet
+with the technology available at the time.
+
+A lot of stories argue that the postulates were good for bacterial diseases but hindered
+viral research for quite some time.
+
+Rabies
+--------------
+
+Rabies would not follow the postulates since it was a virus. Could not be seen under the
+microscope.
+First human use of vaccine for rabies was in 1885 by Pasteur and collaborators.
+
+Vaccine was a series of injections of increasingly less "attenuated" infectious material.
+No pure culture was performed. The idea was that this would weaken the infectious agent
+over time until eventually it died.
+
+The social impact of rabies was great because although it wasn't very common, it killed everyone
+who developed advanced symptoms, frightening people. Animals would go mad and bite people.
+
+The Pasteur Boom
+-------------------
+
+A media event with Pasteur curing several boys sent to France who had been bitten by a dog with
+rabies. Lots of public exposure to the idea of medicine collaborating with science saving people.
+Idea of collaboration stays in America until modern times.
+
+The Rise of Laboratory Medicine
+---------------------------------
+
+Popular excitement in Europe and North America over cures that could be discovered
+in the lab. Lots of medical research institutes open, lots of funding for
+other research efforts and public health initiatives. The picture of medicine
+by the end of the 19th century is completely different from the picture in 1850.
+
+In summary, the theoretical developments in microbiology and medicine were
+made possible by technological innovations.
+
+SUMMARY
+================
+
+Tech drives science in the case of the microscope. The better the microscope gets, the
+more science is developed and theories are changed.
+
+Social interest drives experimentation. Acceptance of medicine as science, public interest
+grows due to the highly public rabies cure experiments.
+
+Pasteur refutes spontaneous generation using swan-necked flask.

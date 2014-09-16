@@ -1,0 +1,253 @@
+Lecture 4
+Alexandria (Continued)
+==================
+
+Galen (120 - 200 CE)
+---------------
+
+Probably the most important doctor in history.
+Greeks and Romans had wildly different views on education: Greece thought that
+education and the pursuit of knowledge was the most important thing ever,
+whereas in the Roman empire it existed as a leftover kept for learning, and was
+more a sign of being from higher society.
+
+10% of all surviving Greek medical texts were by Galen. He connected medicine
+with anatomy much more deeply than anyone had ever before. Cutting people up to
+learn was taboo, but Galen worked for the gladiators as a doctor so he would see
+people's internals. The story goes that doctors were also allowed to do
+vivisections on dead bodies due to Egyptian burial ceremonies, allowing people
+to advance anatomy. Galen produced a standard medical corpus about people's
+anatomy that was used for a very long time (up until 1500).
+
+The big revolution in the 1500s is when people begin questioning Galen.
+
+Classical Indian Astronomy
+===========================
+
+From the Brihaspati Carvaka School, somewhere between 200 BCE and 200 CE, we see
+a current running through philosophy that shows a shockingly modern atheist and
+materialistic view on death where there is no afterlife and we all become dust
+eventually.
+
+Nalanda University (5th to 11th century CE)
+-------------------
+
+10000 students, 2000 teachers, all of whom would have lived in the university.
+Entirely state sponsored, so approximately 200 villages where the agricultural
+output would be dedicated completely to feeding people in the university. Very
+expensive.
+
+Very cosmopolitan: you didn't get just a dogmatic religious education, you would
+be taught other schools of religion, medicine, and different fields of science.
+It's national and covers many schools of thought. Venus Tablet was taught here
+as history of science.
+
+Greeks inherited thing about perfect circles, obsessed with it, but when
+Ptolemy's work comes to India it gets developed without the perfect circles
+obsession. Gets taken much further, calculations are developed to make things
+work out.
+
+We can see that India is getting many influences and is sending them back.
+
+Aryabhata (476 - 550 CE)
+-----------------------
+
+Made many significant contributions to Indian astronomy, considered the most
+influential mathematician/astronomer from India.
+Suggested it's not the stars that go around, it's the Earth. He still thinks
+that the Earth is in the center, but the stars sit still while the Earth
+rotates. So note that in 500 CE we have the idea that the Earth is moving, which
+is really weird and raised a lot of arguments.
+
+He's not just thinking this stuff up -- he is also using this idea as a base to
+build up a mathematical model of the solar system.
+
+Credited with the idea of relativity of motion.
+Surmised that things are lit up by the sun.
+Measured angles of shadows at different positions to come up with an even better
+estimate of the size of the Earth.
+
+Also credited with getting the value of pi much closer than anyone had gotten it
+before.
+
+This brings up an interesting relation between Greek, Indian and Chinese math.
+Greek math is based very much on whole numbers, geometry and ratios between
+whole numbers. This made calculating the exact value of pi difficult.
+Indian culture had no such presumption, so they pursued much more closely
+questions such as pi.
+
+Indian Numerals
+-----------------
+
+Before Aryabhata, some groups of people developed the modern base 10 numerical
+system. Made long division much more straightforward, along with other
+calculations, allowing for a lot of mathematical advancement.
+
+Before this, they didn't have 0 and numbers below 1. Parmenidis said that
+"nothing" could not exist, meaning that the number zero could not exist from
+first principles.
+
+The place system including decimals was developed here as well.
+
+Brahmagupta (597 - 668 CE)
+------
+
+Came up with the rules for treating zero as a number and the rules by which it
+should behave. Before there were placeholders for zero, but not actually the
+number zero -- it couldn't be treated as a number.
+
+Trig and Astronomy
+------------------
+
+Aryahbata developed the sine function. While there was the basic setup of
+trigonometry in previous cultures, it crystallized in India. Copernicus had
+trigonometry because of India, which Ptolemy didn't have.
+
+Islamic Science
+=================
+
+622 is the beginning of the Islamic calendar. Mohammad moved his followers to
+middle India.
+
+From 622 - 750 CE, Islam went from non-existence to controlling a lot of land.
+Everyone in the land was not necessarily Islamic, it allowed different cultures
+and societies to get brought into dialogues in the Islamic world. We see a
+similar pattern to the Archaemenid empire where land is not crushed and
+subjegated, instead it allows for people to talk and get exposure to different
+societies. They made a very large effort to bring people into discussion with
+them because it was part of their cultural goals (every Muslim needs to know the
+Quran).
+
+ibn Hayyan ( 721 - 815)
+--------------------
+
+aka: Gerber
+
+Considered one of the fathers of modern chemistry. Advocates that people need to
+perform practical experiments and get actual results before they make claims
+about chemical properties. You can see that this clashes with the traditional
+story, which claims that it was several hundred years later that people began to
+realize they need to make observations and note things.
+
+Gets his hands dirty with things that would normally be delegated to the lower
+classes, including alchemy with metals and materials such as sulfur. Pursued the
+idea that everything can be transmuted from gold through enough steps. There was
+also a theory that sulfur and mercury made up everything, because of their
+occurence in a lot of mines in the area.
+
+He discovered another means of dissolving gold using nitric acid and
+hydrochloric acid, called aqua regia. He discovered that you could expand the
+gold supply, which made alchemy begin to disrupt the economy.
+
+Alhazen (965 - 1040)
+------------------
+
+Advocates that you need to attack opinions from every side possible in order to
+find the truth, and also that one must doubt their own opinion. He undermines
+the idea that science as critical thinking was a Reneissance thing.
+
+He made a lot of contributions to many fields, we emphasize optics.
+
+At the time, four optical theories that are wrong:
+  Intromission (going in)
+    -- Aristotelian: transparent medium of vision altered by external objects.
+    stuff between you and the world is altered by objects and goes into your
+    eyes. no math or calculations provided.
+    -- Epicurean: a thin layer of the thing seen peels off and hits the eye.
+
+  Extromission (going out)
+    -- Euclidean: eyes emenate a visual cone, which reaches out and touches
+    stuff. Euclid focuses on geometry, he focuses on a geometrical, mathematical
+    and precise approach.
+
+    -- Galenic: a visual fire comes out of the eye, a subtle spirit that shoots
+    out of your eyes and sees stuff.
+
+  People didn't buy the extromission theories since people knew that stuff was
+  going through the eyes through observations.
+
+Alhazen's synthesis takes what's good about all four theories and brings them
+together. It's an intromission theory where the Euclidean idea with the cone is
+being used, except going into your eye. Every point has light going in every
+direction, which goes into your eye through a cone. An explosion of light from
+every object can be reconstructed by your eye into a picture.
+
+He justifies this using mirrors of various sizes and shapes to figure out what's
+going on, doubting and testing things.
+
+Didn't get it completely right: thought the idea of the image being upside-down
+wasn't acceptable, so he thought the vision happened at the front of the eye
+ball as opposed to the back.
+
+Note that he is applying math to the sublunarary realm -- we're breaking off of
+the Aristolian idea that math can only be applied beyond the moon. He rejects
+Parmenidis.
+
+The Translation Movement
+-----------------------
+
+Before Gerber and Alhazen, we have the translation movement starting up, which
+persists for several centuries. Spread of culture that aims to achieve as much
+knowledge as possible and translate it into Arabic. 
+
+Helped along by several technologies, including papermakers from China, improved
+Arabic script motivated by getting the Quran completely accurate, vast tracts of
+land that they control and tons of money to fund this with (making scholars
+rich), astronomy and alchemy, geometry, a lot of philosophy and logic, medicine,
+and other forms of writing.
+
+They start with medical texts, then leads to translating everything.
+
+This is the culmination of everything we have discussed.
+
+Baghdad's House of Wisdom
+----------------------
+
+Around the same time, acts as an example of a network of state-sponsored schools
+with emphasis on not only religion but also maths and sciences.
+
+We can see this massive state-sponsored push to bring all knowledge into the
+Islamic world and translate it into Arabic and move forward with it via
+scholars.
+
+Falsafah & Kalam
+---------------
+
+Falsafah was a tradtion of philosophers primarily influenced by the Paripatetics
+(Aristotle and friends).
+
+DON'T MEMORIZE THESE PEOPLE.
+Composed of al-Kindi(translation movement, first arabic
+philospher, public defender of other traditions being valuable. Had to drop
+important ideas of Aristotle, such as the world being eternal),
+al-Farabi(integrating Aristotle's view of the divine rational being (prime
+mover) into religion as God, celestial spheres are emanations of God's mind that
+cascade down in different forms. Children of giraffes look like giraffes because
+they are influenced by the mind of god), Avicenna(synthesis of Plato, Aristotle
+and some medicine), Averroes(started an influential movement of making contact
+between Aristolian ideas and later cultures). 
+
+Then we have an opposing tradition, Kalam, primarily about theology and largely
+influenced by the Quaran and Hadith. Included al-Ghazali, who was an important
+figure due to his focus on attacking the Aristotle world view through
+rationality. He points out that the idea of things behaving based on what we
+imagine their properties are doesn't make sense, since you can imagine lots of
+different behaviors that aren't true. Destroys the Formal notion of motion. He
+uses this to bridge things towards the idea of God, saying that the laws of the
+world are governed by demigods. Creates a picture of occasionalism, which says
+that all the regularities in the world are govered by the habits of gods, e.g.
+gravity is governed by a god feeling like things should go down. The
+associations of atoms are what are being governed.
+
+He opens up a new worldview where everything is contingent and everything could
+be different, which means that we need to mess with things and experiment with
+them to figure out what the world is like at any different moment.
+
+Note that people thought the Kalam religion was sketchy even though it's opposed
+to Falsafah, a tradition based on foreign religions.
+
+Hypothesis about how science was developed before the scientific method was
+formally established:
+  - before method, we have contextual values that are biased and which
+    threaten to disrupt proper science. How does science stay stable? Through
+    people having discussions where they can set aside their cultural values. 

@@ -1,0 +1,165 @@
+Lecture 6
+Polar Exploration
+=====================
+
+We're interested in starting in the 19th century, with James Clark Ross' "discovery"
+of Antarctica. Starts off the age of heroes wanting to explore.
+
+Magnetic Crusade
+=================
+
+Magnetism was the original cause of sending people down to the South Pole. You navigate
+using a compass, which is magnetic. People have a Newtonian-like fa
+ith that the world
+can be explained laws, and that given enough info about terresterial magnetism, one
+can infer what the laws are. They didn't have much data from the South Pole, and there
+seemeed to be interesting, unexpected behavior in the South Pole.
+
+The French were perceived to be further ahead in this field compared to Britain, prompting
+a rivalry that encouraged Britain to show France up by making a discovery.
+
+People thought that there were more than two poles.
+
+James Clarke Ross
+====================
+
+Previously went to the North Pole.
+1839 - 4 year voyage abord HMS Terror and Erebus. Antarctica, 1 year previously, is likely
+found to be a continent and not merely ice.
+
+Little is known about the continent, particularly its interior. No one knows what it looks like,
+what's there, or what geographical features it has.
+
+Ross sailed from New Zealand to Antarctica, which hadn't been done before due to a giant ice
+pack in the way. He discovered something very disappointing: land. He thought he could just sail
+to the magnetic center, but instead there was all this land in his way.
+
+So Ross was disappointed, but he made many discoveries:
+  -- Ross Ice Shelf
+  -- Victoria Land
+  -- Active Volcano
+  -- Large mountain range
+
+Continued to make magnetic observation while he was there.
+
+HMS Challenger 
+==================
+
+Still trying to map terrestrial magnestism. Ship is designed for scientific research. In the
+time that went by, catalogued almost 4000 previously unknown species	. Located what we now know
+as Mariana's Trench.
+
+The Heroic Age of Exploration
+================================
+
+They're making large-scale observations. But as a result as we approach the end of the 19th century,
+we still have no understanding of how magnetism works.
+
+People are really interested in Antarctica by the end of the 19th century 
+because of fossils (Darwin), uniformitarionism (Lyell), and people have a new-found fascination
+with glaciers because of ice ages. People really wanna know how glaciers move around and
+what they could contain.
+
+Now people are interested in taking risks, facing danger head-on. People see fear differently
+and take on challenges as an important part of demonstrating that they are the fittest.
+
+People wanna be heroes. THey're celebrities now when they explore.
+
+RRS Discovery 1901-1904
+==========================
+
+Last wooden three masted ship built for Britain. RRS (Royal Research Ship) as opposed to
+HMS (Her Majesty's Service) designed for antarctic exploration. Led by Robert Falcon Scot,
+with Ernest Shackleton third in command.
+
+They studied magnetism, zoology and biology, and became celebrities. They had to in order
+to expense the voyage.
+
+Nimrod Expedition 1907-1909
+=======================
+
+Magnetism becomes less the reason for exploration. It's more about geography, biology and
+social status.
+
+The Nimrod is led by Earnest Shackleton. Finds the magnetic south pole, and establishes a
+new record southern latitude.
+
+Makes an attempt at the geographic south pole, but is unsuccessful.
+
+Terra-Nova Expedition 1910-1913
+==============================
+
+Race between Ronald Amundsen and Falcon Scott. Amundsen really wants to do this because
+he owes people a ton of money, leaves port early.
+
+Largest antarctic scientific expedition to date, with 12 scientists, 40 000 specimens of
+2000 species, 400 never identified before. They studied the Emperor Penguins, who were
+thought to be the most ancient birds and therefore most related to the dinosaurs.
+People want to map the penguins back to dinos using their embryos.
+
+Brings back longest unbroken metrological record (snow, and glacier data) for Antarctica, still
+used as baseline for some studies today. Determined the height of the Aurora.
+
+Why would Historians care?
+============================
+
+There's a rise of public interest in science surrounding this. People are becoming very
+interested in everything, regardless of who they are. The harshest conditions in the globe,
+life-threatening conditions make this very exciting for everyone. Everyone's writing
+on the mountains that are found.
+
+Technology
+=============
+
+The dogs, the sleds, the clothing are all technology here, but particularly the sleds are
+interesting. Scott outfitted the sleds with motors that were used to drive the sleds around.
+The standard instruments were not useful in Antarctica because of the harsh conditions. Better
+technologies are developed to accomodate for this situation.
+
+Scott's technology is inferior in some ways, despite the sleds. More interested in appearing
+heroic and gentlemenly, whereas Amundsen has no such concerns, wears furs instead of Scott's
+waxed outfits.
+
+The question for historians, as at any point in time, is who are the scientists? Are they the
+people who sit around in labs developing theories or the adventurers and workers who put their
+lives at risk to make new discoveries? Science begins to change, and what is valued in science
+changes.
+
+The answers to these judgements change drastically how you interpret and view science. What you
+think is science is heavily based around how you view things, what your values are. The legacies
+of Scott, Amundsen and Shackleton could be completely different depending on your views.
+
+Quiz Summary
+==========
+
+Germ Theory
+  Miasma + Contagionism views
+
+Transmutation Species
+  - Darwin
+  - Lemark
+  - Chambers (published Vestiges anonymous, promotes getting to higher ground from
+              middle ground, so appliyng natural selection towards class promotion.
+              There's a higher order law that kicks in during the embryo stage that
+              promotes its complexity. Primes people to think about Darwin)
+
+Dates: memorize publication of Darwin's pictures
+       Time periods
+       Rabies vaccine
+       1905: special relativity (miracle year, Einstein publishes a bunch of papers
+                                 that are very influential)
+
+Concentrate more on people, their concepts and how they argued for them.
+
+20th century physics -> SR/GR
+The key experiments that were done:
+   -- M+M: speed of light is the same in all frames of referenece, therefore
+   no aether.
+   -- Eddington: His test of gravity bending light, and how the results were
+   dubious. 1905.
+   -- Box thought experiment showing gravity is the same as acceleration.
+   -- Einstein's Motivation: Generally people believe that M+M was the
+   motivation, but another view is that Einstein's motivation was the laws
+   of electrodynamics not behaving the same under different circumstances.
+   Einstein wanted laws of nature to be uniform.
+

@@ -1,0 +1,206 @@
+Lecture 5
+
+Assignment Stuff
+================
+
+Quality of content:
+  -- keep a professional tone (spelling, grammar)
+  -- informative, interesting, illuminating
+  -- to the point
+  -- for a general audience (explain jargon)
+  -- clear citations (footnotes and endnotes)
+
+Quality of references:
+  -- use at least five references not in the original article
+  -- use the right kind of references: journal articles and scholarly books
+  -- prove clearly that each reference shows what you said it shows, using long
+  quotes with page numbers
+  -- explain further if necessary
+
+Medieval European Science
+=========================
+
+There was no total lack of learning during the middle ages, unlike what the
+standard story advocates.
+
+Pope Sylvester II (946 - 1003)
+=================
+
+Went to learn astronomy and other sciences from other cultures, slandered as a
+dark magician.
+
+Had a standard education:
+    trivium: grammar, logic, rhetoric
+    quadrivium: arithmetic, geometry, music, astronomy
+
+What people would have learned at this point had a few holes in it, wasn't very
+accessible and interesting. Sylvester focused on writing books that fixed these
+problems and reintroduced the Arabic numeric system and the Abacus into standard
+education.
+
+At this point, people don't switch to Arabic numerals, but stick with Roman
+numerals.
+
+The Armillary Sphere
+=================
+
+An astronomical tool that allows people to figure out where the north star is
+relative to where they are. Use this to understand where stars are in the night
+sky, used for both education and discovery.
+
+Fibonacci (1170 - 1250 CE)
+=================
+
+Credited for spreading the Arabic numeral system somehow, despite what Sylvester
+did.
+
+Wrote Liber Abaci, a compilation of his learning from being brought into Arab
+land by way of his father being a traitor. Showed people how to calculate
+money-related things, which spreads rapidly due to its importance to people.
+
+So there are three things that are spreading now across Europe: Abacus,
+Armillary Sphere, and Arabic Numeral System.
+
+Frederick II (1194 - 1250 CE)
+==================
+
+Fibonacci met with him, and they shared similar views on the values of Islamic
+learning. Met al-Kamil, the Ayyubid sultan, and convinced him as part of a
+crusade to give up the holy land, Bethleham and others, by way of talking as
+opposed to slaughtering, which is not how crusades were supposed to be
+conducted.
+
+University of Naples (est. 1224)
+====================
+
+All the education buildings running across Europe are church-run: Frederick II
+decides to change this and starts up the University of Naples. We see a nice
+network of knowledge beginning to form as scholars are given a special privlege
+in society. Plato isn't a great leader for scientific discussion due to his
+focus on all senses being useless and rationality being the main thing, so
+Aristotle's viewpoint is emphasized.
+
+Medieval European Alchemy
+==========================
+
+We see traces of this through gold coins issued by Edward III (1312 - 1377).
+Edward thought it would be useful to recruit alchemists into his kingdom, as
+they had practical skills to produce more coins from limited resources. This
+made alchemy become much more popular, but also made the church ban alchemy
+outright because they believed it was forgery.
+
+People believe that they can create materials from other materials by way of
+combining the four elements theory with the idea that everything is made from
+mercury and sulfur. Furthermore, since they believe that everything is trying to
+become its own kind, they think all metal is slowly turning into gold, since
+gold isn't corruptable(doesn't tarnish, doesn't dissolve (except in aqua
+regia)).
+
+They have a lot of interesting physical theories, but they're all written in an
+extremely weird, symbolic way (e.g. green lion eating golden sun representing
+the fact that gold doesn't dissolve).
+
+Practical Alchemy
+================
+
+Didn't make it into the official university curriculum at this point. Separation
+between manual arts and higher studies (lower class vs. higher class).
+
+The main goal of practical alchemy is achieving immortality by creating the
+Philosopher's Stone. They don't achieve that, but they do create a bunch of
+interesting medicines.
+
+Medieval European Medicine
+========================
+
+Connects the theoretical side of things with the practical alchemy side of
+things at different levels of the hierarchy.
+
+Learn'ed Medicine
+================
+
+The level of the hierarchy where people learned the trivium, quadrivium. If you
+went into medicine, you learned about Galen's four humours theory and learned
+about astronomy, the signs that allowed you to diagnose different conditions
+based on their correlations to the four humours.
+
+Taking the Pulse and Qiemo
+-----------------------
+
+Interesting similarities between the Greek/Helenic tradition of taking the pulse
+and the Chinese method (called Qiemo). Taking the pulse is the biggest
+diagnostic tool: doctors take the pulse, think hard and then say what's wrong.
+
+In Qiemo, there are three types of pulses:
+  cun: floating small intenstine, sunken heart
+  guan: floating gall bladder, sunken liver
+  chi: floating bladder, sunken kidneys
+
+By taking each of them more info is gathered.
+
+In Greek/Helenic, four phases marked by two stages:
+  systole: pulse going out
+  diastole: pulse going in
+
+Four phases are created by before and after phases for both stages.
+
+Treatment: The Six Non-Naturals
+===========================
+
+How the doctor gives treatment to patients, what they observe for diagnostics.
+
+1. Ambient air
+2. Food and drink
+3. Exercise and rest
+4. Sleep and wakefulness
+5. Excretion and retention (a particular concern)
+6. The passions of the soul
+
+Phlebotomy
+=============
+
+Bleeding was considered super important because it would help to drain the body
+of excess humours. Different limbs were bloodlet depending on what was wrong.
+
+However, this was manual labor, and it was messy and gross, so this was not
+something that Learn'ed doctors would do. Instead this was passed to the next
+people down in the hierarchy.
+
+Note that women didn't need to be bloodlet as often because a good, strong
+period would induce it anyways.
+
+Barbers and Surgeons
+==================
+
+Didn't require going to university. Anyone could practice to be this.
+
+Mid-Wives
+===============
+
+Same level of the hierarchy as the barbers and surgeons. Although doctors are
+consulted, women run the baby-making show. This was because women were not only
+believed to be better at it, but also because it was forbidden for anyone who
+wasn't your husband to be near your vagina.
+
+Ergot
+=======
+
+Surprisingly effective herb used in medical remedies despite being slightly
+poisonous. Induced birth and stopped bleeding due to being a vaso-restrictor.
+
+Pennyroyal
+============
+
+Helped abortions. Caused some herbs to be used to extinction. The church thot
+care needed to be taken because beyond a certain age it was considered killing.
+This point was determined by the quickening, which was determined by the woman
+saying that the quickening had just happened.
+
+Mid-Wives and Witches
+==================
+
+Note that mid-wives were not accused as often of being witches as myths might
+make it out to seem. Women were certainly accused of being witches and tortured
+and killed.
+
+

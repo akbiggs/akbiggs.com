@@ -1,0 +1,172 @@
+\section{Lecture 6 - 03/06/14}
+\subsection{The Printing Press and Vesalius}
+
+At this point there is a developing knowledge network in europe. There is a
+series of institutions of higher learning emerging although you might not be
+too impressed by these institutions. The main intellectual movement was around
+the idea that faith and reason can be brought together and mutually inform and
+benefit each other. This basically grounded down into the work of Aristotle and
+Plato and a lot of christian theology was taught. A lot of the book copying at
+this time was done in christian monastary but the demand starts going up so a
+new class of scribes and papermakers emerages. These artisans become a seperate
+group from the church. At this point making parchment is a bitch to do. Take
+over a week to make 1 to 2 pages of parchment. The problem with increasing
+literacy as it takes thousands and thousands and goats to make 1 bible, so it's
+not praticle without paper making and the printing press.
+ 
+\subsubsection{Europe's Economy}
+
+From 1200 to 1500 the population pretty much doubles. We have some
+technological advances fueling this, water wheels for example; water wheels
+mostly grind grain but there were some industrial applications. This is the
+period where universites start popping up. The actual labour required to keep
+people alive is lessened so more people start getting educated. Meanwhile in
+china the mongolian empire is just destorying china. Around 1300 the population
+does peak and starts to decline with the black death. (bubonic plague) The
+black death in 4 years kills about half of all europeans which is basically the
+same as half of the economy disapearing. It's absolutly devasting to society.
+It created a labour shortage and the cost labour goes up massivly; as an ironic
+side effect the lower classes get a serious economic boost. This makes the idea
+of labour saving devices very attractive.
+ 
+\subsubsection{Gutenberg}
+
+He was around 1395-1468. The printing press absolutely dwarfs all previous
+events in how it improves how much information can be stored and
+transmitted.\footnote{At this point we can start getting quantative about what
+happens} The output of printed works starts exponentially increasing. Gutenberg
+invented the printing press. The first book he printed was the bible. The
+second was a textbook of latin grammar. Now you don't need a professional
+scribe to make copies of things. You can just make one copy and send it to a
+printing press. By the end of this course (18th century) we're just below 50\%
+literacy. It's worth noting that there are way more people though is worth
+noting as the raw number of people who were literate is significantly higher
+than the population of the earth previous.
+ 
+It was not a struggle to get people to understand why printing should be a
+thing. When it first showed up in 1450, within 50 years it's everywhere. There
+could very easily be multiple in a city. There were sometimes be specialized
+print shops, like shops for printing bibles or printing scientific works. The
+printing press was a composite of pre-existing technology. It combined things
+like wine pressing, block printing\footnote{It's actually not that new of an
+idea} and evenign the idea of moving type isn't new. The chinese had Movable
+Type Printing as early as 1045. Gutenberg didn't invent any particular thing,
+he just combined a bunch of elements into one thing. The really radical change
+is the way people start thinking about books and learning in general.
+ 
+\subsubsection{Martin Luther and the Reformation}
+
+He protested a lot of things of the catholic church that he thought were bad.
+Luther's '95 Theses' are printed and spread widely. At this point all bibles
+are in latin and all catholic masses. So if you're in one of the non-educated
+classes (so everyone) you wouldn't know latin and would just sit there and have
+no clue what is going on. Luther thinks that's wrong so he gets his friends to
+finish a German translation of the bible. The printing press spreads control of
+things around. If you didn't like the form the bible was in when it was handed
+to you, you can rewrite it. At this point, deviations from tradition is viewed
+as recapturing the ancient glory. At this point older is better. Let's not
+suggest that the printing press just threw away all traditions.
+ 
+\subsubsection{Andreas Vesalius}
+
+He was around 1514 - 1564. At this time there were two books: The Book of
+Scripture and The Book of Nature. The printing press radically changes the
+relationship with the book of scripture. If you were a doctor you still knew
+your Galen which was around 1000 years ago. He wanted current medical
+literature which you know makes a fuckload of sense. Before Vasalius nce a year
+or so the doctors would gather around do a public disection. A license would be
+optained form teh Vicar of the Pope. It would typically be the body of a
+executed criminal (dissection was considered part of the punishment) and it
+must all be regulated by the college of doctors. It would be done mostly in the
+winter so the body wouldn't get bad so fast. The place would be prepared with
+instruments. While this is happening some guy is reading from galen, the guy
+actually doing the cutting is a barber or surgeon as there is still this class
+between the learn'd doctor and the person who is cutting. If this
+barber/surgeon found something not in the textbook he couldn't say anything.
+The knowledge was static. It was just a showing of what Galen said in a vivid
+way. Vesalious thought this was wrong.
+ 
+Vesalius outragged and horrified by this dogmatic approach to anatomy. He wrote
+a book called "De Humani Corpris Fabrica" (1543) and on the cover was a picture
+of Vesalius of him actually doing disections. When he actually starts doing
+dissections he finds some things that galen said that are just wrong. 1543 is a
+good date to remember as it's the same year that Copernicus's book gets
+published. This book is also a technical trimpuh as the pcitures were very
+detailed. So he found the "Rete Mirable" does not exist in humans, it exists in
+a lot of mammals, Galen dissected a lot of animals and infered to humans. It
+had been noticed that it wasn't there before but they just assumed it
+disapeared after death. Vesalius starts saying that we have to rethink how a
+lot of these things work, he dosen't nesc. have a answer to these problems but
+he brings forth the problem.
+ 
+\subsection{Copernicus}
+
+He's a pretty tragic figure when you look at his life. He's a significantly sad
+man. He had so little confidence in the thing he created he didn't let it be
+published for 30 years. A lot of evidence would of suggested that if he had
+heard about the copernican revelution he would of hated it. Near the end of his
+life he was allowed to see his book finally published. Reports differ as to
+weather or not he was pleased by it, or even if he was able to recognize it.
+This weird polish monk is the center of the story of the scientific revolution.
+ 
+He's the turning point as he's credited with turning the earth literally upside
+down. Ptolomy was still the core to astronomy. Ptolemy wasn't trying to create
+a accurate model of how the stars work he was trying to 'save the appearances'
+and create a model that represents how the stars work. He also had notions that
+planets always move at the same speed. He also was the guy with the equant.
+Copernicus hates the whole equant. He is a hard core aristoliean. He was all
+about the the perfect circles, he wants to be true to aristotle. He has a dash
+of neo-platonism. Neo-platonists were particularly fond of the sun, and
+sometimes threw around the idea that the sun was at the centre of the universe.
+Ptolemy's system was pretty complicated and this partially motived Copernicus.
+Amusingly Copernicus' system was arugably more complicated.
+ 
+So Copernicus sets out to make a new model but he wasn't very much of a fan of
+it. He was a reluctant revolutionary. He wasn't afriad of religious persuction,
+learn'd men of the church were well aware of his ideas and they tried to
+convince him to publish. There was really no religious persuction to the idea
+that the earth moves around the sun. There are a few people who don't like the
+idea but there always is.
+ 
+\subsubsection{The Commentorialis}
+
+This is basically a abridged version of his actual book that he let ciruclate
+while he was alive.
+ 
+\begin{enumerate}
+
+\item There is no one center of all the celestial circles or sphere 
+
+\item The center of the earth is the center of the universe but only of gravity and the
+lunar sphere 
+
+\item All the spheres revolve around the sun 
+
+\item The distance from the earth to the sun in imperceptible in comparison
+with the distance to the firmament 
+
+\item Whatever motion we see in the firmament is not of the
+firmament but of the earths movement. Basically the earth is spinning.
+
+\item This one basically says that earth is a planet like every other planet,
+this really upsets the great chain of being. This was in some regards a good
+thing.  Before earth was the worst part of the universe, not it's just like the
+rest everything else. The world now exists for it's own sake and just moves
+through empty space.  
+
+\item The motion of the earth alone, therefore suffices to explain so many
+apparently inequalites in the heavens.
+
+\end{enumerate}
+ 
+Stellar Parallax is the idea that you should see stars shifting relative to
+each other. However we don't see that so the 4th rule is derived.
+ 
+\subsubsection{De revolutionibus orbium colestium}
+
+His actual textbook published in 1543. It wasn't immediatly taken up and that
+was reasonable given the time. Still most of the leading mathematicians and
+astronomers would have copies. They didn't care so much about the philosophical
+stuff, there were some really good calculation techniques that people really
+liked. A quiet debate about this is happening but nothing serious. 67 Years
+later with Galieo shows up and makes this hyped.

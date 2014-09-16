@@ -1,0 +1,170 @@
+Lecture 2
+Revolution
+============
+
+What represents a revolution?
+The main thing is that there is a shift from one extreme to another.
+
+The word revolution is tossed around all the time. It's seen everywhere.
+The main reason is because people want to be part of revolutions. They want to
+be part of change in society, because it makes them feel important.
+
+There are 16 scientists apparently who have claimed directly that they are the
+cause of a revolution. This includes James Watson, Einstein, Mandelbrot.
+
+Where Does "Revolution" Come From?
+----------
+
+Newton(laws of motion) and Lavoisier(discovery of oxygen) were described as
+revolutionary. First used to describe an extreme amount of motion.
+
+The Scientific Revolution
+-------------------------
+
+Replacing pure reason being the basis of science with empiricism. All about
+investigation and experimentation.
+
+Structure and Revolution
+------------------------
+
+Name of the course comes from Thomas Kuhn's Structure of Scientific Revolutions
+(1962), largely responsible for HPS as a discipline.
+
+Largely influential. Basically coined the term 'paradigm' for ways of going
+about science or any other particular discipline. Since the book was published,
+the words 'scientific revolution' and 'paradigm' increased heavily.
+
+The laws that people such as Newton have created are not necessarily valid in
+all situations. Kuhn questions how science progresses, how mindsets change. He
+proposes that science doesn't change in the way we think it does. The pattern he
+proposes is a Kuhnian Revolution, where scientists most the time are solving
+puzzles, clarifying things that are unclear. They have a hypothesis, and
+experiment and they try to verify. Either the hypothesis succeeds, in which case
+you build upon it, or the hypothesis fails, in which case they tinker with it to
+create a new paradigm.
+
+Kuhn calls things that don't fit within a paradigm *anomalies*. They don't throw
+away hypotheses based on single anomalies, but when they build up scientists
+tend towards making a new theory that encompasses the anomalies. At this point
+the old paradigm enters a phase of crisis and new paradigms begin to spring up.
+After this competition, a new paradigm is established and codified.
+
+There's an interesting consequence to this. There is a problem that Kuhn calls
+"incommencerability", where the old and new paradigm are unable to coexist and
+communicate. The words used between the paradigms are the same but with
+different meanings. We don't necessarily make progress, we switch to new
+definitions, leaving the old behind. This is the essence of a revolution.
+
+MEMORIZE THE STAGES OF KUHNIAN REVOLUTION (google image search)
+
+Industrial Revolution
+1760 - 1840 (memorize)
+=======================
+
+Great Britain, Western Europe to the United States.
+A drastic change technologically, socially and economically.
+
+Factories, machines and tools powered by new kinds of steam engines and rivers
+are the symbol of the revolution. People from mainly agricultural backgrounds
+begin moving to cities. Skilled laborers aren't needed to make fabrics anymore,
+so they move to the city to get more jobs, and producing things becomes much
+more cheap.
+
+The revolution is fueled by iron and coal.
+Combination of regular and steam-powered ships. Steam becomes a method of
+transportation. You have people moving all over the place, via railroads, which
+are expanding dramatically during the mid-1800s.
+
+Because the jobs have been replaced by machines, you no longer need skilled
+laborers to do jobs. Creates a lot of jobs for out of work men, women and
+children. This allows for some social mobility between the classes, but there's
+generally a dispute about whether or not this was a prosperous time. The average
+life has changed, but maybe it has not improved, since people are working in
+factories and paying it back.
+
+Treaty between France and America
+----------------------------------
+
+France and America were sinking each others' ships over a deal gone wrong for a
+lot of money, treaty stops that. The consequence of this is that more things are
+getting sold, products can move between countries and people can travel.
+Supposedly this is a revolutionary change.
+
+March 20 1800 - Alessandro Volta describes his new invention, the voltaic pile,
+the first chemical battery, in a letter to the Royal Society of London. Sets the
+stage for many scientific changes.
+
+Geology in the 18th and 19th Centuries
+========================================
+
+Without much knowledge of the Earth, it's very difficult to figure out where
+things come from. We reached to theories to explain how organisms adapted and
+changed over time when trying to sort fossils in class, but back then there was
+no theory.
+
+Fossils become very important all of a sudden in the 18th and 19th centuries,
+because people are mining for coal. They are digging down into the ground, and
+they discover fossils.
+
+Dynamite is invented mid to late 1800s. People are blowing stuff up, using
+gunpowder before dynamite. The mining industry becomes very interested in this.
+They are draining water from deposits, and as they continue digging they find
+things they don't expect. The fossils began to be used to figure out where the
+resources were located, because this would lead to earning more money.
+
+This changes the way that people begin to think about religion (specifically
+Christianity). If the world is only 7000 years old, why is there all this stuff
+from ages ago? Why would God create animals and just whisk them away?
+
+They use types of rocks to date what things came out of stuff. This doesn't
+really work, and fossils work much more effectively for dating. Someone (who?
+Kouvier?) came up with a system for examining invertebrae fossils and comparing
+them to things that exist in modern day times.
+
+People are questioning how different types of rocks get into fields with nothing
+but a particular type of rock, and how fossils of sea creatures get into
+mountains. Kouvier doesn't make connections between religion and the fossils
+being discovered, but Buckland comes up with Noah's flood.
+
+The transition between layers were small, so they believe that transitions
+happened fast. They know that earthquakes used to be bigger before, and they
+believe this is because the Earth was cooled.
+
+Principles of Geology (The End of Catastrophism)
+================================================
+
+Eventually catastrophism is challenged. by Charles Lyell, reviving the ideas of
+a man named Hutton from the late 1700s. He says that there are no catastrophies,
+no dramatic changes, and that everything we see is just the result of small
+changes. This means that the world has to be much, much older than people had
+previously supposed. He says that things get reformed, each successive level
+formed by the different changes that we observe now.
+
+He takes this a step further and says that animals do not get better over time,
+there is no progress.
+
+The cover of his book shows weathering on columns for a Greek temple, erosion.
+High contrast between weathered and non-weathered parts, non-weathered parts
+being protected by water from the nearby river. We know how old the ruins are,
+which gives us an idea of how fast the processes work. Lyell says that if so
+much can happen over 2000 years, much more can happen over a much longer period
+of time.
+
+Both were Diests, and reconciled their theories with God by saying that God set
+the world up like a clock, and doesn't intervene, he just set things up in an
+order, and that's how God works. This is not the view of Kouvier and Buckland,
+they believed in progress and creation, although Buckland's view changes.
+
+The uniformiarionists believed that there was no beginning to the world, which
+is not something that we believe today. Catastrophes come back into favor when
+the Earth is revealed not to be nearly as old as Lyell and Hutton believed.
+There is no clear winner in this history.
+
+Quiz:
+not too many dates (years mostly)
+content-based questions (but presented in an analytical frame)
+first portion of the quiz will be multiple choice, not too difficult with ten to
+twenty questions
+two short answer questions (one sentence or two)
+one paragraph response
+25 minutes long. Includes the reading for that day.
