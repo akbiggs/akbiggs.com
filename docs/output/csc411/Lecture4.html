@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="5.4" data-basepath=".." data-revision="1411064419638">
+    <div class="book"  data-level="5.4" data-basepath=".." data-revision="1411064617522">
     
 
 <div class="book-summary">
@@ -604,8 +604,8 @@ and therefore might be more likely to occur.</p>
 <p>Assume that the training examples are sampled IID, i.e.
 p(t1, ..., tN|x1, ..., xN) = product from i=1 to N of p(ti|xi).</p>
 <p>We can write each probability as
-p(ti|xi) = p(C=1|xi)^ti <em> p(C=0|xi)^(1-ti). The intuition for this
-is that when ti = 0, this is 1 </em> p(C=0|xi) = p(C=0|xi), and when
+p(ti|xi) = (p(C=1|xi)^ti)(p(C=0|xi)^(1-ti)). The intuition for this
+is that when ti = 0, this is 1 pp(C=0|xi), and when
 ti = 1, this is p(C=1|xi). It seems like a pretty complicated way
 to express this idea, but it&#39;s easy to take the derivative of, which
 will be useful for when we&#39;re working on optimizing the learnining
@@ -621,8 +621,8 @@ function.</p>
 <p>l{log-loss}(w) = -(sum from i=1 to N of (ti)(log(1-p(C=0|xi,w)))) -
 (sum from i=1 to N of (1 - ti)log(p(C=0|xi,w)))</p>
 <p>Recall the log properties:</p>
-<p>log(a*b) = log(a) + log(b)</p>
-<p>log(a^b) = b*log(a)</p>
+<p>log(ab) = log(a) + log(b)</p>
+<p>log(a^b) = blog(a)</p>
 <p>log(1/a) = -log(a)</p>
 <p>We can use these properties to make simplifying our expression easier.</p>
 <p>l(w) = sum over i of (t^i)</p>

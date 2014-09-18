@@ -53,8 +53,8 @@ Assume that the training examples are sampled IID, i.e.
 p(t1, ..., tN|x1, ..., xN) = product from i=1 to N of p(ti|xi).
 
 We can write each probability as
-p(ti|xi) = p(C=1|xi)^ti * p(C=0|xi)^(1-ti). The intuition for this
-is that when ti = 0, this is 1 * p(C=0|xi) = p(C=0|xi), and when
+p(ti|xi) = (p(C=1|xi)^ti)(p(C=0|xi)^(1-ti)). The intuition for this
+is that when ti = 0, this is 1 pp(C=0|xi), and when
 ti = 1, this is p(C=1|xi). It seems like a pretty complicated way
 to express this idea, but it's easy to take the derivative of, which
 will be useful for when we're working on optimizing the learnining
@@ -77,9 +77,9 @@ l{log-loss}(w) = -(sum from i=1 to N of (ti)(log(1-p(C=0|xi,w)))) -
 
 Recall the log properties:
 
-log(a*b) = log(a) + log(b)
+log(ab) = log(a) + log(b)
 
-log(a^b) = b*log(a)
+log(a^b) = blog(a)
 
 log(1/a) = -log(a)
 
