@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 3 | School Notes</title>
+        <title>Tutorial 1 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc411/Lecture4.html" />
+    <link rel="next" href="../csc469/Reading1.html" />
     
     
-    <link rel="prev" href="../csc411/Lecture2.html" />
+    <link rel="prev" href="../csc469/Lecture2.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="5.3" data-basepath=".." data-revision="1411064419638">
+    <div class="book"  data-level="2.3" data-basepath=".." data-revision="1411064419638">
     
 
 <div class="book-summary">
@@ -200,7 +200,7 @@
         </li>
     
         
-        <li class="chapter " data-level="2.3" data-path="csc469/Tutorial1.html">
+        <li class="chapter active" data-level="2.3" data-path="csc469/Tutorial1.html">
             
                 
                     <a href="../csc469/Tutorial1.html">
@@ -410,7 +410,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="5.3" data-path="csc411/Lecture3.html">
+        <li class="chapter " data-level="5.3" data-path="csc411/Lecture3.html">
             
                 
                     <a href="../csc411/Lecture3.html">
@@ -567,51 +567,78 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_9">
+                    <section class="normal" id="section-gitbook_25">
                     
-                        <h1 id="csc411-lecture-3">CSC411 Lecture 3</h1>
-<p>In a classification problem, we are interested in mapping the input x in X
-to some label y in Y. A label could be really anything, but it has to be some
-kind of category. So we&#39;re assigning categories to data. In regression, typically
-Y = R, but in classification it&#39;s a category, so some kind of discrete set.</p>
-<p>Getting good performance in machine learning is figuring out how to extract
-good features that can be easily classified.    </p>
-<p>In classification, you can&#39;t really use what we&#39;ve learned in the previous lectures.
-A regression ignoring that the input is categorical runs into a number of issues.
-You don&#39;t have a clean solution for how values between the discrete values in Y
-should be rounded around. The labels are also not ordered data, compared to the data
-in R.</p>
-<p>(Aside: intuition for <em>overfitting</em>: you&#39;re overfitting if your model is so specific
-to the training examples that it poorly fits new ones)</p>
-<p>A <em>decision rule</em> in classification determines how your <em>classifier</em> gets mapped
-on to different categories, i.e. determines the value of category a new value should
-take on based on where it falls.</p>
-<p>A <em>linear classifier</em> has a linear boundary w0 + wTx = 0 which separates the space into two &quot;half-spaces&quot;. It is used for binary category problems.</p>
-<p>Intuitively, looking at the equation wTx + w0 = 0, with wTx = 0 we have a line passing
-through the origin orthogonal to w. In wTx + w0 = 0, we have that line shifted by w0.</p>
-<h2 id="choice-of-decision-boundary">Choice of Decision Boundary</h2>
-<p>Learning consists in estimating a &quot;good&quot; decision boundary. We need to find w
-(direction) and w0 (location) of the boundary.</p>
-<p>But first, we need to figure out what &quot;good&quot; means.</p>
-<p>Classifying a linear decision boundary reduces the data dimension to 1,
-i.e. y(x) = sign(w0 + wTx).</p>
-<p>The cost of being wrong with your decision boundary is very domain-specific.
-You need to weigh more towards false positives or false negatives depending
-on what your needs are.</p>
-<h2 id="loss-functions">Loss Functions</h2>
-<p>L(y, t) is the loss incurred for predicting y when the correct answer is t.</p>
-<p>We need to figure out what loss functions we have available to us so we can
-choose an appropriate one.</p>
-<p>L<a href="y(x, t">0-1</a>) = {0 if y(x) =t, 1 otherwise}</p>
-<p>LABL(y(x), t) = {alpha if y(x) = 1 and t = 0, beta if y(x) = 0 and t = 1, 0 if y(x) = t}</p>
-<p>Lsquared(y(x), t) = (t - y(x))^2</p>
-<p>Lquadratic(y(x), t) = |t - y(x)|</p>
-<p>There are a few more complex loss functions for different situations.
-e.g. when movie predictions are used for rankings, the predicted ratings don&#39;t
-matter, just the order that is implied by those.</p>
-<p>So we have a few more possibilities: 0-1 loss on the winner, permutation distance
-(get different simulated rankings, get real rankings, get distance between each
-value in rankings).</p>
+                        <h1 id="csc469-tutorial-1">CSC469 Tutorial 1</h1>
+<h2 id="review-of-monolithic-os-microkernel-exokernel">Review of Monolithic OS, Microkernel, Exokernel</h2>
+<p>A microkernel keeps the kernel small by only allowing
+it to handle threading and IPC. Everything else
+is in userspace. In monolithic, you have user applications
+in user space, and all OS functionality is in kernel space.</p>
+<p>In an exokernel, the protection is separated out, and
+everything else is provided at the application-level. Very
+minimal kernel that provides secure access to the hardware
+resources.</p>
+<h2 id="review-of-vmms-virtual-machine-monitors">Review of VMMs (Virtual Machine Monitors)</h2>
+<p>A VMM is a hardware virtualization technique that allows
+software to interact with hardware through a thin software
+layer. Basically simulates the hardware layer. Also
+called a hypervisor.</p>
+<p>Two types: type 1 runs directly on the hosts&#39; hardware
+(e.g. Disco/VMWare, Xen), and type 2 runs within a
+conventional OS environment(e.g. VMWare Workstation,
+Virtual PC).</p>
+<h2 id="disco">Disco</h2>
+<p>The goal of Disco was to extend the modern OS
+to run efficiently on shared memory multiprocessors
+without large changes to the OS. This was difficult
+because a lot of OSs were not designed to scale
+to multiprocessors. Lots of lock contention, and
+faults were not contained to processors.</p>
+<p>By putting a VMM on top of things, we can have the
+VMM manage resource allocation in <em>smarter</em> ways compared
+to outdated OSs which weren&#39;t written with multiprocessors
+in mind yet.</p>
+<h2 id="challenges">Challenges</h2>
+<p>Overhead: extra layer of abstraction needs to be <em>fast</em>, or
+else you won&#39;t be able to simulate hardware effectively. Memory
+also needs to support the code and data of multiple operating
+systems at once, which are normally designed with the idea of
+having one OS in memory at once.</p>
+<p>Resource Management: Lack of info. Idle loop and lock busy-waiting
+since the OS doesn&#39;t have direct access to hardware anymore(?)</p>
+<h2 id="solutions">Solutions</h2>
+<p>Adds a second TLB, which after the physical to machine address
+translation occurs also translates the address to a VM address.</p>
+<p>For I/O devices, each VM assumes it has exclusive access. This
+is handled using virtual devices exclusive to VM. The physical
+devices are multiplexed between virtual ones.</p>
+<p>To handle this functionality, special drivers are introduced into
+the VM that take care of I/O operations. For disks, maps mounted
+virtual disks to physical disk locations on operations, and
+for network requests, forwards the network request on to
+the actual OS using copy-on-write mapping for faster sharing.</p>
+<h2 id="xen-virtualization">Xen Virtualization</h2>
+<p>Two kinds -- <strong>paravirtualiziation</strong>, where the guests run a modified OS
+that has high performance on x86, and <strong>hardware-assisted virtualization</strong>,
+where the CPUs support virtualization, meaning guest OSs don&#39;t have to
+be modified.</p>
+<p>One of the virtualized OSs is running what&#39;s called the Control Plane
+Software. This software has access to the hardware directly, used to
+initialize/manage VMs.</p>
+<p>paper -- &quot;Xen and the art of virtualization&quot; 2003</p>
+<h2 id="practice-questions">Practice Questions</h2>
+<ol>
+<li>What is the difference between an exokernel and a hypervisor?</li>
+<li>What about an exokernel and a microkernel?</li>
+<li>What is the difference between a hypervisor(VMM) and a
+microkernel?</li>
+<li>Can a microkernel be used to implement a hypervisor?</li>
+<li>Can a hypervisor be used to implement a microkernel?</li>
+</ol>
+<h2 id="hypervisors-for-servers">Hypervisors for Servers</h2>
+<p>Better to use a Type 1 hypervisor because it&#39;s closer to the
+hardware, so it&#39;s faster.</p>
 
                     
                     </section>
@@ -622,10 +649,10 @@ value in rankings).</p>
         </div>
 
         
-        <a href="../csc411/Lecture2.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 2"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc469/Lecture2.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 2"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc411/Lecture4.html" class="navigation navigation-next " aria-label="Next page: Lecture 4"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc469/Reading1.html" class="navigation navigation-next " aria-label="Next page: Reading 1"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

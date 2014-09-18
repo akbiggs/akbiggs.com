@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 3 | School Notes</title>
+        <title>Lecture 2 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc411/Lecture4.html" />
+    <link rel="next" href="../csc411/README.html" />
     
     
-    <link rel="prev" href="../csc411/Lecture2.html" />
+    <link rel="prev" href="../csc454/Lecture1.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="5.3" data-basepath=".." data-revision="1411064419638">
+    <div class="book"  data-level="4.2" data-basepath=".." data-revision="1411064419638">
     
 
 <div class="book-summary">
@@ -340,7 +340,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4.2" data-path="csc454/Lecture2.html">
+        <li class="chapter active" data-level="4.2" data-path="csc454/Lecture2.html">
             
                 
                     <a href="../csc454/Lecture2.html">
@@ -410,7 +410,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="5.3" data-path="csc411/Lecture3.html">
+        <li class="chapter " data-level="5.3" data-path="csc411/Lecture3.html">
             
                 
                     <a href="../csc411/Lecture3.html">
@@ -567,51 +567,68 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_9">
+                    <section class="normal" id="section-gitbook_20">
                     
-                        <h1 id="csc411-lecture-3">CSC411 Lecture 3</h1>
-<p>In a classification problem, we are interested in mapping the input x in X
-to some label y in Y. A label could be really anything, but it has to be some
-kind of category. So we&#39;re assigning categories to data. In regression, typically
-Y = R, but in classification it&#39;s a category, so some kind of discrete set.</p>
-<p>Getting good performance in machine learning is figuring out how to extract
-good features that can be easily classified.    </p>
-<p>In classification, you can&#39;t really use what we&#39;ve learned in the previous lectures.
-A regression ignoring that the input is categorical runs into a number of issues.
-You don&#39;t have a clean solution for how values between the discrete values in Y
-should be rounded around. The labels are also not ordered data, compared to the data
-in R.</p>
-<p>(Aside: intuition for <em>overfitting</em>: you&#39;re overfitting if your model is so specific
-to the training examples that it poorly fits new ones)</p>
-<p>A <em>decision rule</em> in classification determines how your <em>classifier</em> gets mapped
-on to different categories, i.e. determines the value of category a new value should
-take on based on where it falls.</p>
-<p>A <em>linear classifier</em> has a linear boundary w0 + wTx = 0 which separates the space into two &quot;half-spaces&quot;. It is used for binary category problems.</p>
-<p>Intuitively, looking at the equation wTx + w0 = 0, with wTx = 0 we have a line passing
-through the origin orthogonal to w. In wTx + w0 = 0, we have that line shifted by w0.</p>
-<h2 id="choice-of-decision-boundary">Choice of Decision Boundary</h2>
-<p>Learning consists in estimating a &quot;good&quot; decision boundary. We need to find w
-(direction) and w0 (location) of the boundary.</p>
-<p>But first, we need to figure out what &quot;good&quot; means.</p>
-<p>Classifying a linear decision boundary reduces the data dimension to 1,
-i.e. y(x) = sign(w0 + wTx).</p>
-<p>The cost of being wrong with your decision boundary is very domain-specific.
-You need to weigh more towards false positives or false negatives depending
-on what your needs are.</p>
-<h2 id="loss-functions">Loss Functions</h2>
-<p>L(y, t) is the loss incurred for predicting y when the correct answer is t.</p>
-<p>We need to figure out what loss functions we have available to us so we can
-choose an appropriate one.</p>
-<p>L<a href="y(x, t">0-1</a>) = {0 if y(x) =t, 1 otherwise}</p>
-<p>LABL(y(x), t) = {alpha if y(x) = 1 and t = 0, beta if y(x) = 0 and t = 1, 0 if y(x) = t}</p>
-<p>Lsquared(y(x), t) = (t - y(x))^2</p>
-<p>Lquadratic(y(x), t) = |t - y(x)|</p>
-<p>There are a few more complex loss functions for different situations.
-e.g. when movie predictions are used for rankings, the predicted ratings don&#39;t
-matter, just the order that is implied by those.</p>
-<p>So we have a few more possibilities: 0-1 loss on the winner, permutation distance
-(get different simulated rankings, get real rankings, get distance between each
-value in rankings).</p>
+                        <h1 id="csc454-lecture-2">CSC454 Lecture 2</h1>
+<p>Today&#39;s lecture is all about team-building.</p>
+<p>Having a poor team can ruin a great plan. It affects your workflow
+and definitely affects how willing investors are to put money into
+your company.</p>
+<p>If you have a good team, pitch it early. A good team chemistry
+gets investors&#39; attentions early and can make up for weaker points
+of your pitch.</p>
+<h2 id="roles">Roles</h2>
+<ul>
+<li>Leader</li>
+<li>Guru</li>
+<li>Industry veteran</li>
+<li>Sales personality</li>
+<li>Financial mind</li>
+</ul>
+<p>When building, it&#39;s useful to think in threes: Dev, Design, and Expert.
+The Expert of the team doubles not only as a knowledge base, but also
+as a potential customer of the software, so the app should be tailored
+to them.</p>
+<p>When you&#39;ve developed something that is viable and could make a lot
+of money, it&#39;s okay as a technical founder to take a backseat and let
+someone else with a knack for business scale the company up. As the
+money gets larger, you&#39;re dealing with more danger, more competitors,
+so you&#39;ve either got to adjust or sell out.</p>
+<p>The <em>tech adoption curve</em> describes a trend of how the product market changes
+at various stages of the products&#39; lifespan. The early
+money comes from innovators, then early adopters, and only makes
+for approximately 15% of the total revenue. Then there&#39;s
+an <em>adoption gap</em>, where you&#39;re trying to penetrate into the
+early majority of consumers, which make up more than twice the
+amount of the initial stages.</p>
+<p>(Aside: Don&#39;t get stuck eight months in development with no proven customers
+and then ship.)</p>
+<h2 id="founding-story">Founding Story</h2>
+<p>When you pitch your startup, frame it in terms of a well-honed founding
+story to help you connect with investors, employees and customers.
+Helps with immediate engagement. People want to be part of something bigger.</p>
+<ul>
+<li><p>Who are you?</p>
+</li>
+<li><p>Where did you come from?</p>
+</li>
+<li><p>What makes you unique?</p>
+</li>
+</ul>
+<h2 id="core-message">Core Message</h2>
+<p>What is your company all about? Why are you doing this? Separate yourself from
+your competitors, explaining the unique benefit of your solution and how
+it will positively benefit your life.</p>
+<h2 id="vision--mission">Vision &amp; Mission</h2>
+<p>Vision &amp; mission outlines what the company wants to be. The philosophy that guides how
+the company executes thngs.</p>
+<h2 id="core-competencies">Core Competencies</h2>
+<p>The skills that put you at a competitive advantage, that put you a step
+ahead of everything else. e.g. Coca-Cola&#39;s competitive advantage 
+was <em>distribution</em>.</p>
+<h2 id="the-business-model-canvas">The Business Model Canvas</h2>
+<p>Gives you a roadmap that allows you to describe every aspect of how
+your company fixes a problem and is set up to succeed.</p>
 
                     
                     </section>
@@ -622,10 +639,10 @@ value in rankings).</p>
         </div>
 
         
-        <a href="../csc411/Lecture2.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 2"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc454/Lecture1.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 1"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc411/Lecture4.html" class="navigation navigation-next " aria-label="Next page: Lecture 4"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc411/README.html" class="navigation navigation-next " aria-label="Next page: CSC411"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

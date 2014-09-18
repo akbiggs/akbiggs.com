@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 3 | School Notes</title>
+        <title>Lecture 2 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc411/Lecture4.html" />
+    <link rel="next" href="../csc469/Tutorial1.html" />
     
     
-    <link rel="prev" href="../csc411/Lecture2.html" />
+    <link rel="prev" href="../csc469/Lecture1.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="5.3" data-basepath=".." data-revision="1411064419638">
+    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1411064419638">
     
 
 <div class="book-summary">
@@ -184,7 +184,7 @@
         </li>
     
         
-        <li class="chapter " data-level="2.2" data-path="csc469/Lecture2.html">
+        <li class="chapter active" data-level="2.2" data-path="csc469/Lecture2.html">
             
                 
                     <a href="../csc469/Lecture2.html">
@@ -410,7 +410,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="5.3" data-path="csc411/Lecture3.html">
+        <li class="chapter " data-level="5.3" data-path="csc411/Lecture3.html">
             
                 
                     <a href="../csc411/Lecture3.html">
@@ -567,51 +567,200 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_9">
+                    <section class="normal" id="section-gitbook_22">
                     
-                        <h1 id="csc411-lecture-3">CSC411 Lecture 3</h1>
-<p>In a classification problem, we are interested in mapping the input x in X
-to some label y in Y. A label could be really anything, but it has to be some
-kind of category. So we&#39;re assigning categories to data. In regression, typically
-Y = R, but in classification it&#39;s a category, so some kind of discrete set.</p>
-<p>Getting good performance in machine learning is figuring out how to extract
-good features that can be easily classified.    </p>
-<p>In classification, you can&#39;t really use what we&#39;ve learned in the previous lectures.
-A regression ignoring that the input is categorical runs into a number of issues.
-You don&#39;t have a clean solution for how values between the discrete values in Y
-should be rounded around. The labels are also not ordered data, compared to the data
-in R.</p>
-<p>(Aside: intuition for <em>overfitting</em>: you&#39;re overfitting if your model is so specific
-to the training examples that it poorly fits new ones)</p>
-<p>A <em>decision rule</em> in classification determines how your <em>classifier</em> gets mapped
-on to different categories, i.e. determines the value of category a new value should
-take on based on where it falls.</p>
-<p>A <em>linear classifier</em> has a linear boundary w0 + wTx = 0 which separates the space into two &quot;half-spaces&quot;. It is used for binary category problems.</p>
-<p>Intuitively, looking at the equation wTx + w0 = 0, with wTx = 0 we have a line passing
-through the origin orthogonal to w. In wTx + w0 = 0, we have that line shifted by w0.</p>
-<h2 id="choice-of-decision-boundary">Choice of Decision Boundary</h2>
-<p>Learning consists in estimating a &quot;good&quot; decision boundary. We need to find w
-(direction) and w0 (location) of the boundary.</p>
-<p>But first, we need to figure out what &quot;good&quot; means.</p>
-<p>Classifying a linear decision boundary reduces the data dimension to 1,
-i.e. y(x) = sign(w0 + wTx).</p>
-<p>The cost of being wrong with your decision boundary is very domain-specific.
-You need to weigh more towards false positives or false negatives depending
-on what your needs are.</p>
-<h2 id="loss-functions">Loss Functions</h2>
-<p>L(y, t) is the loss incurred for predicting y when the correct answer is t.</p>
-<p>We need to figure out what loss functions we have available to us so we can
-choose an appropriate one.</p>
-<p>L<a href="y(x, t">0-1</a>) = {0 if y(x) =t, 1 otherwise}</p>
-<p>LABL(y(x), t) = {alpha if y(x) = 1 and t = 0, beta if y(x) = 0 and t = 1, 0 if y(x) = t}</p>
-<p>Lsquared(y(x), t) = (t - y(x))^2</p>
-<p>Lquadratic(y(x), t) = |t - y(x)|</p>
-<p>There are a few more complex loss functions for different situations.
-e.g. when movie predictions are used for rankings, the predicted ratings don&#39;t
-matter, just the order that is implied by those.</p>
-<p>So we have a few more possibilities: 0-1 loss on the winner, permutation distance
-(get different simulated rankings, get real rankings, get distance between each
-value in rankings).</p>
+                        <h1 id="csc469-lecture-2">CSC469 Lecture 2</h1>
+<h2 id="microkernel">Microkernel</h2>
+<p>In a microkernel OS, a few services that we think would normally
+be at the kernel level are run as regular processes outside the
+microkernel. The user level contains both regular processes and
+important OS services.</p>
+<p>Design philosophy is that the kernel code should be as small as
+possible, keeping the abstractions small, clean, and logical.</p>
+<p>The kernel includes tasks and threads, virtual memory, and
+interprocess communication. Everything else (networking, FS, etc.)
+is at the user-level.</p>
+<p>Experience is mixed.</p>
+<p>Advantages:</p>
+<ul>
+<li><p>Very extensible, easy to add new OS functionality</p>
+</li>
+<li><p>kernel doesn&#39;t impose a particular OS design, so you
+can have different OS <em>personalities</em>, i.e. run different
+servers each of which emulates a different OS, but each
+running on the same microkernel. Allows apps to use their
+own customized OS.</p>
+</li>
+<li><p>mostly hardware agnostic, since the servers don&#39;t need
+to know about what hardware they&#39;re running on</p>
+</li>
+<li><p>strongly protected, even with parts of the OS</p>
+</li>
+</ul>
+<p>Disadvantages:</p>
+<ul>
+<li><p><strong>performance</strong>: microkernel killer. System calls can require
+a lot of protection mode changes.</p>
+</li>
+<li><p>expensive to reimplement everything with a new model. Moving
+your OS to a microkernel can actually be more work than moving
+to new hardware, since at least with new hardware you&#39;ll know what
+subsystems will be affected.</p>
+</li>
+<li><p>bad past: look up IBM Workplace OS</p>
+</li>
+</ul>
+<h2 id="microkernel-performance-example">Microkernel Performance Example</h2>
+<ol>
+<li>App calls read(), trap to microkernel</li>
+<li>microkernel has to request Unix personality to read</li>
+<li>Unix personality has to send message to FSS, which
+means trapping to the OS again</li>
+<li>FSS looks up what to do, has to read some disk blocks,
+which means trapping <em>again</em></li>
+<li>FSS sends message back to Unix personality</li>
+<li>personality receives message, sends back to app</li>
+<li>App receives data.</li>
+</ol>
+<p>Each message requires trapping. Yikes.</p>
+<h2 id="mach">Mach</h2>
+<p>Research project approached in a few steps:</p>
+<ol>
+<li>Proof of concept(&quot;fix&quot; VM, threads, IPC in BSD 4.3)</li>
+<li>Microkernel and &quot;single-server&quot; Unix emulation(take
+the Unix kernel and saw it in half, half for kernel space,
+half for user space)</li>
+<li>Multi-server work</li>
+</ol>
+<p>The multi-server part was never completed, but it was a hugely
+influential project that got people excited and talking about
+microkernels.</p>
+<h2 id="mach-abstractions">Mach Abstractions</h2>
+<ol>
+<li>Tasks are address space + resources</li>
+<li>Threads are program counters within a task</li>
+<li>Ports are message origin+destination, essentially
+an object reference mechanism.</li>
+<li>Messages, used to communicate between tasks, between
+ports, between computers, etc.</li>
+</ol>
+<p>Also provided device handling and a concept of virtual memory</p>
+<ul>
+<li>handling things that are in physical memory.</li>
+</ul>
+<p>What&#39;s really nice about the abstraction of messages is that you
+can easily have a much more powerful multiprocessor computer
+take care of a workload by transmitting it via messages and receiving
+the results back.</p>
+<p>It explored a lot of ideas, but left a few things to be desired
+in the implementation. Notably because they started with a monolithic
+system and broke it out, there were still a lot of dependencies,
+and the microkernel was larger than one would want.</p>
+<h2 id="l4-abstractions--mechanisms">L4 Abstractions + Mechanisms</h2>
+<p>Starts mostly from scratch, proper microkernel. Has two basic abstractions:</p>
+<ol>
+<li><p>Address spaces, the unit of protection. Initially empty, and populated
+by privleged mapping operations.</p>
+</li>
+<li><p>Threads, the unit of execution. Kernel-scheduled, but managed at the
+user level.</p>
+</li>
+</ol>
+<p>and two mechanisms:</p>
+<ol>
+<li>IPC - synchronous message passing</li>
+<li>Mapping - provides all access to memory and devices.</li>
+</ol>
+<p>Drastically improved performance over Mach. L3 whitepaper showed 
+that Mach&#39;s performance issues weren&#39;t necessarily from the
+microkernel idea, but from the implementation.</p>
+<p>The main performance benefit comes from a very small cache footprint.
+Mach had a complex API, but more importantly, its large cache footprint
+meant that it was memory bandwidth-limited. L4, instead, is CPU-limited.</p>
+<p>L4Ka is <em>extremely</em> small these days (only 10k lines!). This is sweet,
+because the kernel can be tested and formally proven to be correct/stable.</p>
+<h2 id="exokernels">Exokernels</h2>
+<p>The microkernel design philosophy said that we should reduce the number
+of abstractions. The exokernel research project from MIT claims that
+all OS abstractions are bad, since in the process of hiding detail
+you prevent applications from doing things that could be cool. Discourages
+innovation.</p>
+<p>So the solution an exokernel proposes is to separate protection from abstraction
+and management. It&#39;s a <em>resource multiplexer</em>. It gives physical hardware
+access to processes, and that&#39;s it. It&#39;s also very <strong>fine-grained</strong> about how
+it gives out resources, e.g. provides individual disk blocks, instead of disk
+partitions.</p>
+<p>To deal with things like file permissions that are difficult for the exokernel
+to keep track of, the user can provide code for the kernel to download that
+can be executed in a privleged mode. Complicated, since you have to avoid
+things like infinite loops when executing arbitrary code.</p>
+<h2 id="virtual-machines">Virtual Machines</h2>
+<p>In a virtual machine, you have a thin layer of software that resides over
+the hardware, with monitoring tools like the hypervisor that simulate
+the hardware, so the OS isn&#39;t aware that it&#39;s actually running on the software
+level.</p>
+<p>However, there are some virtualization systems that actually make it clear
+to the OS that it&#39;s being virtualized, so it can handle some situations
+more efficiently.</p>
+<p>A virtual machine monitor provides an efficient, isolated and duplicated
+version of the real machine.</p>
+<p>The original motivation behind virtual machines in the 1960s was that
+you needed to share large, expensive computers with many users,
+and different groups wanted or needed different operating systems.
+So it was convient for timesharing.</p>
+<p>Today, large scale servers have similar issues as the machines
+that originally motivated VMs. VMs also provide security,
+portability/compatibility(since your hypervisor can schedule
+things on multiple CPUs while the OS only sees a single CPU),
+reliability/fault tolerance(try out code you don&#39;t trust in a VM),
+migration(not dependent on physical hardware), and innovation(allows
+us to try out new ideas safely).</p>
+<p>Conventional software is developed for a specific OS and instruction
+set architecture(ISA). This combination is considered the ABI. Gives us
+two types of VMs: <a href="http://en.wikipedia.org/wiki/Virtual_machine#Process_virtual_machines" target="_blank">process VMs</a>
+and <a href="http://en.wikipedia.org/wiki/Virtual_machine#System_virtual_machines" target="_blank">system VMs</a>.
+The process VM supports a single process, while the system VM works on an operating
+system.</p>
+<p>In a classic system VM (VMM), the VM runs on bare hardware. Most privleged
+form of software. In a hosted VM, the VM is like a regular application.</p>
+<h2 id="requirements">Requirements</h2>
+<p>There are a few architecture requirements for a VM to function:</p>
+<ol>
+<li>dual-mode operation</li>
+<li>A way to call privleged operations from non-privleged mode.</li>
+<li>memory relocation / protection hardware (need to know when the
+memory isn&#39;t where the VM&#39;s hardware simulations says it should be
+for optimization)</li>
+<li>Asynchronous interrupts for I/O to communicate with CPU</li>
+</ol>
+<p>None of these things are particularly difficult/esoteric on today&#39;s
+architectures.</p>
+<p>There are also a few generic VM operations that need to be implemented.</p>
+<p>A <em>privleged instruction</em> is required to trap when it&#39;s not
+executed in supervisor mode. A <em>sensitive instruction</em> affects the
+operation of the system in some way. Pretty vague, but generally,
+there&#39;s a theorem that as long as the sensitive instructions form
+a subset of the privleged instructions, we can make an efficient
+VMM, since the OS won&#39;t know the difference. This means that we
+need to avoid instructions that have different effects depending
+on whether they are executed in user mode or kernel mode.</p>
+<p>Different approaches between VMs of how this is handled. VMware
+uses binary rewriting, whereas Xen uses paravirtualization.</p>
+<h2 id="os-extensions">OS Extensions</h2>
+<p>Adding new functions to OS &quot;on the fly&quot;, at runtime. Allows
+for fixing mistakes, supporting new features or hardware.
+For implementation, you could give everyone their own 
+machine (VMs), allow some OS functions to run outside (ukernel),
+or we could alow users to modify the OS directly (loadable kernel
+modules).</p>
+<p>The last solution is popular because giving everyone their
+own VM is pretty drastic for a potentially small change. So
+this solution allows parts of the kernel to be dynamically
+loaded and unloaded, replacing the small parts accordingly.
+This is for example how drivers could be implemented.</p>
+<p>But this also means that if the loaded part is buggy, then
+the kernel will crash. Responsible for a large majority of
+BSODs.</p>
 
                     
                     </section>
@@ -622,10 +771,10 @@ value in rankings).</p>
         </div>
 
         
-        <a href="../csc411/Lecture2.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 2"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc469/Lecture1.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 1"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc411/Lecture4.html" class="navigation navigation-next " aria-label="Next page: Lecture 4"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc469/Tutorial1.html" class="navigation navigation-next " aria-label="Next page: Tutorial 1"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

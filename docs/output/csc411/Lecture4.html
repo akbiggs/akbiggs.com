@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 3 | School Notes</title>
+        <title>Lecture 4 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc411/Lecture4.html" />
+    <link rel="next" href="../csc411/Reading1.html" />
     
     
-    <link rel="prev" href="../csc411/Lecture2.html" />
+    <link rel="prev" href="../csc411/Lecture3.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="5.3" data-basepath=".." data-revision="1411064419638">
+    <div class="book"  data-level="5.4" data-basepath=".." data-revision="1411064419638">
     
 
 <div class="book-summary">
@@ -410,7 +410,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="5.3" data-path="csc411/Lecture3.html">
+        <li class="chapter " data-level="5.3" data-path="csc411/Lecture3.html">
             
                 
                     <a href="../csc411/Lecture3.html">
@@ -426,7 +426,7 @@
         </li>
     
         
-        <li class="chapter " data-level="5.4" data-path="csc411/Lecture4.html">
+        <li class="chapter active" data-level="5.4" data-path="csc411/Lecture4.html">
             
                 
                     <a href="../csc411/Lecture4.html">
@@ -567,51 +567,65 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_9">
+                    <section class="normal" id="section-gitbook_10">
                     
-                        <h1 id="csc411-lecture-3">CSC411 Lecture 3</h1>
-<p>In a classification problem, we are interested in mapping the input x in X
-to some label y in Y. A label could be really anything, but it has to be some
-kind of category. So we&#39;re assigning categories to data. In regression, typically
-Y = R, but in classification it&#39;s a category, so some kind of discrete set.</p>
-<p>Getting good performance in machine learning is figuring out how to extract
-good features that can be easily classified.    </p>
-<p>In classification, you can&#39;t really use what we&#39;ve learned in the previous lectures.
-A regression ignoring that the input is categorical runs into a number of issues.
-You don&#39;t have a clean solution for how values between the discrete values in Y
-should be rounded around. The labels are also not ordered data, compared to the data
-in R.</p>
-<p>(Aside: intuition for <em>overfitting</em>: you&#39;re overfitting if your model is so specific
-to the training examples that it poorly fits new ones)</p>
-<p>A <em>decision rule</em> in classification determines how your <em>classifier</em> gets mapped
-on to different categories, i.e. determines the value of category a new value should
-take on based on where it falls.</p>
-<p>A <em>linear classifier</em> has a linear boundary w0 + wTx = 0 which separates the space into two &quot;half-spaces&quot;. It is used for binary category problems.</p>
-<p>Intuitively, looking at the equation wTx + w0 = 0, with wTx = 0 we have a line passing
-through the origin orthogonal to w. In wTx + w0 = 0, we have that line shifted by w0.</p>
-<h2 id="choice-of-decision-boundary">Choice of Decision Boundary</h2>
-<p>Learning consists in estimating a &quot;good&quot; decision boundary. We need to find w
-(direction) and w0 (location) of the boundary.</p>
-<p>But first, we need to figure out what &quot;good&quot; means.</p>
-<p>Classifying a linear decision boundary reduces the data dimension to 1,
-i.e. y(x) = sign(w0 + wTx).</p>
-<p>The cost of being wrong with your decision boundary is very domain-specific.
-You need to weigh more towards false positives or false negatives depending
-on what your needs are.</p>
-<h2 id="loss-functions">Loss Functions</h2>
-<p>L(y, t) is the loss incurred for predicting y when the correct answer is t.</p>
-<p>We need to figure out what loss functions we have available to us so we can
-choose an appropriate one.</p>
-<p>L<a href="y(x, t">0-1</a>) = {0 if y(x) =t, 1 otherwise}</p>
-<p>LABL(y(x), t) = {alpha if y(x) = 1 and t = 0, beta if y(x) = 0 and t = 1, 0 if y(x) = t}</p>
-<p>Lsquared(y(x), t) = (t - y(x))^2</p>
-<p>Lquadratic(y(x), t) = |t - y(x)|</p>
-<p>There are a few more complex loss functions for different situations.
-e.g. when movie predictions are used for rankings, the predicted ratings don&#39;t
-matter, just the order that is implied by those.</p>
-<p>So we have a few more possibilities: 0-1 loss on the winner, permutation distance
-(get different simulated rankings, get real rankings, get distance between each
-value in rankings).</p>
+                        <h1 id="csc411-lecture-4">CSC411 Lecture 4</h1>
+<p>Recall that you cannot always separate classes using a linear classifier.
+This can mean a variety of things: the class isn&#39;t easy to separate,
+you don&#39;t have all the information necessary, there&#39;s noise, etc.</p>
+<p>The question is, should we make the model complex enough to have
+perfect separation in the training data?</p>
+<h2 id="review">Review</h2>
+<p>The classifier we chose last lecture was y(x) = sign(w0 + wTx).
+With this classifier, it was difficult to optimize any loss on
+l(y, t) due to the form of y(x), since it&#39;s either 0 or 1(you lose
+any info about how close you were).</p>
+<p>We want a smoother function so things become easier to optimize.</p>
+<h2 id="sigmoid">Sigmoid</h2>
+<p>One alternative is replace the &quot;sign&quot; function with the <strong>sigmoid</strong>
+or <strong>logistic</strong> function. Now we have y(x) = sigma(wTx + w0),
+where the sigmoid sigma is a function sigma(z) = 1 / (1 + exp(-z)).</p>
+<p>Has a few interesting properties: max value is 1, min value is 0. As
+z -&gt; inf, y -&gt; 1, and as z -&gt; -inf, y -&gt; 0. The majority of change
+in the value happens around 0. It&#39;s a smooth function.</p>
+<h2 id="shape-of-the-logistic-function">Shape of the Logistic Function</h2>
+<p>Changes to w affect the shape of our logisitic function. We can
+view w0 as the &quot;bias&quot; of our function -- changing it will shift
+the location of our curve. Changing w1 - wN will stretch and squish
+our curve in different dimensions.</p>
+<h2 id="conditional-likelihood">Conditional Likelihood</h2>
+<p>Assume t in {0, 1}, we can write the probability distribution of
+each of our training points {t1, ..., tN | x1, ..., xN}. In other
+word, we can figure out how likely each of our target points
+are to occur.</p>
+<p>One view to take when approaching your training model is that you should
+bias towards the training examples, since they&#39;re pulled from reality
+and therefore might be more likely to occur.</p>
+<p>Assume that the training examples are sampled IID, i.e.
+p(t1, ..., tN|x1, ..., xN) = product from i=1 to N of p(ti|xi).</p>
+<p>We can write each probability as
+p(ti|xi) = p(C=1|xi)^ti <em> p(C=0|xi)^(1-ti). The intuition for this
+is that when ti = 0, this is 1 </em> p(C=0|xi) = p(C=0|xi), and when
+ti = 1, this is p(C=1|xi). It seems like a pretty complicated way
+to express this idea, but it&#39;s easy to take the derivative of, which
+will be useful for when we&#39;re working on optimizing the learnining
+function.</p>
+<p>When we learn from the model, we do so by maximizing the conditional likelihood:</p>
+<p>max over w of (product from i=1 to N of p(ti|xi))</p>
+<p>Note that p(t1, ..., tN|x1, ..., XN) =
+product from i=1 to N of (1 - P(C=1|xi)^ti)(P(C=0|xi)^ti-1)</p>
+<p>We want to convert this to a minimization problem so we can use it to
+minimize our loss. So we can take the log and convert the maximization
+to a minimization by changing the sign. Typically called the <strong>log loss</strong>
+function.</p>
+<p>l{log-loss}(w) = -(sum from i=1 to N of (ti)(log(1-p(C=0|xi,w)))) -
+(sum from i=1 to N of (1 - ti)log(p(C=0|xi,w)))</p>
+<p>Recall the log properties:</p>
+<p>log(a*b) = log(a) + log(b)</p>
+<p>log(a^b) = b*log(a)</p>
+<p>log(1/a) = -log(a)</p>
+<p>We can use these properties to make simplifying our expression easier.</p>
+<p>l(w) = sum over i of (t^i)</p>
 
                     
                     </section>
@@ -622,10 +636,10 @@ value in rankings).</p>
         </div>
 
         
-        <a href="../csc411/Lecture2.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 2"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc411/Lecture3.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 3"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc411/Lecture4.html" class="navigation navigation-next " aria-label="Next page: Lecture 4"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc411/Reading1.html" class="navigation navigation-next " aria-label="Next page: Reading 1"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
