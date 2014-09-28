@@ -106,7 +106,7 @@ C: process record time (average)
 H: time required to apply hash function a record
 F: tree fanout
 
-A summary of the findings can be found [here](http://akbiggs.net/images/notes/443fleperf.png). A good exercise is reasoning through how each of those values was obtained.
+A summary of the findings can be found [here](http://akbiggs.net/images/notes/443fileperf.png). A good exercise is reasoning through how each of those values was obtained.
 
 8.5 Index and Performance Tuning
 -----------------------------------
@@ -197,3 +197,16 @@ are deallocated, the free list is added to. The list is obtained by following
 a known pointer to the first free block. Another way is to maintain a bitmap
 that has one bit for each disk block, indicating whether or not it is in use.
 This allows for very fast identification and allocation of continuous 
+blocks.
+
+9.4 Buffer Manager
+--------------------
+
+Useful for handling the common situation of replacing pages in memory
+with new data. Uses a replacement policy to determine which page to
+replace.
+
+Does some book-keeping on pages, using a *pincount* and a *dirty* bit.
+Pincount tracks the number of users of the page(people who have requested
+but not released the page). Until the pincount becomes zero, page cannot
+be replaced. Dirty bit tracks 
