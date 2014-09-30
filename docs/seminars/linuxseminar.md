@@ -1,3 +1,6 @@
+Terminal Seminar
+===================
+
 Why Use The Terminal?
 -----------------------
 
