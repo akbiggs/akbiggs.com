@@ -62,7 +62,7 @@ scan over the entirety of S to figure out which records match up with
 other records. Then our algorithm becomes probing the index on S.B
 on R.A for each tuple of R, for each page of R. We need to go down
 the tree every time we probe for an index value. So the cost becomes
-M + (M)(PR), PR being the time to index probe.	
+N + (M)(PR)(time to index probe), PR being the number of tuples per page R.
 
 The time to index probe is a bit more difficult to figure out.
 It depends on a number of factors: the height of the tree, whether

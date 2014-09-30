@@ -30,7 +30,7 @@ Note that it is possible to get search key values in the leafs that are not in
 layers above, either through deletion or through certain insertion patterns.
 
 Hash Functions On Keys
------------------------
+----------------------
 
 Since multiple records can be hashed to the same key, in our hash index file
 there would be some sort of directory structure linked to each hash value,

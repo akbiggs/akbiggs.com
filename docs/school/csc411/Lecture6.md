@@ -60,4 +60,3 @@ H(X) = - sum over all x in X of (p(x) log2(p(x)))
 Tells us how uncertain we are about a distribution. We want lower entropy
 when constructing a decision tree, so it's easier to predict what a value will
 be.
-
