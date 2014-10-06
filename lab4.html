@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>CSC324 Fall 2014</title>
+  <link rel="icon" type="image/x-icon" href="http://www.cs.toronto.edu/~liudavid/csc324/images/favicon.ico" />
+  <link rel="stylesheet" href="http://www.cs.toronto.edu/~liudavid/csc324/styles/main.css" />
+  <script src="http://www.cs.toronto.edu/~liudavid/csc324/scripts/jquery-1.11.1.js"></script>
+  <script src="http://www.cs.toronto.edu/~liudavid/csc324/scripts/misc.js"></script>
+      <style type="text/css">
+    table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+      margin: 0; padding: 0; vertical-align: baseline; border: none; }
+    table.sourceCode { width: 100%; line-height: 100%; background-color: #303030; color: #cccccc; }
+    td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; }
+    td.sourceCode { padding-left: 5px; }
+    pre, code { color: #cccccc; background-color: #303030; }
+    code > span.kw { color: #f0dfaf; }
+    code > span.dt { color: #dfdfbf; }
+    code > span.dv { color: #dcdccc; }
+    code > span.bn { color: #dca3a3; }
+    code > span.fl { color: #c0bed1; }
+    code > span.ch { color: #dca3a3; }
+    code > span.st { color: #cc9393; }
+    code > span.co { color: #7f9f7f; }
+    code > span.ot { color: #efef8f; }
+    code > span.al { color: #ffcfaf; }
+    code > span.fu { color: #efef8f; }
+    code > span.er { color: #c3bf9f; }
+    </style>
+    </head>
+<body>
+  <div id="nav-background"></div>
+  <div class="center">
+    <div id="line_left_long"></div>
+    <div id="line_right_long"></div>
+    <nav>
+      <ul>
+        <li><a href="http://www.cs.toronto.edu/~liudavid/csc324/index.html">CSC324</a></li>
+        <li><a href="http://www.cs.toronto.edu/~liudavid/csc324/learn.html" class="here">Learn</a></li>
+        <li><a href="https://piazza.com/utoronto.ca/fall2014/csc324/home">Discuss</a></li>
+        <li><a href="https://markus.cdf.toronto.edu/csc324-2014-09/">Submit</a></li>
+        <li><a href="http://www.cs.toronto.edu/~liudavid/csc324/feedback.html">Anonymous Feedback</a></li>
+        <li><a id="more">More</a>
+          <div id="more-wrap">
+            <ul id="more-dropdown">
+              <li><a href="http://www.cs.toronto.edu/~liudavid/csc324/calendar.html">Calendar</a></li>
+              <li><a href="http://www.cs.toronto.edu/~liudavid/csc324/res/info.pdf" target="blank_">Info Sheet</a></li>
+              <li><a href="http://www.cs.toronto.edu/~liudavid/csc324/integrity.html">Academic Integrity</a></li>
+              <li><a href="http://www.cs.toronto.edu/~liudavid/csc324/homework_faq.html">Homework FAQ</a></li>
+              <li><a href="http://www.cs.toronto.edu/~liudavid/csc324/lab_policies.html">Lab Policies</a></li>
+              <li><a href="http://www.cs.toronto.edu/~liudavid/csc324/exams.html">Exam Info</a></li>
+              <li><a href="https://login.library.utoronto.ca/cgi-bin/go_log.pl?url=http://exams.library.utoronto.ca">University Exam Repo</a></li>
+            </ul>
+          </div>
+        </li>
+        <span style="float: right;"><li>Fall 2014</li></span>
+      </ul>
+    </nav>
+  </div>
+  <div id="content">
+    <div class="center">
+<!-- Don't indent the body. There seems to be issues with this and code rendering. -->
+<h1 id="lab-4">Lab 4</h1>
+<p>In this lab, we're going to switch gears, and experiment with a new language: <strong>Haskell</strong>.</p>
+<h1 id="task-0---getting-started">Task 0 - Getting started</h1>
+<p>Like Racket, Haskell has a REPL that we'll use to familiarize ourselves with the language. We'll use a REPL called GHCi, which you can start by running the command <code>ghci</code> in a terminal.</p>
+<h1 id="task-1---repl-exploration">Task 1 - REPL Exploration</h1>
+<p>Try typing in each of the following expressions into the interpreter, and play around with your own ideas too!</p>
+<p>We've deliberately put in a few expressions that will generate errors; try to predict which ones will, but don't worry too much about the error messages themselves. (Haskell is notoriously bad for its error messages, so it's really important for you to get a good handle on <em>why</em> your code might raise errors early, so you aren't stuck debugging )</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> <span class="dt">True</span>
+<span class="fu">&gt;</span> <span class="dt">True</span> <span class="fu">&amp;&amp;</span> <span class="dt">False</span>
+<span class="fu">&gt;</span> not <span class="dt">False</span>
+<span class="fu">&gt;</span> <span class="dv">1</span>
+<span class="fu">&gt;</span> <span class="dv">3</span><span class="fu">.</span><span class="dv">1415</span> <span class="fu">+</span> <span class="dv">1</span>
+<span class="fu">&gt;</span> <span class="st">&quot;Hello!&quot;</span>
+<span class="fu">&gt;</span> <span class="ch">&#39;H&#39;</span>
+<span class="fu">&gt;</span> <span class="ch">&#39;Hello!&#39;</span> <span class="co">-- error: single-quotes mean &quot;Char&quot; literal</span>
+<span class="fu">&gt;</span> <span class="dv">1</span> <span class="fu">+</span> <span class="st">&quot;Hello!&quot;</span> <span class="co">-- error: incompatible types</span>
+<span class="fu">&gt;</span> <span class="dv">3</span> <span class="fu">/=</span> <span class="dv">4</span> <span class="co">-- not equal</span>
+<span class="fu">&gt;</span> <span class="co">-- This is a comment.</span>
+<span class="fu">&gt;</span> <span class="co">-- Now we&#39;re talking about lists.</span>
+<span class="fu">&gt;</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]
+<span class="fu">&gt;</span> <span class="dv">1</span><span class="fu">:</span>[<span class="dv">2</span>,<span class="dv">3</span>]
+<span class="fu">&gt;</span> <span class="dv">1</span><span class="fu">:</span><span class="dv">2</span><span class="fu">:</span><span class="dv">3</span>    <span class="co">-- Type error, why?</span>
+<span class="fu">&gt;</span> <span class="dv">1</span><span class="fu">:</span><span class="dv">2</span><span class="fu">:</span><span class="dv">3</span><span class="fu">:</span>[]
+<span class="fu">&gt;</span> null [] <span class="co">-- Test whether a list is empty</span>
+<span class="fu">&gt;</span> head [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]
+<span class="fu">&gt;</span> tail [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]
+<span class="fu">&gt;</span> [<span class="dv">1</span><span class="fu">..</span><span class="dv">10</span>]
+<span class="fu">&gt;</span> take <span class="dv">5</span> [<span class="dv">1</span><span class="fu">..</span><span class="dv">10</span>]
+<span class="fu">&gt;</span> [<span class="dv">1</span><span class="fu">..</span><span class="dv">10</span>] <span class="fu">!!</span> <span class="dv">2</span>  <span class="co">-- List element access</span>
+<span class="fu">&gt;</span> [<span class="dv">1</span>,<span class="dv">4</span>,<span class="dv">7</span>] <span class="fu">++</span> [<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">2</span>]
+<span class="fu">&gt;</span> [<span class="st">&quot;Hello&quot;</span>, <span class="st">&quot;Goodbye&quot;</span>]
+<span class="fu">&gt;</span> length [<span class="st">&quot;Hello&quot;</span>, <span class="st">&quot;Goodbye&quot;</span>]
+<span class="fu">&gt;</span> [<span class="dv">1</span>, <span class="st">&quot;Hello&quot;</span>] <span class="co">-- Lists containing different types?</span>
+<span class="fu">&gt;</span> <span class="co">-- Now let&#39;s bind some names!</span>
+<span class="fu">&gt;</span> <span class="kw">let</span> x <span class="fu">=</span> <span class="dv">4</span>
+<span class="fu">&gt;</span> x
+<span class="fu">&gt;</span> <span class="kw">let</span> y <span class="fu">=</span> x <span class="fu">*</span> <span class="dv">30</span>
+<span class="fu">&gt;</span> max x y
+<span class="fu">&gt;</span> <span class="kw">if</span> y <span class="fu">&gt;</span> x <span class="kw">then</span> <span class="dv">23</span> <span class="kw">else</span> <span class="dv">200</span>
+<span class="fu">&gt;</span> <span class="kw">if</span> y <span class="fu">&gt;</span> x <span class="kw">then</span> <span class="dv">23</span> <span class="kw">else</span> <span class="ch">&#39;a&#39;</span> <span class="co">-- two branches with different types?</span>
+<span class="fu">&gt;</span> <span class="kw">if</span> y <span class="fu">&gt;</span> x <span class="kw">then</span> <span class="dv">23</span> <span class="co">-- missing else?</span></code></pre>
+<p>Here are some questions to answer to make sure you're comfortable with basic Haskell syntax:</p>
+<ol style="list-style-type: decimal">
+<li>Haskell seems to take types much more seriously than Racket. Identify the two instances above where the analogous expressions would have been okay in Racket, but because of types they were rejected in Haskell.</li>
+<li>How do you call a function in Haskell? (Note: this is <em>not</em> the same syntax as either Racket or Python.)</li>
+</ol>
+<p>As with Racket, we use lambda expressions to create functions:</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> (\x <span class="ot">-&gt;</span> x <span class="fu">+</span> <span class="dv">14</span>) <span class="dv">1</span>
+<span class="fu">&gt;</span> map (\x <span class="ot">-&gt;</span> <span class="kw">if</span> x <span class="fu">&gt;</span> <span class="dv">0</span> <span class="kw">then</span> x <span class="fu">+</span> <span class="dv">1</span> <span class="kw">else</span> x <span class="fu">-</span> <span class="dv">15</span>) [<span class="dv">10</span>, <span class="fu">-</span><span class="dv">4</span>, <span class="dv">13</span>]
+<span class="fu">&gt;</span> (\x y <span class="ot">-&gt;</span> x <span class="fu">+</span> (<span class="dv">3</span> <span class="fu">*</span> y)) <span class="dv">4</span> <span class="dv">10</span></code></pre>
+<h2 id="task-2---defining-your-own-functions">Task 2 - Defining your own functions</h2>
+<p>We can define functions in the REPL, but this is less than ideal. Instead, download the starter code <a href="intro.hs">intro.hs</a> and open it in your favourite text editor. It contains three function definitions already: <code>double</code>, <code>sumOfSquares</code>, and <code>absVal</code>. Make sure you understand the syntax for function definition before moving on!</p>
+<p>Next, exit GHCi (<code>Ctrl-D</code>), and in the terminal, navigate to the directory containing <code>intro.hs</code>. Then start GHCi again (<code>ghci</code>). You can now load the Haskell file into the interpreter by running the following command:</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> <span class="fu">:</span>load intro
+<span class="fu">&gt;</span> double <span class="dv">10</span>
+<span class="fu">&gt;</span> sumOfSquares <span class="dv">2</span><span class="fu">.</span><span class="dv">3</span> <span class="dv">3</span><span class="fu">.</span><span class="dv">9</span></code></pre>
+<p>Every time you change <code>intro.hs</code>, you'll need to reload it into the interpreter to make it aware of your new definitions.</p>
+<p>Here's one more interesting function definition that shows Haskell's ability to define functions by <em>pattern matching</em> its arguments. Retype this into the starter file and reload it to play with it!</p>
+<pre><code>-- &#39;onlyEvens&#39; returns a new list 
+onlyEvens [] = []
+onlyEvens (x:xs) = if (mod x 2 == 0) 
+                   then x : onlyEvens xs
+                   else onlyEvens xs</code></pre>
+<p>Now, spend the remaining lab time writing some function definitions of your own; when in doubt, try the following:</p>
+<ul>
+<li>Make sure you could implement the function Racket; once this is accomplished, all you need to do is translate your Racket code to Haskell</li>
+<li>If you aren't sure how to do X in Haskell, ask your TA, or search online for help!</li>
+</ul>
+<p>In <code>intro.hs</code>, implement the following functions:</p>
+<ol style="list-style-type: decimal">
+<li>A function <code>celsiusToFahrenheit</code> that takes a temperature in degrees Celsius and outputs the equivalent temperature in degrees Fahrenheit</li>
+<li>A function <code>join</code> that takes a list of strings and outputs a single string that is the concatenation of all of the strings in the list. Note that because <strong>Haskell represents strings as lists</strong> you can concatenate strings with the <code>++</code> operator.</li>
+<li>A function <code>numCommon</code> that takes two lists and outputs the number of elements they have in common</li>
+<li>A function <code>apply</code> that takes a unary function and a value, and applies the function to that value, returning the result</li>
+<li>A function <code>makeConstantFunction</code> that takes a value <code>x</code>, and returns a unary function that ignores its argument and always outputs <code>x</code>.</li>
+<li>A function <code>listReverse</code> that reverses a list. Bonus if you can make a tail-recursive variant (using an extra parameter).</li>
+<li>Implement your own versions of <code>map</code>, <code>filter</code>, and <code>foldl</code> using recursion; call them <code>myMap</code>, <code>myFilter</code>, and <code>myFoldl</code> to avoid name collisions.</li>
+</ol>
+<h2 id="task-3---a-teaser">Task 3 - A teaser</h2>
+<p>When there's three minutes left, type the following expression into GHCi:</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> [<span class="dv">1</span><span class="fu">..</span>]</code></pre>
+<p>:( Try <code>Ctrl+Z</code>; if that doesn't work, close the terminal.</p>
+<p>Now, restart GHCi in a new terminal, and type in the following expression:</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="fu">&gt;</span> take <span class="dv">10</span> [<span class="dv">1</span><span class="fu">..</span>]</code></pre>
+<p><strong>How is this different than Racket?</strong></p>
+    </div>
+</div>
+  <footer>
+    <a href="http://web.cs.toronto.edu/"><img class="logo" src="http://www.cs.toronto.edu/~liudavid/csc324/images/csfaculty.jpg"/></a>
+    <h5>
+      <a href="http://www.cs.toronto.edu/~liudavid/">David Liu</a> (liudavid at cs dot toronto dot edu) <br />
+      Come find me in BA4260<br />
+      Site design by Deyu Wang (dyw999 at gmail dot com)
+    </h5>
+  </footer>
+  <!--scripts-->
+  <script src="http://www.cs.toronto.edu/~liudavid/csc324/scripts/main.js"></script>
+</body>
+</html>
