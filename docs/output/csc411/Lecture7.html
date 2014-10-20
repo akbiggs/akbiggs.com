@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 1 | School Notes</title>
+        <title>Lecture 7 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc469/Lecture2.html" />
+    <link rel="next" href="../csc411/Lecture8.html" />
     
     
-    <link rel="prev" href="../csc469/README.html" />
+    <link rel="prev" href="../csc411/Lecture6.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1413843186418">
+    <div class="book"  data-level="5.7" data-basepath=".." data-revision="1413843186418">
     
 
 <div class="book-summary">
@@ -216,7 +216,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="csc469/Lecture1.html">
+        <li class="chapter " data-level="2.1" data-path="csc469/Lecture1.html">
             
                 
                     <a href="../csc469/Lecture1.html">
@@ -762,7 +762,7 @@
         </li>
     
         
-        <li class="chapter " data-level="5.7" data-path="csc411/Lecture7.html">
+        <li class="chapter active" data-level="5.7" data-path="csc411/Lecture7.html">
             
                 
                     <a href="../csc411/Lecture7.html">
@@ -999,87 +999,73 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_42">
+                    <section class="normal" id="section-gitbook_14">
                     
-                        <h1 id="csc469-lecture-1">CSC469 Lecture 1</h1>
-<p>When reading notes, don&#39;t go linearly. Focus on the intro and conclusion
-to get the meat of the paper. Also, if the paper hasn&#39;t already been
-selected for you by someone, approach it with some skepticism.</p>
-<p>Practice active reading: write notes on each paper you read, make
-references between sections.</p>
-<p>You generally have a few types of problems that you need to deal with
-when working with large systems and change:</p>
+                        <h1 id="csc411-lecture-7">CSC411 Lecture 7</h1>
+<p>Recall that in a decision tree, we break complex boundaries into simple
+boundaries, and choose which boundary we&#39;re in by checking a few simple
+conditions, going down the tree.</p>
+<p>We need to figure out how to make such a tree, what values we pick and what
+attributes we narrow down for distinguishing between the paths on the tree.</p>
+<h2 id="entropy">Entropy</h2>
+<p>One way that we figure this out is by examining the entropy of the distribution
+of our data. This tells us how surprised we are to see new values in a sequence.
+It basically measures the spread of our data.</p>
+<p>To calculate the entropy of a joint distribution, H(x, y), we take
+the <code>- sum over all values of x of the (- sum over all values of y of
+p(x,y)log2(p(x,y)))</code></p>
+<p>If one of the variables is given, we plug in that variable and then
+sum over the other. This gives us the conditional entropy for that specific
+value</p>
+<p>e.g. <code>H(X|Y=y) = - sum over x in X of (p(x | y)log2(p(x | y)))</code></p>
+<h2 id="expected-non-specific-conditional-entropy">Expected (Non-Specific) Conditional Entropy</h2>
+<p><code>H(X|Y) = sum over y in Y of p(y)H(X|Y=y)</code></p>
+<p>It&#39;s the sum over all of the possible outcomes of our conditional entropies.</p>
+<p>Tells us what the entropy is of a random variable is with regards to all the
+things that it is conditionally dependent on. We can see this as a measure of
+how much impact one variable has on another variable.</p>
+<h2 id="information-gain">Information Gain</h2>
+<p><code>IG(X|Y) = H(X) - H(X|Y)</code></p>
+<p>This is referred to as the <strong>information gain</strong> in X due to Y.</p>
+<h2 id="constructing-our-decision-tree">Constructing Our Decision Tree</h2>
+<p>The optimal decision tree algorithm is NP-hard. So we&#39;re going to aim for
+a simple approximation. Our first approach will be a simple, greedy approach,
+where we build up the tree node-by-node. Steps:</p>
 <ol>
-<li>Incommenserate Scalability (scaling resources doesn&#39;t make sense)</li>
-<li>Surprises (unforseen consequences of changes)</li>
-<li>Trade-offs (you can&#39;t provide all the desirable features 
-simultaneously)</li>
+<li>Pick an attr to split at a non-terminal node</li>
+<li>Split into groups based on that attr&#39;s values</li>
+<li>Measure the entropies of those groups to figure out which attribute gives
+us the most entropy. Won&#39;t give us the optimal solution, but it&#39;s something
+that we know how to measure and works reasonably well for splitting up our data.</li>
 </ol>
-<p>Complexity in a large software system is almost inevitable.
-You have a large number of elements, a large number of
-interconnections, irregularity in how those connections
-are formed, lack of a methodical description, and a minimum
-team size required to understand the system.</p>
-<p>Some sources of system complexity are taking on too many objectives,
-needing high usage of limited resources, and making design decisions that
-try to be general but are ultimately unnecessary and have to be revisited
-later.</p>
-<p>So in this course, we&#39;ll try to approach understanding and controlling
-complexity through the examination of case studies and existing
-experience. We&#39;ll see how OS design changes in response to <em>technological
-advances</em>, <em>new application requirements</em>, and <em>advanced system
-objectives</em>.</p>
-<p>OSs abstract system resources, providing access to processes, files,
-sockets, memory, etc. They are constantly changing, due to shifting
-hardware and software, and tend to be highly complex for the reasons
-mentioned above. Combining systems together makes everything even more
-complicated.</p>
-<h2 id="dealing-with-complexity">Dealing With Complexity</h2>
-<p>There are a few techniques we can apply to deal with complexity:</p>
-<p>-<strong>Modularity</strong>: Break the implementation up into different components
-as necessary.
--<strong>Abstraction</strong>: Separate the interface from the specification of the
-implementation, so changes to the internal details do not propogate.
--<strong>Hierarchy</strong>: Build on modularity by recursively grouping different
-sets of components based on their purpose(e.g. middleware, workhorses)</p>
-<p>The <strong>end-to-end argument</strong> is that you should not implement something
-at a low-level if it could be done just as well at a higher level.
-Consider the example of transferring a file from node A to node B.
-The end-to-end argument says that there is no need to handle verification
-at intermediate low level steps when you could just do a final high-level
-verification step at the end that was necessary anyways. However,
-this doesn&#39;t necessarily apply when you&#39;re dealing with very unreliable
-intermediate steps or extremely large files.</p>
-<p>Try to keep things simple. Do one things at a time, and do it well. Make
-it fast, don&#39;t hide power, and leave it to the client. Make these
-interfaces as stable as possible.</p>
-<p>Make an implementation work, and plan to throw one attempt at an
-implementation away.</p>
-<p>Isolate the normal and worst case. Handle the worst case safely,
-you can do it slow, but the normal case needs to be fast.</p>
-<h2 id="early-operating-systems">Early Operating Systems</h2>
-<p><strong>The THE</strong>: Operating system is cleanly separated into different layers 
-(User programs &gt; buffering of I/O &gt; console &gt; segment controller &gt;
- processor allocation and interrupt handling). 
-Every layer has a well-defined function and interface. Limits complexity,
-can test the system nicely using simulated input, can&#39;t deadlock since
-there are no cycles. However, it&#39;s really hard to partition things this
-way.</p>
-<p><strong>Monolithic OS</strong>: You have processes for each application in user-space,
-and the OS kernel in kernel-space, which has access to the different
-resource managers, which in turn have access to the hardware. Common
-in commercial systems.
-Very flexible, well-understood, and very performant. Good protection
-of OS against applications. However, you have no protection between
-kernel components, you can&#39;t safely/easily extend it, and as the OS
-grows it becomes much more complex.</p>
-<p><strong>Open Systems</strong>: There is no division between kernel and application
-space. Apps have direct access to the hardware resources they need.
-It sounds crazy today, but used to be <em>very</em> common. When resources
-were extremely limited, you couldn&#39;t afford to deal with all those
-levels of indirection. Very extensible and works for a single user
-system. However, not very stable and composing extensions leads to
-much more unpredictable behavior.</p>
+<h2 id="evaluating-a-decision-tree">Evaluating A Decision Tree</h2>
+<p>Needs to be small, but not too small. The tree needs to distinguish your data
+sufficiently well.</p>
+<p>However, also has to be not too big, to avoid computational complexity and to
+avoid overfitting.</p>
+<p>We generally want to apply Occam&#39;s Razor: go for the simplest hypothesis.</p>
+<p>Problems:</p>
+<ol>
+<li>Exponentially less useful at lower levels</li>
+<li>Too big a tree can overfit</li>
+<li>Greedy algorithms don&#39;t yield optimum</li>
+</ol>
+<p>We often get around this by reguarizing the construction process.</p>
+<h2 id="comparison-with-knn">Comparison with KNN</h2>
+<p>In KNN, we have piece-wise DBs, whereas in DTs we have axis-aligned,
+tree-structured boxes.</p>
+<h1 id="multi-class-classification">Multi-Class Classification</h1>
+<p>One way that we can classify multiple class data is to have K - 1 classifiers,
+each solving a two class problem of separating the class CK from points not in
+that class. Called the <strong>1 vs all</strong> algorithm.</p>
+<p>However, this means that there is more than one good answer where your classes
+collide.</p>
+<p>So instead we introduce two-way classifiers, one for each possible pair of
+classes. Points are classified according to majority vote among these functions.
+This is called the <strong>1 vs 1 classifier</strong>. However, it might not classify all
+the space(two way relations aren&#39;t transitive(?)).</p>
+<p>We get around this by making K functions and K weights, and classifying based
+on the max.</p>
 
                     
                     </section>
@@ -1090,10 +1076,10 @@ much more unpredictable behavior.</p>
         </div>
 
         
-        <a href="../csc469/README.html" class="navigation navigation-prev " aria-label="Previous page: CSC469"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc411/Lecture6.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 6"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc469/Lecture2.html" class="navigation navigation-next " aria-label="Next page: Lecture 2"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc411/Lecture8.html" class="navigation navigation-next " aria-label="Next page: Lecture 8"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

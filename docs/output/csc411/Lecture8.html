@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 1 | School Notes</title>
+        <title>Lecture 8 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc469/Lecture2.html" />
+    <link rel="next" href="../csc411/Lecture9.html" />
     
     
-    <link rel="prev" href="../csc469/README.html" />
+    <link rel="prev" href="../csc411/Lecture7.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1413843186418">
+    <div class="book"  data-level="5.8" data-basepath=".." data-revision="1413843186418">
     
 
 <div class="book-summary">
@@ -216,7 +216,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="csc469/Lecture1.html">
+        <li class="chapter " data-level="2.1" data-path="csc469/Lecture1.html">
             
                 
                     <a href="../csc469/Lecture1.html">
@@ -778,7 +778,7 @@
         </li>
     
         
-        <li class="chapter " data-level="5.8" data-path="csc411/Lecture8.html">
+        <li class="chapter active" data-level="5.8" data-path="csc411/Lecture8.html">
             
                 
                     <a href="../csc411/Lecture8.html">
@@ -999,87 +999,50 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_42">
+                    <section class="normal" id="section-gitbook_21">
                     
-                        <h1 id="csc469-lecture-1">CSC469 Lecture 1</h1>
-<p>When reading notes, don&#39;t go linearly. Focus on the intro and conclusion
-to get the meat of the paper. Also, if the paper hasn&#39;t already been
-selected for you by someone, approach it with some skepticism.</p>
-<p>Practice active reading: write notes on each paper you read, make
-references between sections.</p>
-<p>You generally have a few types of problems that you need to deal with
-when working with large systems and change:</p>
-<ol>
-<li>Incommenserate Scalability (scaling resources doesn&#39;t make sense)</li>
-<li>Surprises (unforseen consequences of changes)</li>
-<li>Trade-offs (you can&#39;t provide all the desirable features 
-simultaneously)</li>
-</ol>
-<p>Complexity in a large software system is almost inevitable.
-You have a large number of elements, a large number of
-interconnections, irregularity in how those connections
-are formed, lack of a methodical description, and a minimum
-team size required to understand the system.</p>
-<p>Some sources of system complexity are taking on too many objectives,
-needing high usage of limited resources, and making design decisions that
-try to be general but are ultimately unnecessary and have to be revisited
-later.</p>
-<p>So in this course, we&#39;ll try to approach understanding and controlling
-complexity through the examination of case studies and existing
-experience. We&#39;ll see how OS design changes in response to <em>technological
-advances</em>, <em>new application requirements</em>, and <em>advanced system
-objectives</em>.</p>
-<p>OSs abstract system resources, providing access to processes, files,
-sockets, memory, etc. They are constantly changing, due to shifting
-hardware and software, and tend to be highly complex for the reasons
-mentioned above. Combining systems together makes everything even more
-complicated.</p>
-<h2 id="dealing-with-complexity">Dealing With Complexity</h2>
-<p>There are a few techniques we can apply to deal with complexity:</p>
-<p>-<strong>Modularity</strong>: Break the implementation up into different components
-as necessary.
--<strong>Abstraction</strong>: Separate the interface from the specification of the
-implementation, so changes to the internal details do not propogate.
--<strong>Hierarchy</strong>: Build on modularity by recursively grouping different
-sets of components based on their purpose(e.g. middleware, workhorses)</p>
-<p>The <strong>end-to-end argument</strong> is that you should not implement something
-at a low-level if it could be done just as well at a higher level.
-Consider the example of transferring a file from node A to node B.
-The end-to-end argument says that there is no need to handle verification
-at intermediate low level steps when you could just do a final high-level
-verification step at the end that was necessary anyways. However,
-this doesn&#39;t necessarily apply when you&#39;re dealing with very unreliable
-intermediate steps or extremely large files.</p>
-<p>Try to keep things simple. Do one things at a time, and do it well. Make
-it fast, don&#39;t hide power, and leave it to the client. Make these
-interfaces as stable as possible.</p>
-<p>Make an implementation work, and plan to throw one attempt at an
-implementation away.</p>
-<p>Isolate the normal and worst case. Handle the worst case safely,
-you can do it slow, but the normal case needs to be fast.</p>
-<h2 id="early-operating-systems">Early Operating Systems</h2>
-<p><strong>The THE</strong>: Operating system is cleanly separated into different layers 
-(User programs &gt; buffering of I/O &gt; console &gt; segment controller &gt;
- processor allocation and interrupt handling). 
-Every layer has a well-defined function and interface. Limits complexity,
-can test the system nicely using simulated input, can&#39;t deadlock since
-there are no cycles. However, it&#39;s really hard to partition things this
-way.</p>
-<p><strong>Monolithic OS</strong>: You have processes for each application in user-space,
-and the OS kernel in kernel-space, which has access to the different
-resource managers, which in turn have access to the hardware. Common
-in commercial systems.
-Very flexible, well-understood, and very performant. Good protection
-of OS against applications. However, you have no protection between
-kernel components, you can&#39;t safely/easily extend it, and as the OS
-grows it becomes much more complex.</p>
-<p><strong>Open Systems</strong>: There is no division between kernel and application
-space. Apps have direct access to the hardware resources they need.
-It sounds crazy today, but used to be <em>very</em> common. When resources
-were extremely limited, you couldn&#39;t afford to deal with all those
-levels of indirection. Very extensible and works for a single user
-system. However, not very stable and composing extensions leads to
-much more unpredictable behavior.</p>
+                        <h2 id="csc411-lecture-8">CSC411 Lecture 8</h2>
+<h2 id="randomizing-weights">Randomizing Weights</h2>
+<p>You want to randomize the weights you start with when you&#39;re doing machine learning
+because you don&#39;t want your results to be biased by being next to a local optimum.
+You need to make sure your model can adapt to lots of new data with different values
+usually, not a specific subset of that data.</p>
+<h2 id="multi-class-logistic-regression">Multi-Class Logistic Regression</h2>
+<p>When we have multiple classes, we change the way we determine the probability:</p>
+<p><code>p(T|x1, ..., xn) = product(n=1, N, product(k=1, K, p(Ck|xn)^tnk))</code></p>
+<p>We can then derive the loss by computing the negative log-likelihood between
+two distributions.</p>
+<p><code>E(w1, ..., wk) = - sum over n, k, (tnk)(log(ynk, xn))</code></p>
+<p>To train on this, we do gradient descent again, with derivatives on each ynj
+w.r.t. znk, and dE w.r.t. znk.</p>
+<p>One way to think about our situation is that we have a bunch of nodes for each
+value of x, and we connect to values of y using weights for each value of x
+and class of y. Our values of y are a function of our weights and values of x.</p>
+<p>Now with this idea in hand, we can handle different multi-class problems. With
+K-NN with multiple classes, we can generalize to color in different areas surrounding
+points based on the class that each point should take on.</p>
+<p>In a decision tree, we still aim to find leafs that have elements of just one class,
+using divisions based on attribute values.</p>
+<h1 id="generative-models-for-classification">Generative Models For Classification</h1>
+<p>Sometimes, we don&#39;t know what classes exist for the data we&#39;ve been given. We need
+to figure out how to create different classes for data based on its distribution.
+We build a model for the input data x and for a given class C, and end up building
+a model for the input data and <em>every</em> class C.</p>
+<p>Recall: Bayes&#39; Rule follows the form p(C|X) = p(X|C)p(C) / p(x)</p>
+<p>We can think of the top as the conditional likelihood of x given C times what we know
+about C without any data(the <em>prior</em>) / the probability of different values of x
+occuring without any information.</p>
+<p>To take our data and determine from it how we might create and divide classes. One
+way of doing this is by averaging things into different bins based on their values.
+But the main way of doing this is by generalizing the data by fitting a distribution
+to it.</p>
+<p>To do this, we need to figure out what our model will be, and what the model
+parameters will be to accurately portray the distribution of each of the classes.
+The model is chosen based on the distribution of the data -- for the most part we&#39;ll
+be picking the Gaussian.</p>
+<p>We can compute the mean and variance from the distribution of the data assuming
+it&#39;s i.i.d. and fits a distribution. We do this using standard algebra
+problem solving techniques to isolate mu and sigma.</p>
 
                     
                     </section>
@@ -1090,10 +1053,10 @@ much more unpredictable behavior.</p>
         </div>
 
         
-        <a href="../csc469/README.html" class="navigation navigation-prev " aria-label="Previous page: CSC469"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc411/Lecture7.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 7"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc469/Lecture2.html" class="navigation navigation-next " aria-label="Next page: Lecture 2"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc411/Lecture9.html" class="navigation navigation-next " aria-label="Next page: Lecture 9"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

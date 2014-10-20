@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 1 | School Notes</title>
+        <title>Lecture 9 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc469/Lecture2.html" />
+    <link rel="next" href="../csc372/Lecture11.html" />
     
     
-    <link rel="prev" href="../csc469/README.html" />
+    <link rel="prev" href="../csc372/Lecture8.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1413843186418">
+    <div class="book"  data-level="3.9" data-basepath=".." data-revision="1413843186418">
     
 
 <div class="book-summary">
@@ -216,7 +216,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="csc469/Lecture1.html">
+        <li class="chapter " data-level="2.1" data-path="csc469/Lecture1.html">
             
                 
                     <a href="../csc469/Lecture1.html">
@@ -510,7 +510,7 @@
         </li>
     
         
-        <li class="chapter " data-level="3.9" data-path="csc372/Lecture9.html">
+        <li class="chapter active" data-level="3.9" data-path="csc372/Lecture9.html">
             
                 
                     <a href="../csc372/Lecture9.html">
@@ -999,88 +999,78 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_42">
+                    <section class="normal" id="section-gitbook_12">
                     
-                        <h1 id="csc469-lecture-1">CSC469 Lecture 1</h1>
-<p>When reading notes, don&#39;t go linearly. Focus on the intro and conclusion
-to get the meat of the paper. Also, if the paper hasn&#39;t already been
-selected for you by someone, approach it with some skepticism.</p>
-<p>Practice active reading: write notes on each paper you read, make
-references between sections.</p>
-<p>You generally have a few types of problems that you need to deal with
-when working with large systems and change:</p>
-<ol>
-<li>Incommenserate Scalability (scaling resources doesn&#39;t make sense)</li>
-<li>Surprises (unforseen consequences of changes)</li>
-<li>Trade-offs (you can&#39;t provide all the desirable features 
-simultaneously)</li>
-</ol>
-<p>Complexity in a large software system is almost inevitable.
-You have a large number of elements, a large number of
-interconnections, irregularity in how those connections
-are formed, lack of a methodical description, and a minimum
-team size required to understand the system.</p>
-<p>Some sources of system complexity are taking on too many objectives,
-needing high usage of limited resources, and making design decisions that
-try to be general but are ultimately unnecessary and have to be revisited
-later.</p>
-<p>So in this course, we&#39;ll try to approach understanding and controlling
-complexity through the examination of case studies and existing
-experience. We&#39;ll see how OS design changes in response to <em>technological
-advances</em>, <em>new application requirements</em>, and <em>advanced system
-objectives</em>.</p>
-<p>OSs abstract system resources, providing access to processes, files,
-sockets, memory, etc. They are constantly changing, due to shifting
-hardware and software, and tend to be highly complex for the reasons
-mentioned above. Combining systems together makes everything even more
-complicated.</p>
-<h2 id="dealing-with-complexity">Dealing With Complexity</h2>
-<p>There are a few techniques we can apply to deal with complexity:</p>
-<p>-<strong>Modularity</strong>: Break the implementation up into different components
-as necessary.
--<strong>Abstraction</strong>: Separate the interface from the specification of the
-implementation, so changes to the internal details do not propogate.
--<strong>Hierarchy</strong>: Build on modularity by recursively grouping different
-sets of components based on their purpose(e.g. middleware, workhorses)</p>
-<p>The <strong>end-to-end argument</strong> is that you should not implement something
-at a low-level if it could be done just as well at a higher level.
-Consider the example of transferring a file from node A to node B.
-The end-to-end argument says that there is no need to handle verification
-at intermediate low level steps when you could just do a final high-level
-verification step at the end that was necessary anyways. However,
-this doesn&#39;t necessarily apply when you&#39;re dealing with very unreliable
-intermediate steps or extremely large files.</p>
-<p>Try to keep things simple. Do one things at a time, and do it well. Make
-it fast, don&#39;t hide power, and leave it to the client. Make these
-interfaces as stable as possible.</p>
-<p>Make an implementation work, and plan to throw one attempt at an
-implementation away.</p>
-<p>Isolate the normal and worst case. Handle the worst case safely,
-you can do it slow, but the normal case needs to be fast.</p>
-<h2 id="early-operating-systems">Early Operating Systems</h2>
-<p><strong>The THE</strong>: Operating system is cleanly separated into different layers 
-(User programs &gt; buffering of I/O &gt; console &gt; segment controller &gt;
- processor allocation and interrupt handling). 
-Every layer has a well-defined function and interface. Limits complexity,
-can test the system nicely using simulated input, can&#39;t deadlock since
-there are no cycles. However, it&#39;s really hard to partition things this
-way.</p>
-<p><strong>Monolithic OS</strong>: You have processes for each application in user-space,
-and the OS kernel in kernel-space, which has access to the different
-resource managers, which in turn have access to the hardware. Common
-in commercial systems.
-Very flexible, well-understood, and very performant. Good protection
-of OS against applications. However, you have no protection between
-kernel components, you can&#39;t safely/easily extend it, and as the OS
-grows it becomes much more complex.</p>
-<p><strong>Open Systems</strong>: There is no division between kernel and application
-space. Apps have direct access to the hardware resources they need.
-It sounds crazy today, but used to be <em>very</em> common. When resources
-were extremely limited, you couldn&#39;t afford to deal with all those
-levels of indirection. Very extensible and works for a single user
-system. However, not very stable and composing extensions leads to
-much more unpredictable behavior.</p>
+                        <h2 id="csc372-lecture-9">CSC372 Lecture 9</h2>
+<h2 id="interrupts">Interrupts</h2>
+<p>Interrupts are used for many, many things, including closing processes in a safe
+way before they are closed by e.g. the system shutting down.</p>
+<p>An interrupt is an async signal from HW indicating the need for a change in code
+execution. Most of the time, we want to use an interrupt because polling is
+extremely expensive for longer wait times. However, polling is also easy to 
+implement, and it&#39;s great for short wait times. Something not to overlook is the
+fact that an interrupt can occur anytime, whereas polling is restricted to a busy
+wait loop.</p>
+<h2 id="interrupt-handler-interrupt-service-routineisr">Interrupt Handler (Interrupt Service Routine(ISR))</h2>
+<p>An interrupt handler has to be placed at address 0x20.</p>
+<p>For example:</p>
+<pre><code>.section .exceptions, &quot;ax&quot; # meaning allocatable executable
+.global ISRname
+ISR:
+    ...     # decide how to handle the exception
+    eret     # exception return
+</code></pre><p>In the DE2, everything that can interrupt uses IRQs to broadcast those
+interrupts back to the CPU. (What&#39;s an IRQ?)</p>
+<p>Registers r31-onwards are control registers that are used to control various
+services connected to the CPU.</p>
+<p>ctl0 is status, ctl1 is estatus, ctl2 is bstatus, ctl3 is ienable (enable
+interrupts), ctl4 is ipending(pending interrupts), ctl5 is cpuid.</p>
+<p>The zeroth bit of the ctl0 register sets whether or not interrupts can happen
+in the middle of executing another process&#39; code.</p>
+<p>The 32 bits of ienable each control a separate device that is connected to the
+computer. Similarly, the 32 bits of ipending control whether or not there is
+an interrupt pending from each device.</p>
+<p>We also have special commands for reading and writing controls: rdctl for
+reading a control, and wrctl for writing a control.</p>
+<p>Example:</p>
+<pre><code>movi r9, 0b1
+wrctl status,r9 # or wrctl ctl0,r9, same thing
+</code></pre><p>Longer example:</p>
+<pre><code>.global main
+main:
+    # set up interrupt
+    # do something
+    movi ...
+@0x1000    subi ... # INTERRUPT OCCURS!
+@0x1004 addi ... # now the PC counter will be here
 
+    ...
+
+ISR:
+    ...
+    subi ea,ea,4 # we need to make sure that when we go back, our PC is at the
+                 # last instruction we were at(subi), instead of the one that it was
+                 # going to go to next(addi).
+    eret          # return and re-execute subi.
+</code></pre><p>When an interrupt occurs, the execution of the current instruction is abandoned.
+The old address of the PC is saved in ea(alias for r29, meaning exception address).
+Now ea is the address of the next instruction, not the current one: <code>ea &lt;- PC+4</code></p>
+<p>Then PC takes on the address of the ISR(0x20). When you return, ISR executes eret, causing PC to take on the value of ea. We need to subtract four from the ea before
+returning to make sure we go back to the previous instruction.</p>
+<h2 id="timer-interrupt">Timer Interrupt</h2>
+<p>Full code to come in the next lecture.</p>
+<pre><code>stwio zero,(r8) # reset timer
+
+# start, allow interrupts
+movi r9,0b101
+stwio r9,4(r8)
+
+# enable external interrupts
+movi r9,0b1
+wrctl ienable,r9
+movi r9,0b1
+wrctl status,r9
+</code></pre>
                     
                     </section>
                 
@@ -1090,10 +1080,10 @@ much more unpredictable behavior.</p>
         </div>
 
         
-        <a href="../csc469/README.html" class="navigation navigation-prev " aria-label="Previous page: CSC469"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc372/Lecture8.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 8"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc469/Lecture2.html" class="navigation navigation-next " aria-label="Next page: Lecture 2"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc372/Lecture11.html" class="navigation navigation-next " aria-label="Next page: Lecture 11"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

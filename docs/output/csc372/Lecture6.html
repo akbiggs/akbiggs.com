@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 1 | School Notes</title>
+        <title>Lecture 6 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc469/Lecture2.html" />
+    <link rel="next" href="../csc372/Lecture7.html" />
     
     
-    <link rel="prev" href="../csc469/README.html" />
+    <link rel="prev" href="../csc372/Lecture5.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1413843186418">
+    <div class="book"  data-level="3.6" data-basepath=".." data-revision="1413843186418">
     
 
 <div class="book-summary">
@@ -216,7 +216,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="csc469/Lecture1.html">
+        <li class="chapter " data-level="2.1" data-path="csc469/Lecture1.html">
             
                 
                     <a href="../csc469/Lecture1.html">
@@ -462,7 +462,7 @@
         </li>
     
         
-        <li class="chapter " data-level="3.6" data-path="csc372/Lecture6.html">
+        <li class="chapter active" data-level="3.6" data-path="csc372/Lecture6.html">
             
                 
                     <a href="../csc372/Lecture6.html">
@@ -999,88 +999,219 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_42">
+                    <section class="normal" id="section-gitbook_2">
                     
-                        <h1 id="csc469-lecture-1">CSC469 Lecture 1</h1>
-<p>When reading notes, don&#39;t go linearly. Focus on the intro and conclusion
-to get the meat of the paper. Also, if the paper hasn&#39;t already been
-selected for you by someone, approach it with some skepticism.</p>
-<p>Practice active reading: write notes on each paper you read, make
-references between sections.</p>
-<p>You generally have a few types of problems that you need to deal with
-when working with large systems and change:</p>
-<ol>
-<li>Incommenserate Scalability (scaling resources doesn&#39;t make sense)</li>
-<li>Surprises (unforseen consequences of changes)</li>
-<li>Trade-offs (you can&#39;t provide all the desirable features 
-simultaneously)</li>
-</ol>
-<p>Complexity in a large software system is almost inevitable.
-You have a large number of elements, a large number of
-interconnections, irregularity in how those connections
-are formed, lack of a methodical description, and a minimum
-team size required to understand the system.</p>
-<p>Some sources of system complexity are taking on too many objectives,
-needing high usage of limited resources, and making design decisions that
-try to be general but are ultimately unnecessary and have to be revisited
-later.</p>
-<p>So in this course, we&#39;ll try to approach understanding and controlling
-complexity through the examination of case studies and existing
-experience. We&#39;ll see how OS design changes in response to <em>technological
-advances</em>, <em>new application requirements</em>, and <em>advanced system
-objectives</em>.</p>
-<p>OSs abstract system resources, providing access to processes, files,
-sockets, memory, etc. They are constantly changing, due to shifting
-hardware and software, and tend to be highly complex for the reasons
-mentioned above. Combining systems together makes everything even more
-complicated.</p>
-<h2 id="dealing-with-complexity">Dealing With Complexity</h2>
-<p>There are a few techniques we can apply to deal with complexity:</p>
-<p>-<strong>Modularity</strong>: Break the implementation up into different components
-as necessary.
--<strong>Abstraction</strong>: Separate the interface from the specification of the
-implementation, so changes to the internal details do not propogate.
--<strong>Hierarchy</strong>: Build on modularity by recursively grouping different
-sets of components based on their purpose(e.g. middleware, workhorses)</p>
-<p>The <strong>end-to-end argument</strong> is that you should not implement something
-at a low-level if it could be done just as well at a higher level.
-Consider the example of transferring a file from node A to node B.
-The end-to-end argument says that there is no need to handle verification
-at intermediate low level steps when you could just do a final high-level
-verification step at the end that was necessary anyways. However,
-this doesn&#39;t necessarily apply when you&#39;re dealing with very unreliable
-intermediate steps or extremely large files.</p>
-<p>Try to keep things simple. Do one things at a time, and do it well. Make
-it fast, don&#39;t hide power, and leave it to the client. Make these
-interfaces as stable as possible.</p>
-<p>Make an implementation work, and plan to throw one attempt at an
-implementation away.</p>
-<p>Isolate the normal and worst case. Handle the worst case safely,
-you can do it slow, but the normal case needs to be fast.</p>
-<h2 id="early-operating-systems">Early Operating Systems</h2>
-<p><strong>The THE</strong>: Operating system is cleanly separated into different layers 
-(User programs &gt; buffering of I/O &gt; console &gt; segment controller &gt;
- processor allocation and interrupt handling). 
-Every layer has a well-defined function and interface. Limits complexity,
-can test the system nicely using simulated input, can&#39;t deadlock since
-there are no cycles. However, it&#39;s really hard to partition things this
-way.</p>
-<p><strong>Monolithic OS</strong>: You have processes for each application in user-space,
-and the OS kernel in kernel-space, which has access to the different
-resource managers, which in turn have access to the hardware. Common
-in commercial systems.
-Very flexible, well-understood, and very performant. Good protection
-of OS against applications. However, you have no protection between
-kernel components, you can&#39;t safely/easily extend it, and as the OS
-grows it becomes much more complex.</p>
-<p><strong>Open Systems</strong>: There is no division between kernel and application
-space. Apps have direct access to the hardware resources they need.
-It sounds crazy today, but used to be <em>very</em> common. When resources
-were extremely limited, you couldn&#39;t afford to deal with all those
-levels of indirection. Very extensible and works for a single user
-system. However, not very stable and composing extensions leads to
-much more unpredictable behavior.</p>
+                        <h1 id="csc372-lecture-6">CSC372 Lecture 6</h1>
+<h2 id="subroutine-register-overview">Subroutine Register Overview</h2>
+<p>r2 - r3: subroutine return(caller-save)
+r4 - r7: subroutine args(caller-save)</p>
+<p>They stay around via the stack, i.e. if we call a subroutine within a subroutine
+they get pushed to the stack and we can retrieve them.</p>
+<p>Caller responsibilities:</p>
+<ul>
+<li>If r8-r15 contain live values, then save them at the call site.</li>
+<li>Make the call(&quot;call funcName&quot;)</li>
+<li>On return, restore r8-r15</li>
+</ul>
+<p>Subroutine conventions:</p>
+<ul>
+<li>If a separate file wants to use this function, do</li>
+</ul>
+<pre><code>.global funcName
 
+funcName:
+    addi sp,sp,-32     # adjust sp
+    stw ra,20(sp)      # save ra if this subroutine calls another
+                    # save r16-r23 is used
+                    # initialize variables if any
+</code></pre><h2 id="example-bst-search">Example: BST Search</h2>
+<p>(10
+  (5 () 8)
+  (20 15 30))</p>
+<p>so we have some code like this:</p>
+<pre><code>struct Node {
+    int key;
+    struct Node* left, right;
+}
+</code></pre><p>In ASM:</p>
+<pre><code>.equ NULL,0                 # all occurences of NULL replaced with 0
+.include &quot;nios_macros.s&quot;
+.section .data
+
+root: .word 10,L1,R1         # L1 is addr of left child, R1 is addr of right child 
+L1: .word 5,NULL,R21
+R21: .word 8,NULL,NULL
+R1: .word 20,L22,R22
+L22: .word 15,NULL,NULL
+R22: .word 30,NULL,NULL
+
+.section .text
+.global main
+
+main:
+    movia r4,root            # set up first argument for subroutine we&#39;re going to
+                            # invoke
+    movia r5,30
+    call search             # will set up r2 to be a boolean if it was found
+    beq r2,zero,offLED        # turn off LED if not found (&quot;zero&quot; is alias for r0)
+    call on
+    br stop
+offLED:
+    call off
+stop:
+    br stop
+    .end
+</code></pre><p>C code for search:</p>
+<pre><code>int search(struct Node *ptr, int v) {
+    while (ptr) {
+        if (ptr-&gt;key == value)
+            return 1;
+        if (ptr-&gt;key &gt; value)
+            ptr = ptr-&gt;left;
+        else
+            ptr = ptr-&gt;right;
+    }
+    return 0;
+}
+</code></pre><p>ASM:</p>
+<pre><code>search:
+    addi sp,sp,-4
+    stw r16,0(sp)        # save the value that&#39;s currently in r16 on top of stack,
+                        # so we don&#39;t wreck anyone else&#39;s work
+while:
+    beq r4,r0,notFound    # when the pointer is NULL, go to end
+    ldw r16,(r4)        # grab our value
+    beq r16,r5,found     # r5 contains the value we&#39;re looking for
+    bgt r16,r5,goLeft
+                        # going right now, since neither found nor going left
+    ldw r4,8(r4)        # right is two words into struct, so 8 bytes of offset
+    br while
+goLeft:
+    ldw r4,4(r4)         # left is one word into struct, so 4 bytes of offset
+    br while
+found:
+    addi r2,zero,1
+    br end
+notFound:
+    movi r2,0            # might be less efficient than addi since I guess it gets
+                        # disassembled into an addi
+end:
+    ldw r16,(sp)        # take the old value of r16 off the top of the stack
+    addi sp,sp,4         # set stack pointer back to the original top of the stack
+    ret
+</code></pre><h2 id="prime-example">Prime Example</h2>
+<p>C code:</p>
+<pre><code>int isPrime(int n)
+{
+    int i;
+
+    if (n == 1)
+        return 1;
+
+    for (i = 2; i &lt; n; i++)
+        if (modI(n, i) == 0)
+             return 0;
+
+    return 1;
+}
+</code></pre><p>ASM:</p>
+<pre><code>isPrime:
+    # save registers
+    addi sp,sp,(-12) # want to save three things
+    stw ra,8(sp)
+    stw r16,4(sp)
+    stw r17,0(sp)
+
+    mov r16,r4         # keep copy of n in r16
+    movi r2,1
+    beq r16,r2,done # check if n == 1, we&#39;re done if so
+
+    movi r17,2         # i = 2
+
+loop:
+    bge r17,r16,done     # loop is finished when i &gt;= n
+    mov r4,r16
+    mov r5,r17              # set up our two args for modI
+    call modI
+    beq r2,zero,done    # no need to change return register value to be zero
+                        # before we branch to the done address,
+                        # since it&#39;s already set to zero from modI&#39;s return
+                        # value
+    addi r17,r17,1         # i++
+
+done:
+    # restore registers
+    ldw ra,8(sp)
+    ldw r16,4(sp)
+    ldw r17,0(sp)
+    addi sp,sp,12
+
+    ret
+
+modI:
+    bltu r4,r5,donemod
+    sub r4,r4,r5
+    br modI
+
+donemod:
+    mov r2,r4
+    ret
+</code></pre><h1 id="more-hardware">More Hardware</h1>
+<p>Recall that the processor connects to the memory through the bus, which transfers
+things around. Memory from 0 to 0x007FFFFFF on the NIOS is used just for the
+instructions and data of programs. LEDR(memory-mapped I/O) starts at 0x10000000,
+LEDG starts at 0x10000010. Then there&#39;s a seven segment display in memory-mapped
+I/O, HEX 3-0 at 0x10000020, HEX 7-4 at 0x10000030. JTAG-UART(used for terminal
+communication) is at 0x10001000. R5232 UART is at 0x10001010. Then there&#39;s a timer
+at 0x10002000.</p>
+<p>We also have pins, used for general-purpose I/O, or GPIO. JP1 is at 0x10000060,
+JP2 is at 0x10000070, and there&#39;s about 12 other pins(need to look up the NIOS
+specs to find out how many pins there are).</p>
+<p>Two methods for communicating with devices, detecting when their values have
+changed. One is <strong>polling</strong>, the other is <strong>interrupt</strong>. They have individual
+pros and cons.</p>
+<h2 id="polling">Polling</h2>
+<p>The timer allows you to measure real-time as a number of clock cycles (50 MHZ on
+the NIOS).</p>
+<p>We have 6 words of space in the timer.</p>
+<p>0x10002000     bit 0 is timeout, bit 1 is run, bits 2 and 3 are reserved, rest empty
+0x10002004     bit 0 is interrupt timeout, bit 1 is cont, bit 2 is start, bit 3 is
+            stop, rest is unused
+0x10002008  counter start value (16 LOW-order bits)
+0x1000200C    counter stop value (16 HIGH-order bits)
+0x10002010  counter snapshot (LOW)
+0x10002014  counter snapshot (HIGH)</p>
+<p><em>timeout</em>: set to 1 by timer. If timer reached zero can be reset by user.</p>
+<p><em>run</em>: timer sets to 1 when running</p>
+<p><em>start/stop</em>: timer can be used as a stopwatch. set them to 1 to start/stop</p>
+<p><em>cont</em>: when reached zero automatically reloads specified starting count
+value. if cont = 1, repeats, otherwise stops.</p>
+<p>Say we want to put 5 seconds into the timer, with a 50 MHZ clock. 
+cycles = (5)(50)(10^6) = 250(10^6) cycles = (in hex) 0x0EE6 (high) B280 (low)</p>
+<pre><code>.equ TIMER, 0x10002000
+.equ time, 0x0EE6B280
+movia r8,TIMER
+movui r9,%lo(time) 
+stwio r9,8(r8) # put low bits into 0x10002008
+movui r9,%hi(time)
+stwio r9,12(r8) # put high bits into 0x10002012
+stwio r0,(r8) # reset timer
+movi r0,0b100 # start &lt;- 1
+stwio r9,4(r8)
+
+poll:
+    ldwio r9,(r8)
+    andi r9,r9,0b1 # check if start is 1
+    beq r9,r0, Poll # keep checking until it is
+</code></pre><p>How does the snapshot work?</p>
+<pre><code>movia r8,TIMER         # set things up to read current timer value
+stwio r0,16(r8)
+ldwio r9,16(r8)        # read counter LOW
+ldwio r10,20(r8)    # read counter HIGH
+slli r10,r10,16     # in order to put the snapshot value together into a 32-bit
+                    # number, we&#39;re going to shift it left into the 31-16 bits
+or r10,r10,r9         # now the value is together
+</code></pre>
                     
                     </section>
                 
@@ -1090,10 +1221,10 @@ much more unpredictable behavior.</p>
         </div>
 
         
-        <a href="../csc469/README.html" class="navigation navigation-prev " aria-label="Previous page: CSC469"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc372/Lecture5.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 5"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc469/Lecture2.html" class="navigation navigation-next " aria-label="Next page: Lecture 2"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc372/Lecture7.html" class="navigation navigation-next " aria-label="Next page: Lecture 7"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

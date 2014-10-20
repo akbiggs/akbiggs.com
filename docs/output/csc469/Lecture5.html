@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 1 | School Notes</title>
+        <title>Lecture 5 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc469/Lecture2.html" />
+    <link rel="next" href="../csc469/Lecture6.html" />
     
     
-    <link rel="prev" href="../csc469/README.html" />
+    <link rel="prev" href="../csc469/Lecture4.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1413843186418">
+    <div class="book"  data-level="2.5" data-basepath=".." data-revision="1413843186418">
     
 
 <div class="book-summary">
@@ -216,7 +216,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="csc469/Lecture1.html">
+        <li class="chapter " data-level="2.1" data-path="csc469/Lecture1.html">
             
                 
                     <a href="../csc469/Lecture1.html">
@@ -280,7 +280,7 @@
         </li>
     
         
-        <li class="chapter " data-level="2.5" data-path="csc469/Lecture5.html">
+        <li class="chapter active" data-level="2.5" data-path="csc469/Lecture5.html">
             
                 
                     <a href="../csc469/Lecture5.html">
@@ -999,87 +999,94 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_42">
+                    <section class="normal" id="section-gitbook_41">
                     
-                        <h1 id="csc469-lecture-1">CSC469 Lecture 1</h1>
-<p>When reading notes, don&#39;t go linearly. Focus on the intro and conclusion
-to get the meat of the paper. Also, if the paper hasn&#39;t already been
-selected for you by someone, approach it with some skepticism.</p>
-<p>Practice active reading: write notes on each paper you read, make
-references between sections.</p>
-<p>You generally have a few types of problems that you need to deal with
-when working with large systems and change:</p>
-<ol>
-<li>Incommenserate Scalability (scaling resources doesn&#39;t make sense)</li>
-<li>Surprises (unforseen consequences of changes)</li>
-<li>Trade-offs (you can&#39;t provide all the desirable features 
-simultaneously)</li>
-</ol>
-<p>Complexity in a large software system is almost inevitable.
-You have a large number of elements, a large number of
-interconnections, irregularity in how those connections
-are formed, lack of a methodical description, and a minimum
-team size required to understand the system.</p>
-<p>Some sources of system complexity are taking on too many objectives,
-needing high usage of limited resources, and making design decisions that
-try to be general but are ultimately unnecessary and have to be revisited
-later.</p>
-<p>So in this course, we&#39;ll try to approach understanding and controlling
-complexity through the examination of case studies and existing
-experience. We&#39;ll see how OS design changes in response to <em>technological
-advances</em>, <em>new application requirements</em>, and <em>advanced system
-objectives</em>.</p>
-<p>OSs abstract system resources, providing access to processes, files,
-sockets, memory, etc. They are constantly changing, due to shifting
-hardware and software, and tend to be highly complex for the reasons
-mentioned above. Combining systems together makes everything even more
-complicated.</p>
-<h2 id="dealing-with-complexity">Dealing With Complexity</h2>
-<p>There are a few techniques we can apply to deal with complexity:</p>
-<p>-<strong>Modularity</strong>: Break the implementation up into different components
-as necessary.
--<strong>Abstraction</strong>: Separate the interface from the specification of the
-implementation, so changes to the internal details do not propogate.
--<strong>Hierarchy</strong>: Build on modularity by recursively grouping different
-sets of components based on their purpose(e.g. middleware, workhorses)</p>
-<p>The <strong>end-to-end argument</strong> is that you should not implement something
-at a low-level if it could be done just as well at a higher level.
-Consider the example of transferring a file from node A to node B.
-The end-to-end argument says that there is no need to handle verification
-at intermediate low level steps when you could just do a final high-level
-verification step at the end that was necessary anyways. However,
-this doesn&#39;t necessarily apply when you&#39;re dealing with very unreliable
-intermediate steps or extremely large files.</p>
-<p>Try to keep things simple. Do one things at a time, and do it well. Make
-it fast, don&#39;t hide power, and leave it to the client. Make these
-interfaces as stable as possible.</p>
-<p>Make an implementation work, and plan to throw one attempt at an
-implementation away.</p>
-<p>Isolate the normal and worst case. Handle the worst case safely,
-you can do it slow, but the normal case needs to be fast.</p>
-<h2 id="early-operating-systems">Early Operating Systems</h2>
-<p><strong>The THE</strong>: Operating system is cleanly separated into different layers 
-(User programs &gt; buffering of I/O &gt; console &gt; segment controller &gt;
- processor allocation and interrupt handling). 
-Every layer has a well-defined function and interface. Limits complexity,
-can test the system nicely using simulated input, can&#39;t deadlock since
-there are no cycles. However, it&#39;s really hard to partition things this
-way.</p>
-<p><strong>Monolithic OS</strong>: You have processes for each application in user-space,
-and the OS kernel in kernel-space, which has access to the different
-resource managers, which in turn have access to the hardware. Common
-in commercial systems.
-Very flexible, well-understood, and very performant. Good protection
-of OS against applications. However, you have no protection between
-kernel components, you can&#39;t safely/easily extend it, and as the OS
-grows it becomes much more complex.</p>
-<p><strong>Open Systems</strong>: There is no division between kernel and application
-space. Apps have direct access to the hardware resources they need.
-It sounds crazy today, but used to be <em>very</em> common. When resources
-were extremely limited, you couldn&#39;t afford to deal with all those
-levels of indirection. Very extensible and works for a single user
-system. However, not very stable and composing extensions leads to
-much more unpredictable behavior.</p>
+                        <h1 id="csc469-lecture-5">CSC469 Lecture 5</h1>
+<h2 id="lock-review">Lock Review</h2>
+<p>Recall that a <strong>spinlock</strong> is just looping and spinning until we can
+acquire the lock. They&#39;re good if we have nothing else to do, or the
+wait times are short, or we&#39;re not allowed to block threads, despite
+their bad performance for longer times. We&#39;ll be focusing on these.</p>
+<p>The basic operation on a spinlock is TAS(test and set) -- checks to see
+if the lock is available, locks it if so. Needs to be an atomic operation.</p>
+<h2 id="the-cost-of-locking">The Cost of Locking</h2>
+<p>Since we need the lock to operate atomically in order to perform correctly,
+this means that every thread waiting needs to operate on memory to check
+the value of the lock. This leads to each thread hammering memory.</p>
+<p>To improve on this performance, we spin in the cache using a local variable,
+and access the memory only when the lock is likely to be available. Our
+cached copy is invalidated when the lock is released. This is called a TTAS
+(test and test and set) operation. </p>
+<p>However, this still leads to every thread hammering memory at the same time
+when they think the lock will end up being available.</p>
+<p>So we introduce <em>backoff</em>, where each thread is pausing for a delay that is
+growing exponentially (* 2 on each iteration). However, this is still not a very
+fair algorithm, can lead to some threads getting screwed over.</p>
+<h2 id="ticket-locks">Ticket Locks</h2>
+<p>Resolve the fairness issues through FIFO order, while reducing the number of atomic
+operations. The lock has two counters, next_ticket and now_serving.</p>
+<p>For a thread to acquire the lock, they do the atomic FAA (Fetch and Add) op
+to retrieve the next ticket of the lock, and loop until their acquired
+ticket matches the now_serving value on the lock. When the lock is released,
+the now_serving value is incremented.</p>
+<h2 id="queuing-locks">Queuing Locks</h2>
+<p>With a ticket lock, there&#39;s a bit of contention at release time when the
+threads have to acquire the new value of now_serving. A Queuing Lock
+solves this.</p>
+<p>Each CPU spins on a different memory location, reducing cache
+traffic and memory contention. Each CPU is added to a different point in
+a queue for acquiring the lock, and spins on that position in the queue.</p>
+<p>Each node needs to refer to a node on another CPU, so the structures for
+the nodes in the linked list are in shared memory.</p>
+<h1 id="the-problems-with-locks">The Problems With Locks</h1>
+<p>Although locks protect shared data and avoid inconsistent views, they have
+lots of problem. Deadlock, priority inversion, not fault tolerant, ...</p>
+<p><strong>Deadlock</strong>: There is a set of threads blocked waiting for events that can only be
+caused by threads also in the set.</p>
+<p><strong>Priority Inversion</strong>: A low priority thread gets the lock that a high priority
+thread needs. Now the high priority thread gets a lot of time to wait while
+the low priority thread is unable to do what it needs to release the lock.</p>
+<p><strong>Not Fault Tolerant</strong>: If the lock holder crashes, or gets delayed, everyone is
+stuck.</p>
+<p><strong>Convoying</strong>: A bunch of threads start at different times, and do similar work
+sharing some data. We would expect that the time when the locks are needed would
+be spread out over time, but because of the time the first thread spends with the
+lock, the other threads catch up and contention occurs.</p>
+<p>Even when uncontended, locks are still very expensive. Ten years ago, it took 0.24
+nanoseconds to execute a single instruction, and 234 nanoseconds to acquire a lock.
+This has huge implications for locked regions of shared memory -- a lock will inherently be way more expensive to work with.</p>
+<h2 id="not-locking">Not Locking</h2>
+<p>So maybe we shouldn&#39;t try to lock unless we have to. There&#39;s this idea of
+Non-Blocking Synchronization. Despite its name, this does not mean that threads
+do not sleep.</p>
+<p>In basic NBS, we attempt to make changes optimistically, and roll back and retry
+the operations to a commit point if there are conflicts.</p>
+<pre><code>do {
+    value = *pointer;
+} while (!CAS(S,value,pointer));
+</code></pre><h2 id="the-aba-problem">The ABA Problem</h2>
+<p>Suppose we have two threads operating on the same stack. One pops off two values,
+pushes on two new values, where the last of the new pushed values is equivalent to
+the value that was originally on the stack. Now when our other thread uses the
+CAS operation, it will succeed since S == value, but it has a completely different
+stack so things get corrupted.</p>
+<p>One solution to this issue is to store a version number with every pointer,
+incrementing the version atomically every time the pointer is modified. This
+will guarantee that CAS fails if the pointer changed, but requires an atomic
+CAS operation that can operate on double-words.</p>
+<h2 id="real-copy-update-rcu">Real-Copy Update (RCU)</h2>
+<p>Motivated as an alternative to the idea of NBS based on the idea of real-world
+computers not failing in the same way that theoretical computers do.</p>
+<p>RCU is a reader-writer synchronization mechanism, where the readers use no
+locks, and the writers create new versions atomically, typically by locking
+out other writers. Readers can continue to access the old versions, until they&#39;re
+done with them, at which point the outdated copies need to be cleaned up. kinda
+like garbage collection.</p>
+<p>Since we don&#39;t use locks, we need to find some way to avoid having the CPU
+and Compiler reorder statements, so data is initialized in the right order.
+RCU provides rcu_assign_pointer and rcu_dereference to enforce operations
+executing in the right order.</p>
+<p>TODO: study quiescent state based reclamation.</p>
 
                     
                     </section>
@@ -1090,10 +1097,10 @@ much more unpredictable behavior.</p>
         </div>
 
         
-        <a href="../csc469/README.html" class="navigation navigation-prev " aria-label="Previous page: CSC469"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc469/Lecture4.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 4"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc469/Lecture2.html" class="navigation navigation-next " aria-label="Next page: Lecture 2"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc469/Lecture6.html" class="navigation navigation-next " aria-label="Next page: Lecture 6"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

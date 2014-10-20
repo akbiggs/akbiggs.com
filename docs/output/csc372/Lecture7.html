@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 1 | School Notes</title>
+        <title>Lecture 7 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc469/Lecture2.html" />
+    <link rel="next" href="../csc372/Lecture8.html" />
     
     
-    <link rel="prev" href="../csc469/README.html" />
+    <link rel="prev" href="../csc372/Lecture6.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1413843186418">
+    <div class="book"  data-level="3.7" data-basepath=".." data-revision="1413843186418">
     
 
 <div class="book-summary">
@@ -216,7 +216,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="csc469/Lecture1.html">
+        <li class="chapter " data-level="2.1" data-path="csc469/Lecture1.html">
             
                 
                     <a href="../csc469/Lecture1.html">
@@ -478,7 +478,7 @@
         </li>
     
         
-        <li class="chapter " data-level="3.7" data-path="csc372/Lecture7.html">
+        <li class="chapter active" data-level="3.7" data-path="csc372/Lecture7.html">
             
                 
                     <a href="../csc372/Lecture7.html">
@@ -999,88 +999,87 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_42">
+                    <section class="normal" id="section-gitbook_10">
                     
-                        <h1 id="csc469-lecture-1">CSC469 Lecture 1</h1>
-<p>When reading notes, don&#39;t go linearly. Focus on the intro and conclusion
-to get the meat of the paper. Also, if the paper hasn&#39;t already been
-selected for you by someone, approach it with some skepticism.</p>
-<p>Practice active reading: write notes on each paper you read, make
-references between sections.</p>
-<p>You generally have a few types of problems that you need to deal with
-when working with large systems and change:</p>
-<ol>
-<li>Incommenserate Scalability (scaling resources doesn&#39;t make sense)</li>
-<li>Surprises (unforseen consequences of changes)</li>
-<li>Trade-offs (you can&#39;t provide all the desirable features 
-simultaneously)</li>
-</ol>
-<p>Complexity in a large software system is almost inevitable.
-You have a large number of elements, a large number of
-interconnections, irregularity in how those connections
-are formed, lack of a methodical description, and a minimum
-team size required to understand the system.</p>
-<p>Some sources of system complexity are taking on too many objectives,
-needing high usage of limited resources, and making design decisions that
-try to be general but are ultimately unnecessary and have to be revisited
-later.</p>
-<p>So in this course, we&#39;ll try to approach understanding and controlling
-complexity through the examination of case studies and existing
-experience. We&#39;ll see how OS design changes in response to <em>technological
-advances</em>, <em>new application requirements</em>, and <em>advanced system
-objectives</em>.</p>
-<p>OSs abstract system resources, providing access to processes, files,
-sockets, memory, etc. They are constantly changing, due to shifting
-hardware and software, and tend to be highly complex for the reasons
-mentioned above. Combining systems together makes everything even more
-complicated.</p>
-<h2 id="dealing-with-complexity">Dealing With Complexity</h2>
-<p>There are a few techniques we can apply to deal with complexity:</p>
-<p>-<strong>Modularity</strong>: Break the implementation up into different components
-as necessary.
--<strong>Abstraction</strong>: Separate the interface from the specification of the
-implementation, so changes to the internal details do not propogate.
--<strong>Hierarchy</strong>: Build on modularity by recursively grouping different
-sets of components based on their purpose(e.g. middleware, workhorses)</p>
-<p>The <strong>end-to-end argument</strong> is that you should not implement something
-at a low-level if it could be done just as well at a higher level.
-Consider the example of transferring a file from node A to node B.
-The end-to-end argument says that there is no need to handle verification
-at intermediate low level steps when you could just do a final high-level
-verification step at the end that was necessary anyways. However,
-this doesn&#39;t necessarily apply when you&#39;re dealing with very unreliable
-intermediate steps or extremely large files.</p>
-<p>Try to keep things simple. Do one things at a time, and do it well. Make
-it fast, don&#39;t hide power, and leave it to the client. Make these
-interfaces as stable as possible.</p>
-<p>Make an implementation work, and plan to throw one attempt at an
-implementation away.</p>
-<p>Isolate the normal and worst case. Handle the worst case safely,
-you can do it slow, but the normal case needs to be fast.</p>
-<h2 id="early-operating-systems">Early Operating Systems</h2>
-<p><strong>The THE</strong>: Operating system is cleanly separated into different layers 
-(User programs &gt; buffering of I/O &gt; console &gt; segment controller &gt;
- processor allocation and interrupt handling). 
-Every layer has a well-defined function and interface. Limits complexity,
-can test the system nicely using simulated input, can&#39;t deadlock since
-there are no cycles. However, it&#39;s really hard to partition things this
-way.</p>
-<p><strong>Monolithic OS</strong>: You have processes for each application in user-space,
-and the OS kernel in kernel-space, which has access to the different
-resource managers, which in turn have access to the hardware. Common
-in commercial systems.
-Very flexible, well-understood, and very performant. Good protection
-of OS against applications. However, you have no protection between
-kernel components, you can&#39;t safely/easily extend it, and as the OS
-grows it becomes much more complex.</p>
-<p><strong>Open Systems</strong>: There is no division between kernel and application
-space. Apps have direct access to the hardware resources they need.
-It sounds crazy today, but used to be <em>very</em> common. When resources
-were extremely limited, you couldn&#39;t afford to deal with all those
-levels of indirection. Very extensible and works for a single user
-system. However, not very stable and composing extensions leads to
-much more unpredictable behavior.</p>
+                        <h1 id="csc372-lecture-7">CSC372 Lecture 7</h1>
+<p>How do we handle I/O? We have a few different ways.</p>
+<h2 id="1-parallel-interface-pit">1. Parallel Interface (PIT)</h2>
+<p>DE2 includes two Bidirectional(Input or Output) General Purpose I/O(GPIO), called
+the JP1/JP2.</p>
+<p>Both the JP1 and JP2 have two registers: the data register and the direction
+register. The data register is in the lower four bytes, while the direction register
+is in the upper four bytes.</p>
+<p>If a bit in the  <strong>direction register</strong> is 0, the corresponding bit in the
+data register is configured as input. If it&#39;s 1, then it&#39;s configured as output.</p>
+<p>First ten bits are used in this way, then four unused pins, then another 12,
+then four unused, then another 10.</p>
+<p>Configuring:</p>
+<pre><code>.equ JP1, 0x1000 0060
+movia r8,JP1
+stwio r0,4(r8) # zero out the direction register, configuring as inputs
 
+ldwio r9,0(r8) # this is how you would read the data register
+
+movi r9,0xFFFF # sign extends to all 32 bits since signed move 
+stwio r9, 4(r8) # configured for output
+</code></pre><h2 id="motor-control">Motor Control</h2>
+<p>Our PIT can be used to handle motor control. There are five motors over ten bits,
+every two bits separating a motor. The first bit is the on/off bit, the second
+bit is the forward/reverse bit. Oddly enough, off is 0, and on is 1.</p>
+<p>When we have our motors hooked up and we want to control them, we should have the
+first ten bits of our direction register on JP1 or JP2 set to 1.</p>
+<p>Motors are from bits 9 - 0.</p>
+<h2 id="sensor-control">Sensor Control</h2>
+<p>Again, we can have five sensors hooked up to the board. Each sensor has two bits:
+on/off and ready. When ready is 0, it means the data is prepared, but when it is
+1, the data is garbage.</p>
+<p>We use output on the direction register for the on/off bit, to set it on or off.
+We use input for the ready bit, to check whether or not the data is ready.</p>
+<p>Sensors are from bits 19 - 10. The data from the sensor we&#39;re interested in is kept
+on the 30 - 27 bits, so our direction bits are 0 for all of those.</p>
+<p><strong>Note</strong>: Best to set the direction register for 0x07F557FF. This will set/reset
+all bits for motors/sensors to the appropriate values.</p>
+<h2 id="usage">Usage</h2>
+<pre><code>.equ JP1,0x1000 0060
+movia r8,JP1
+movia r9,0xFFFFFFFF
+stwio r9,(r8) # all motors &amp; sensors off
+movia r9,0x07F557FF
+stwio r9,4(r8)
+
+# suppose we want to turn on motor 0, to go forward
+movia r9,0xFFFFFFFC # C is 1100, sets motor 0 on, sets forward bit to 1
+stwio r9,(r8)
+
+# going in reverse
+movia r9,0xFFFFFFFE
+stwio r9,(r8)
+
+# let&#39;s suppose we need two sensors
+movia r10,0xFFFFEFFF     # E is 1110, configures sensor 1 on
+movia r11,0xFFFFBFF     # B is 1011, sensor 0 on
+stwio r10,(r8)            # turn on sensor 1
+
+# we need to check for when the data is ready in sensor 1.
+# let&#39;s poll the bit that says when it&#39;s ready.
+Poll:
+    ldwio r14,(r8)
+    srli r14,r14,13      # we need to bring bit 13 to bit 0 within our register
+    andi r14,r14,1         # extract the value at bit 0
+    bne r14,r0,Poll
+
+    # sensor data is ready
+    ldwio r14,(r8)
+    srli r14,r14,27     # go to the data sensor
+    andi r14,r14,0x000F # extract last four bits
+
+    # cut off for sake of time, but here&#39;s the basic workflow for lab 2:
+    # 1. init
+    # 2. turn on motor
+    # 3. pulse width modulate? whatever PWM stands for
+    # 4. read sensor
+    # 5. flip to go forward and reverse
+</code></pre>
                     
                     </section>
                 
@@ -1090,10 +1089,10 @@ much more unpredictable behavior.</p>
         </div>
 
         
-        <a href="../csc469/README.html" class="navigation navigation-prev " aria-label="Previous page: CSC469"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc372/Lecture6.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 6"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc469/Lecture2.html" class="navigation navigation-next " aria-label="Next page: Lecture 2"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc372/Lecture8.html" class="navigation navigation-next " aria-label="Next page: Lecture 8"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

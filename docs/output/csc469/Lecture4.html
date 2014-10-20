@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 1 | School Notes</title>
+        <title>Lecture 4 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc469/Lecture2.html" />
+    <link rel="next" href="../csc469/Lecture5.html" />
     
     
-    <link rel="prev" href="../csc469/README.html" />
+    <link rel="prev" href="../csc469/Lecture3.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1413843186418">
+    <div class="book"  data-level="2.4" data-basepath=".." data-revision="1413843186418">
     
 
 <div class="book-summary">
@@ -216,7 +216,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="csc469/Lecture1.html">
+        <li class="chapter " data-level="2.1" data-path="csc469/Lecture1.html">
             
                 
                     <a href="../csc469/Lecture1.html">
@@ -264,7 +264,7 @@
         </li>
     
         
-        <li class="chapter " data-level="2.4" data-path="csc469/Lecture4.html">
+        <li class="chapter active" data-level="2.4" data-path="csc469/Lecture4.html">
             
                 
                     <a href="../csc469/Lecture4.html">
@@ -999,87 +999,84 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_42">
+                    <section class="normal" id="section-gitbook_45">
                     
-                        <h1 id="csc469-lecture-1">CSC469 Lecture 1</h1>
-<p>When reading notes, don&#39;t go linearly. Focus on the intro and conclusion
-to get the meat of the paper. Also, if the paper hasn&#39;t already been
-selected for you by someone, approach it with some skepticism.</p>
-<p>Practice active reading: write notes on each paper you read, make
-references between sections.</p>
-<p>You generally have a few types of problems that you need to deal with
-when working with large systems and change:</p>
-<ol>
-<li>Incommenserate Scalability (scaling resources doesn&#39;t make sense)</li>
-<li>Surprises (unforseen consequences of changes)</li>
-<li>Trade-offs (you can&#39;t provide all the desirable features 
-simultaneously)</li>
-</ol>
-<p>Complexity in a large software system is almost inevitable.
-You have a large number of elements, a large number of
-interconnections, irregularity in how those connections
-are formed, lack of a methodical description, and a minimum
-team size required to understand the system.</p>
-<p>Some sources of system complexity are taking on too many objectives,
-needing high usage of limited resources, and making design decisions that
-try to be general but are ultimately unnecessary and have to be revisited
-later.</p>
-<p>So in this course, we&#39;ll try to approach understanding and controlling
-complexity through the examination of case studies and existing
-experience. We&#39;ll see how OS design changes in response to <em>technological
-advances</em>, <em>new application requirements</em>, and <em>advanced system
-objectives</em>.</p>
-<p>OSs abstract system resources, providing access to processes, files,
-sockets, memory, etc. They are constantly changing, due to shifting
-hardware and software, and tend to be highly complex for the reasons
-mentioned above. Combining systems together makes everything even more
-complicated.</p>
-<h2 id="dealing-with-complexity">Dealing With Complexity</h2>
-<p>There are a few techniques we can apply to deal with complexity:</p>
-<p>-<strong>Modularity</strong>: Break the implementation up into different components
-as necessary.
--<strong>Abstraction</strong>: Separate the interface from the specification of the
-implementation, so changes to the internal details do not propogate.
--<strong>Hierarchy</strong>: Build on modularity by recursively grouping different
-sets of components based on their purpose(e.g. middleware, workhorses)</p>
-<p>The <strong>end-to-end argument</strong> is that you should not implement something
-at a low-level if it could be done just as well at a higher level.
-Consider the example of transferring a file from node A to node B.
-The end-to-end argument says that there is no need to handle verification
-at intermediate low level steps when you could just do a final high-level
-verification step at the end that was necessary anyways. However,
-this doesn&#39;t necessarily apply when you&#39;re dealing with very unreliable
-intermediate steps or extremely large files.</p>
-<p>Try to keep things simple. Do one things at a time, and do it well. Make
-it fast, don&#39;t hide power, and leave it to the client. Make these
-interfaces as stable as possible.</p>
-<p>Make an implementation work, and plan to throw one attempt at an
-implementation away.</p>
-<p>Isolate the normal and worst case. Handle the worst case safely,
-you can do it slow, but the normal case needs to be fast.</p>
-<h2 id="early-operating-systems">Early Operating Systems</h2>
-<p><strong>The THE</strong>: Operating system is cleanly separated into different layers 
-(User programs &gt; buffering of I/O &gt; console &gt; segment controller &gt;
- processor allocation and interrupt handling). 
-Every layer has a well-defined function and interface. Limits complexity,
-can test the system nicely using simulated input, can&#39;t deadlock since
-there are no cycles. However, it&#39;s really hard to partition things this
-way.</p>
-<p><strong>Monolithic OS</strong>: You have processes for each application in user-space,
-and the OS kernel in kernel-space, which has access to the different
-resource managers, which in turn have access to the hardware. Common
-in commercial systems.
-Very flexible, well-understood, and very performant. Good protection
-of OS against applications. However, you have no protection between
-kernel components, you can&#39;t safely/easily extend it, and as the OS
-grows it becomes much more complex.</p>
-<p><strong>Open Systems</strong>: There is no division between kernel and application
-space. Apps have direct access to the hardware resources they need.
-It sounds crazy today, but used to be <em>very</em> common. When resources
-were extremely limited, you couldn&#39;t afford to deal with all those
-levels of indirection. Very extensible and works for a single user
-system. However, not very stable and composing extensions leads to
-much more unpredictable behavior.</p>
+                        <h1 id="csc469-lecture-4">CSC469 Lecture 4</h1>
+<h1 id="interrupts">Interrupts</h1>
+<h2 id="software-interrupts">Software Interrupts</h2>
+<p>When you execute an interrupt, part of it is deferred to other parts of
+the operating system to be executed at a slightly later time. These parts
+are referred to as &quot;software interrupts&quot;.</p>
+<p>e.g. Network has some time-critical work, like copying packets off the
+hardware and responding to the hardware, but it also has some deferred work
+to process the packet, figure out what type of packet it is, pass it off to
+the correct application. Similarly, timers have time-critical work (incrementing
+current time of day) and deferred work (changing process priorities).</p>
+<h1 id="signals">Signals</h1>
+<p>Basic software mechanism for IPC, allows a process to respond to async external
+events by specifying its own signal handlers or using the OS&#39; default actions.</p>
+<p>Internally, a process has a structure that stores flags for possible signals and
+the corresponding actions to take. When a process receives a signal, a pending
+flag is set, and then the action occurs the next time the process checks for
+signals to execute.</p>
+<h2 id="terminology">Terminology</h2>
+<p><strong>Posting</strong>: When we generate a signal.</p>
+<p><strong>Delivery</strong>: action taken when process recognizes arrival of signal(handling)</p>
+<p><strong>Catching</strong>: process catches signal when it executes some user-level action in
+response.</p>
+<p><strong>Pending</strong>: when the process&#39; flag for that signal has been set but the action
+hasn&#39;t been taken yet</p>
+<h2 id="complications">Complications</h2>
+<p>The handlers can execute at any time, so we need to be careful when we&#39;re
+manipulating global state in the signal handler.</p>
+<p>A signal delivery can interrupt execution of signal handler, so we need to make sure
+our code can be entered multiple times by the same process without running into
+deadlock.</p>
+<h2 id="kernel-view-of-signals">Kernel View of Signals</h2>
+<p>We have a fixed set of signals in the kernel, each with its own unique number to
+identify it. The signal set for a process is a bit vector, where each bit gives
+the status of its corresponding signal.</p>
+<p>When we set a signal on a process, we wake up the process, interrupt whatever it&#39;s
+currently doing(including blocking system calls such as read), and give it the
+signal. If a process is multi-threaded, need to find a thread to give the signal
+to -- on FreeBSD, this is done using signal masks for each thread that say what
+signals they don&#39;t want to receive. Sending a signal to a multi-threaded process
+makes it search for the first thread that doesn&#39;t mask the signal.</p>
+<p>During the delivery and handling of a signal on FreeBSD, the process sets up
+a trapframe like you would when calling a regular function for the stack pointer,
+return address, and program counter. Then the trampoline code executes in user
+space.</p>
+<h2 id="real-time-signals">Real-Time Signals</h2>
+<p>Normal signals can&#39;t carry any extra info besides the signal number. A real-time
+signal can carry a value, but we only have a few of them on most OSs, and they
+aren&#39;t really able to carry a bunch of stuff.</p>
+<h1 id="other-communication-mechanisms">Other Communication Mechanisms</h1>
+<p>Signals are limited in that they are unable to transfer any other information. 
+Normally used for communication of exceptional events since they&#39;re so unspecific.
+UNIX provides a number of other communication methods that we can use to transfer
+data around.</p>
+<p>Pipes were created as a unidirectional stream that processes can use to receive info
+from other processes. However, they were limited in the sense that processes could
+only gain access to them through a direct parent-child relationship with the
+process creating the pipe&#39;s output. So fifos were created, which were named pipes,
+but they were also unidirectional and not great for communicating back and forth
+between processes.</p>
+<p>So nowadays we use <strong>sockets</strong>. A socket is a commmunication endpoint where you
+can send data to the endpoint and get a response back, between computers over
+a network.</p>
+<h2 id="socket-implementation">Socket Implementation</h2>
+<p>For memory management of socket resources and data, we use a custom main data
+structure, mbuf. We use this because we need to efficiently allocate and reclaim
+memory, add and remove headers, dividing a stream into packets and combining
+received packets, and moving data between queues. Mbufs are allocated from
+a pool of fixed-size blocks of memory, making allocation and reclamation very
+fast, and avoiding external fragmentation and coallescing. Allows multiple blocks
+to be chained together for longer messages.</p>
+<p>For multi-packet messages, we send together packages of mbufs. The first mbuf
+of each package has a pointer to the first mbuf of the next package.</p>
+<h2 id="descriptor-based-ipc">Descriptor-based IPC</h2>
+<p>We associate with each file a descriptor that describes the state of the file
+being operated on, including its ID.</p>
 
                     
                     </section>
@@ -1090,10 +1087,10 @@ much more unpredictable behavior.</p>
         </div>
 
         
-        <a href="../csc469/README.html" class="navigation navigation-prev " aria-label="Previous page: CSC469"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc469/Lecture3.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 3"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc469/Lecture2.html" class="navigation navigation-next " aria-label="Next page: Lecture 2"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc469/Lecture5.html" class="navigation navigation-next " aria-label="Next page: Lecture 5"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

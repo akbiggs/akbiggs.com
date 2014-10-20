@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 1 | School Notes</title>
+        <title>Lecture 8 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc469/Lecture2.html" />
+    <link rel="next" href="../csc372/Lecture9.html" />
     
     
-    <link rel="prev" href="../csc469/README.html" />
+    <link rel="prev" href="../csc372/Lecture7.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1413843186418">
+    <div class="book"  data-level="3.8" data-basepath=".." data-revision="1413843186418">
     
 
 <div class="book-summary">
@@ -216,7 +216,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="csc469/Lecture1.html">
+        <li class="chapter " data-level="2.1" data-path="csc469/Lecture1.html">
             
                 
                     <a href="../csc469/Lecture1.html">
@@ -494,7 +494,7 @@
         </li>
     
         
-        <li class="chapter " data-level="3.8" data-path="csc372/Lecture8.html">
+        <li class="chapter active" data-level="3.8" data-path="csc372/Lecture8.html">
             
                 
                     <a href="../csc372/Lecture8.html">
@@ -999,88 +999,189 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_42">
+                    <section class="normal" id="section-gitbook_11">
                     
-                        <h1 id="csc469-lecture-1">CSC469 Lecture 1</h1>
-<p>When reading notes, don&#39;t go linearly. Focus on the intro and conclusion
-to get the meat of the paper. Also, if the paper hasn&#39;t already been
-selected for you by someone, approach it with some skepticism.</p>
-<p>Practice active reading: write notes on each paper you read, make
-references between sections.</p>
-<p>You generally have a few types of problems that you need to deal with
-when working with large systems and change:</p>
-<ol>
-<li>Incommenserate Scalability (scaling resources doesn&#39;t make sense)</li>
-<li>Surprises (unforseen consequences of changes)</li>
-<li>Trade-offs (you can&#39;t provide all the desirable features 
-simultaneously)</li>
-</ol>
-<p>Complexity in a large software system is almost inevitable.
-You have a large number of elements, a large number of
-interconnections, irregularity in how those connections
-are formed, lack of a methodical description, and a minimum
-team size required to understand the system.</p>
-<p>Some sources of system complexity are taking on too many objectives,
-needing high usage of limited resources, and making design decisions that
-try to be general but are ultimately unnecessary and have to be revisited
-later.</p>
-<p>So in this course, we&#39;ll try to approach understanding and controlling
-complexity through the examination of case studies and existing
-experience. We&#39;ll see how OS design changes in response to <em>technological
-advances</em>, <em>new application requirements</em>, and <em>advanced system
-objectives</em>.</p>
-<p>OSs abstract system resources, providing access to processes, files,
-sockets, memory, etc. They are constantly changing, due to shifting
-hardware and software, and tend to be highly complex for the reasons
-mentioned above. Combining systems together makes everything even more
-complicated.</p>
-<h2 id="dealing-with-complexity">Dealing With Complexity</h2>
-<p>There are a few techniques we can apply to deal with complexity:</p>
-<p>-<strong>Modularity</strong>: Break the implementation up into different components
-as necessary.
--<strong>Abstraction</strong>: Separate the interface from the specification of the
-implementation, so changes to the internal details do not propogate.
--<strong>Hierarchy</strong>: Build on modularity by recursively grouping different
-sets of components based on their purpose(e.g. middleware, workhorses)</p>
-<p>The <strong>end-to-end argument</strong> is that you should not implement something
-at a low-level if it could be done just as well at a higher level.
-Consider the example of transferring a file from node A to node B.
-The end-to-end argument says that there is no need to handle verification
-at intermediate low level steps when you could just do a final high-level
-verification step at the end that was necessary anyways. However,
-this doesn&#39;t necessarily apply when you&#39;re dealing with very unreliable
-intermediate steps or extremely large files.</p>
-<p>Try to keep things simple. Do one things at a time, and do it well. Make
-it fast, don&#39;t hide power, and leave it to the client. Make these
-interfaces as stable as possible.</p>
-<p>Make an implementation work, and plan to throw one attempt at an
-implementation away.</p>
-<p>Isolate the normal and worst case. Handle the worst case safely,
-you can do it slow, but the normal case needs to be fast.</p>
-<h2 id="early-operating-systems">Early Operating Systems</h2>
-<p><strong>The THE</strong>: Operating system is cleanly separated into different layers 
-(User programs &gt; buffering of I/O &gt; console &gt; segment controller &gt;
- processor allocation and interrupt handling). 
-Every layer has a well-defined function and interface. Limits complexity,
-can test the system nicely using simulated input, can&#39;t deadlock since
-there are no cycles. However, it&#39;s really hard to partition things this
-way.</p>
-<p><strong>Monolithic OS</strong>: You have processes for each application in user-space,
-and the OS kernel in kernel-space, which has access to the different
-resource managers, which in turn have access to the hardware. Common
-in commercial systems.
-Very flexible, well-understood, and very performant. Good protection
-of OS against applications. However, you have no protection between
-kernel components, you can&#39;t safely/easily extend it, and as the OS
-grows it becomes much more complex.</p>
-<p><strong>Open Systems</strong>: There is no division between kernel and application
-space. Apps have direct access to the hardware resources they need.
-It sounds crazy today, but used to be <em>very</em> common. When resources
-were extremely limited, you couldn&#39;t afford to deal with all those
-levels of indirection. Very extensible and works for a single user
-system. However, not very stable and composing extensions leads to
-much more unpredictable behavior.</p>
+                        <h1 id="csc372-lecture-8">CSC372 Lecture 8</h1>
+<p>When you&#39;re approaching your design, don&#39;t put everything together at once.
+Do little tests on small amounts of functionality.</p>
+<h2 id="pulse-width-modulation">Pulse-width modulation</h2>
+<p>The <strong>switching frequency</strong> is the rate at which we turn things off and then
+on again to conserve energy. Pulse-width modulation involves changing our wave
+indicating when our circuit is on and off based on reducing the switching frequency
+and changing the amount of voltage being applied.</p>
+<p>The period of our program is 1 / frequency. The Duty cycle (D) = on time / period</p>
+<ul>
+<li>100%. 0% &lt;= D &lt;= 100%.</li>
+</ul>
+<h2 id="example">Example</h2>
+<p>Let r4 be the cycle time, passed by the caller.</p>
+<pre><code>.equ TIMER,0x10002000
+pwm: movia r23,TIMER
+stwia r4,8(r23)
+stwio zero,12(r23)
+stwio zero,(r23)
+movi r24, 0b0100
+stwio r24,4(r23)
 
+PollPWM:
+    ldwio r24,(r23)
+    andi r24,r24,1
+    beq r24,zero,PollPWM
+</code></pre><p>On a time out, we want to turn the motor off now.</p>
+<p>New instruction, shift left/right logical immediate</p>
+<p><code>slli rC,rA, Imm5</code>: <code>rC &lt;- rA &lt;&lt; Imm5</code></p>
+<p>5 due to 5 bits needed to represent 32, the size of a word in bits.</p>
+<p>for example, slli r8,r9,3 shifts r9 three bits to the left and stores it in r8.</p>
+<p>Another instruction, shift left/right arithmetic:</p>
+<p><code>sra rC,rA,rB: rC &lt;- (aligned rA) &gt;&gt; (rB4,,0)</code></p>
+<p>In other words, fill the empty space created by the right shift with 0s.</p>
+<h2 id="transmitting-information-over-serial-interfaces">Transmitting Information Over Serial Interfaces</h2>
+<p>Serial interfaces transfer data one bit at a time, whereas Parallel interfaces
+transfer a collection of bits at a time. Serial interfaces employ one line,
+whereas Parallel employs a collection of lines. Serial interfaces are cheap,
+while parallel ones are more expensive.</p>
+<h2 id="jtag-uart">JTAG UART</h2>
+<p>The JTAG UART acts as a connection between the USB Blaster interface of the host
+PC and the NIOS 2 and its bus interface. Implemented over the JTAG interface on DE2
+board and USB on the host PC. Can be used to transfer control to the terminal window
+on the Altera monitor program.</p>
+<p>The layout of the JTAG UART is two registers -- one at 0x10001000 for the data
+register, another at 0x10001004 for the control register.</p>
+<p>In the data register, bits 31 - 16 represents the number of characters available to
+read, bit 15 represents whether reading is valid from data section, bits 14 - 8 are
+unused, and bits 7 - 0 are data.</p>
+<p>In the control register, bits 31 - 16 are for white space, bits 15 - 11 are unused,
+bits 9 and 8 are used to indicate Write interrupts and Read interrupts, and bits 1
+and 0 are used to enable/disable Write interrupts and Read interrupts.</p>
+<h2 id="working-with-jtag">Working With JTAG</h2>
+<p>Workflow is check if data is ready. If it is, load the data, otherwise loop.</p>
+<pre><code>.equ JTAG, 0x10001000
+movia r8,JTAG
+
+Poll: 
+    ldwio r9,(r8)
+    andi r10,r9,0x8000     # extract the valid bit
+    beq r10,zero,Poll
+    andi r9,r9,0xFF        # extract data
+</code></pre><h2 id="factorial-function">Factorial Function</h2>
+<p>C Code:</p>
+<pre><code>int fact(int n)
+{
+    if (n == 0)
+        return 1;
+
+    return (n * fact(n-1));
+}
+</code></pre><p>ASM:</p>
+<pre><code>.section .text
+.global main
+
+main:
+    movi r4,3
+    call fact
+stop: 
+    br stop
+    .end
+
+.global fact
+fact:
+    addi sp,sp,-4
+    stw ra,(sp)              # need to save return address (could go after beq)
+
+    beq r4,zero,return1      # return 1 if n == 0
+
+    addi sp,sp,-4             # push old value of n on stack so we don&#39;t lose it
+    stw r4,(sp)
+
+    addi r4,r4,-1             # call recursively with n - 1
+    call fact
+
+    ldw r4,(sp)              # load our argument for n back on to register
+    addi sp,sp,4
+
+    mul r2,r4,r2             # set return value to be the recursive result * n
+    br end
+
+return1:
+    movi r2,1
+
+end:
+    ldw ra,(sp)             
+    addi sp,sp,4
+    ret
+</code></pre><h2 id="another-function-call-example">Another Function Call Example</h2>
+<p>Compute <code>f(f(3,4), -2)</code> where <code>f(a, b) = a^2 - b</code></p>
+<pre><code>.include &quot;nios_macros.s&quot;
+.section .text
+.global main
+main:
+    movi r4,3
+    movi r5,4
+    call math
+    mov r4,r2
+    movi r5, -2
+    call math
+
+stop:
+    br stop
+    .end
+
+.section .text
+.global main
+math:
+    mul r2,r4,r4
+    sub r2,r2,r5
+    ret
+</code></pre><h2 id="function-call-with-lots-of-arguments-example">Function Call With Lots Of Arguments Example</h2>
+<p>C function definition:</p>
+<pre><code>if (a &lt; b)
+    y = c + d + e
+else y = c - d - e;
+
+y = f(a,b,c,d,e)
+</code></pre><p>ASM:</p>
+<pre><code>main:
+    movi r4,4
+    movi r5,5
+    movi r6,6
+    movi r7,7     # now we&#39;ve run out of registers. need to push our fifth arg onto
+                # the stack
+
+    movi r8,8
+    addi sp,sp,-4
+    stw r8,(sp)
+
+    call add
+
+    addi sp,sp,4     # clean up the stack pointer, REMEMBER THIS
+stop:
+    br stop
+    .end
+
+add:
+    addi sp,sp,-8
+    stw r16,(sp)
+    stw r17,4(sp)
+
+    ldw r16,8(sp)     # load the value of our fifth argument, which was at the top
+                    # of the stack when we branched here, now 8 bytes away
+
+    # if (a &lt; b)
+    cmplt r17,r4,r5    # alternative approach to doing blt
+    beq r17,zoer,then
+else:
+    sub r2,r6,r7     # c - d
+    sub r2,r2,r16     # c - d - e
+    br end
+then:
+    add r2,r6,r7     # c + d
+    add r2,r2,r16     # c + d + e
+end:
+    ldw r16,(sp)
+    ldw r17,4(sp)
+    addi sp,sp,8
+    ret
+</code></pre>
                     
                     </section>
                 
@@ -1090,10 +1191,10 @@ much more unpredictable behavior.</p>
         </div>
 
         
-        <a href="../csc469/README.html" class="navigation navigation-prev " aria-label="Previous page: CSC469"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc372/Lecture7.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 7"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc469/Lecture2.html" class="navigation navigation-next " aria-label="Next page: Lecture 2"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc372/Lecture9.html" class="navigation navigation-next " aria-label="Next page: Lecture 9"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

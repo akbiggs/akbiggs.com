@@ -1,0 +1,33 @@
+CSC411 Tutorial 4 Questions
+------------------------------
+
+load alspam;
+
+features_names
+pause;
+
+data_train(1,:)'
+
+feature_names(logical(data_train(1,:)))
+pause;
+
+data_train(800,:)
+pause;
+
+feature_names(logical(data_train(800,:)))
+pause;
+
+fprintf('Running Naive Bayes...\n');
+[pcond, prior] = nb(data_train, labels_train);
+fprintf("Finished...\n");
+
+pause;
+
+prior
+pause;
+
+topwords(pcond(1,:), 10, feature_names);
+	pause;
+
+class1probs = repmat(pcond(1,:), 4000, 1)
+class1data = data_valid .* class1probs + (1 - data_valid) .*

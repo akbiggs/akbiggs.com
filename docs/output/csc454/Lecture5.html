@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture 1 | School Notes</title>
+        <title>Lecture 5 | School Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../csc469/Lecture2.html" />
+    <link rel="next" href="../csc411/README.html" />
     
     
-    <link rel="prev" href="../csc469/README.html" />
+    <link rel="prev" href="../csc454/Lecture4.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1413843186418">
+    <div class="book"  data-level="4.5" data-basepath=".." data-revision="1413843186418">
     
 
 <div class="book-summary">
@@ -216,7 +216,7 @@
                 
     
         
-        <li class="chapter active" data-level="2.1" data-path="csc469/Lecture1.html">
+        <li class="chapter " data-level="2.1" data-path="csc469/Lecture1.html">
             
                 
                     <a href="../csc469/Lecture1.html">
@@ -628,7 +628,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4.5" data-path="csc454/Lecture5.html">
+        <li class="chapter active" data-level="4.5" data-path="csc454/Lecture5.html">
             
                 
                     <a href="../csc454/Lecture5.html">
@@ -999,87 +999,69 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_42">
+                    <section class="normal" id="section-gitbook_40">
                     
-                        <h1 id="csc469-lecture-1">CSC469 Lecture 1</h1>
-<p>When reading notes, don&#39;t go linearly. Focus on the intro and conclusion
-to get the meat of the paper. Also, if the paper hasn&#39;t already been
-selected for you by someone, approach it with some skepticism.</p>
-<p>Practice active reading: write notes on each paper you read, make
-references between sections.</p>
-<p>You generally have a few types of problems that you need to deal with
-when working with large systems and change:</p>
+                        <h1 id="csc454-lecture-5">CSC454 Lecture 5</h1>
+<h2 id="pricing-your-products">Pricing Your Products</h2>
+<p>Depending on the channel you&#39;re pursuing, your pricing model will vary.</p>
 <ol>
-<li>Incommenserate Scalability (scaling resources doesn&#39;t make sense)</li>
-<li>Surprises (unforseen consequences of changes)</li>
-<li>Trade-offs (you can&#39;t provide all the desirable features 
-simultaneously)</li>
+<li><p>If there are products like yours, how much do customers spend for them
+today?</p>
+</li>
+<li><p>If users need a product like yours, how much do they pay in aggregate to
+do the same tasks today?</p>
+</li>
 </ol>
-<p>Complexity in a large software system is almost inevitable.
-You have a large number of elements, a large number of
-interconnections, irregularity in how those connections
-are formed, lack of a methodical description, and a minimum
-team size required to understand the system.</p>
-<p>Some sources of system complexity are taking on too many objectives,
-needing high usage of limited resources, and making design decisions that
-try to be general but are ultimately unnecessary and have to be revisited
-later.</p>
-<p>So in this course, we&#39;ll try to approach understanding and controlling
-complexity through the examination of case studies and existing
-experience. We&#39;ll see how OS design changes in response to <em>technological
-advances</em>, <em>new application requirements</em>, and <em>advanced system
-objectives</em>.</p>
-<p>OSs abstract system resources, providing access to processes, files,
-sockets, memory, etc. They are constantly changing, due to shifting
-hardware and software, and tend to be highly complex for the reasons
-mentioned above. Combining systems together makes everything even more
-complicated.</p>
-<h2 id="dealing-with-complexity">Dealing With Complexity</h2>
-<p>There are a few techniques we can apply to deal with complexity:</p>
-<p>-<strong>Modularity</strong>: Break the implementation up into different components
-as necessary.
--<strong>Abstraction</strong>: Separate the interface from the specification of the
-implementation, so changes to the internal details do not propogate.
--<strong>Hierarchy</strong>: Build on modularity by recursively grouping different
-sets of components based on their purpose(e.g. middleware, workhorses)</p>
-<p>The <strong>end-to-end argument</strong> is that you should not implement something
-at a low-level if it could be done just as well at a higher level.
-Consider the example of transferring a file from node A to node B.
-The end-to-end argument says that there is no need to handle verification
-at intermediate low level steps when you could just do a final high-level
-verification step at the end that was necessary anyways. However,
-this doesn&#39;t necessarily apply when you&#39;re dealing with very unreliable
-intermediate steps or extremely large files.</p>
-<p>Try to keep things simple. Do one things at a time, and do it well. Make
-it fast, don&#39;t hide power, and leave it to the client. Make these
-interfaces as stable as possible.</p>
-<p>Make an implementation work, and plan to throw one attempt at an
-implementation away.</p>
-<p>Isolate the normal and worst case. Handle the worst case safely,
-you can do it slow, but the normal case needs to be fast.</p>
-<h2 id="early-operating-systems">Early Operating Systems</h2>
-<p><strong>The THE</strong>: Operating system is cleanly separated into different layers 
-(User programs &gt; buffering of I/O &gt; console &gt; segment controller &gt;
- processor allocation and interrupt handling). 
-Every layer has a well-defined function and interface. Limits complexity,
-can test the system nicely using simulated input, can&#39;t deadlock since
-there are no cycles. However, it&#39;s really hard to partition things this
-way.</p>
-<p><strong>Monolithic OS</strong>: You have processes for each application in user-space,
-and the OS kernel in kernel-space, which has access to the different
-resource managers, which in turn have access to the hardware. Common
-in commercial systems.
-Very flexible, well-understood, and very performant. Good protection
-of OS against applications. However, you have no protection between
-kernel components, you can&#39;t safely/easily extend it, and as the OS
-grows it becomes much more complex.</p>
-<p><strong>Open Systems</strong>: There is no division between kernel and application
-space. Apps have direct access to the hardware resources they need.
-It sounds crazy today, but used to be <em>very</em> common. When resources
-were extremely limited, you couldn&#39;t afford to deal with all those
-levels of indirection. Very extensible and works for a single user
-system. However, not very stable and composing extensions leads to
-much more unpredictable behavior.</p>
+<p>You need to be careful not to tell partners the truth about your numbers, or
+they will screw you over by stealing your pricing model. You also need to be
+careful not to say &quot;I have better value, and I can sell it cheaper&quot;. Can really
+screw you over -- you should aim to adjust your price based on the amount of
+additional value you&#39;re adding.</p>
+<h2 id="managing-channels">Managing Channels</h2>
+<ol>
+<li><p>You need to figure out the sales model before telling it to your partners.
+Make the first few sales directly yourself to figure out the market.</p>
+</li>
+<li><p>Channel sales take a long time to get off the ground, due to differing priorities
+between you and your partner. Have to stay on top of them.</p>
+</li>
+<li><p>You need to create demand for your product, not your resellers.</p>
+</li>
+<li><p>The more time you invest in educating them, the better they&#39;ll be able to resell your product.</p>
+</li>
+<li><p>Ensure that there is a channel that sells similar products to a similar buyer
+as yours. Creating your own channel is a huge pain and drain of resources.</p>
+</li>
+</ol>
+<h2 id="customer-lifetime-value">Customer Lifetime Value</h2>
+<p>A prediction of the entire value a business will derive from their entire
+relationship with a customer. Need to make sure that the cost of the company
+is less than this value by a significant margin, or you&#39;re sunk.</p>
+<p>You have to watch out for <strong>Customer Acquisition Costs</strong> as well, where you
+need to spend money just to bring customers in. You can reduce CACs through your
+product design, improving your conversion rate, and managing the amount of money
+spend marketing.</p>
+<p>For a SAAS, aim for about 3 x CAC for the LTV. Public companies have multiples
+that are more similar to 5 x CAC. Need to recover the CAC in &lt; 12 months for
+a subscription-based service.</p>
+<h2 id="improving-ltv">Improving LTV</h2>
+<ol>
+<li><p>Use email to answer common questions, create new innovation, upsell,
+and provide customer education</p>
+</li>
+<li><p>View every customer interaction as opportunity to improve customer loyalty</p>
+</li>
+<li><p>Find ways to build habits around your product.</p>
+</li>
+<li><p>Make customer service easy. Say yes more than no.</p>
+</li>
+<li><p>Incorporate customer feedback to improve everything from user experience to
+product features and design.</p>
+</li>
+</ol>
+<h1 id="legal-considerations-with-startups">Legal Considerations With Startups</h1>
+<p>When incorporating, you have to weigh several advantages against several
+disadvantages.</p>
 
                     
                     </section>
@@ -1090,10 +1072,10 @@ much more unpredictable behavior.</p>
         </div>
 
         
-        <a href="../csc469/README.html" class="navigation navigation-prev " aria-label="Previous page: CSC469"><i class="fa fa-angle-left"></i></a>
+        <a href="../csc454/Lecture4.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 4"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../csc469/Lecture2.html" class="navigation navigation-next " aria-label="Next page: Lecture 2"><i class="fa fa-angle-right"></i></a>
+        <a href="../csc411/README.html" class="navigation navigation-next " aria-label="Next page: CSC411"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
