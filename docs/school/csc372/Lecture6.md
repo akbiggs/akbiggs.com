@@ -266,3 +266,4 @@ ldwio r10,20(r8)	# read counter HIGH
 slli r10,r10,16 	# in order to put the snapshot value together into a 32-bit
 					# number, we're going to shift it left into the 31-16 bits
 or r10,r10,r9 		# now the value is together
+```

@@ -8,7 +8,7 @@ We have a instruction called "call", which takes
 a label of the address where the function instructions
 begin. We also have an instruction called "ret", which
 indicates the end of a function.
-
+	
 So "call" invokes a subroutine(callee) by using 
 "call Imm26", where Imm26 is an immediate 26-bit
 value. On NIOS, sets r31(also known as ra) to the next instruction

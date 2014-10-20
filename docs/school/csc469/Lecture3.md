@@ -203,4 +203,4 @@ optimization, not just a comparison of the section being optimized.
 
 The lesson that Amdahl's Law teaches us is that it's difficult to speed up
 a program, since if you identify and eliminate one bottleneck in a system,
-something else becomes the bottleneck
+something else becomes the bottleneck.
