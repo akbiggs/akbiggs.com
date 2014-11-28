@@ -37,6 +37,11 @@ body {
     float: left;
 }
 
+.game.single {
+    float: none;
+    margin: auto;
+}
+
 .game .title {
     text-align: center;
     font-weight: bold;
