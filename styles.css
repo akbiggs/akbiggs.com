@@ -41,6 +41,7 @@ body {
 .game.single {
     float: none;
     margin: auto;
+    width: 350px;
 }
 
 .game .title {
@@ -53,8 +54,8 @@ body {
 }
 
 .game img {
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    margin: auto;
     width: 240px;
     height: 175px;
 }
