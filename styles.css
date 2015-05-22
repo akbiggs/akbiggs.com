@@ -1,5 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
+
+    background-image: url("images/background.png");
 }
 
 .name {
