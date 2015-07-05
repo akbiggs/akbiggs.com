@@ -1,5 +1,7 @@
 body {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
+
+    background-image: url("images/background.png");
 }
 
 .name {
@@ -32,6 +34,7 @@ body {
 .game {
     position: relative;
     width: 250px;
+    height: 550px;
     padding-left: 20px;
     padding-right: 20px;
     float: left;
@@ -40,6 +43,7 @@ body {
 .game.single {
     float: none;
     margin: auto;
+    width: 350px;
 }
 
 .game .title {
@@ -52,8 +56,8 @@ body {
 }
 
 .game img {
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    margin: auto;
     width: 240px;
     height: 175px;
 }
