@@ -1,0 +1,4 @@
+[submodule "ssbu"]
+	path = ssbu
+	url = https://github.com/akbiggs/banspage.github.io
+	branch = save-ultimate
